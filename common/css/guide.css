@@ -4183,7 +4183,7 @@ label {
 .template-box.temp-2-2 .inner-box ul li:nth-child(1) ~ li {
   width: calc(50% - 5px);
   overflow: hidden;
-  vertical-align: middle;
+  vertical-align: top;
 }
 .template-box.temp-2-2 .inner-box ul li:nth-child(3) {
   margin-left: 10px;
