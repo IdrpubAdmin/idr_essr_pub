@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="pragma" content="no-cache">
+  <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,shrink-to-fit=no,viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" type="image/x-icon" href="../common/images/common/favicon.ico">
+  <title>공지사항 - 공지사항 없음</title>
+  <link rel="stylesheet" href="../../common/css/detail.css">
+<!--  <link rel="stylesheet" href="../../common/css/guide.css">-->
+  <script type="text/javascript" th:inline="javascript">
+    /*<![CDATA[*/
+    const _PageMixins = [];
+    function semVueLoader(url) {
+      return httpVueLoader(url);
+    }
+    /*]]>*/
+  </script>
+</head>
+<body>
+  <div id="app" class="wrapper">
+    <!-- header -->
+    <header class="header-wrap">
+      <!-- 서브타이틀,카테고리타이틀(서브메뉴),서브카테고리(서브메뉴),메인아이콘,뒤로가기버튼,검색버튼,내서랍버튼-->
+      <header-common :sub-title="''"
+                     :category-title="false"
+                     :sub-category="false"
+                     :is-main-icon="false"
+                     :is-back-btn="true"
+                     :is-home-btn="false"
+                     :is-search-btn="true"
+                     :is-drawer-btn="true"
+                     :is-search-box="false"
+      ></header-common>
+      <div class="append-box"></div>
+    </header>
+    <!-- container -->
+    <section class="container">
+      <!-- contents -->
+      <article class="contents">
+        <div class="result-wrap">
+          <span class="ico"></span>
+          <p>선택하신 상품이 존재하지 않습니다.</p>
+          <span class="desc">상품이 품절되었거나<br>노출이 제한된 상품일 수 있습니다.</span>
+          <div class="button-box">
+            <button type="button" class="bak-btn"><span>이전으로</span></button>
+            <button type="button" class="home-btn"><span>홈으로</span></button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+  <script type="text/javascript" src="../../common/js/swiper.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-2.6.11.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-awesome-swiper.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-lazyload.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/httpVueLoader.js"></script>
+  <script type="text/javascript" src="../../common/js/sem-vue/plugins/sem-plugin.js"></script>
+  <script type="text/javascript" src="../../common/js/style.js"></script>
+
+  <script>
+    Vue.use(VueLazyload);
+  </script>
+  <script type="text/javascript" th:inline="javascript">
+    _PageMixins.push({
+      components: {
+
+      },
+      data() {
+        return {
+          classValue : true,
+        }
+      }
+    });
+  </script>
+  <script type="text/javascript" th:inline="javascript">
+    const reqUrl = window.location.pathname;
+
+    _PageMixins.push({
+      components: {
+        'header-common': semVueLoader('../../common/js/sem-vue/components/common/HeaderCommonComponent.vue'),
+        'footer-menu': semVueLoader('../../common/js/sem-vue/components/common/tabMenu.vue'),
+      },
+      data() {
+        return {
+          showFooterMenu: reqUrl.includes('/home') || reqUrl.includes('/shop') || reqUrl.includes('/drawer') || reqUrl.includes('/mypage')
+        };
+      },
+      mounted:function(){
+        window.actionseet();
+      },
+      computed: {
+        subTitle() {
+          return this.pageTitle || '';
+        }
+      }
+    });
+  </script>
+  <script type="text/javascript" src="../../common/js/sem-vue/sem.main.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="pragma" content="no-cache">
+  <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,shrink-to-fit=no,viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" type="image/x-icon" href="../common/images/common/favicon.ico">
+  <title>Title</title>
+  <link rel="stylesheet" href="../../common/css/home.css">
+<!--  <link rel="stylesheet" href="../../common/css/guide.css">-->
+  <script type="text/javascript" th:inline="javascript">
+    /*<![CDATA[*/
+    const _PageMixins = [];
+    function semVueLoader(url) {
+      return httpVueLoader(url);
+    }
+    /*]]>*/
+  </script>
+</head>
+<body>
+  <div id="app" class="wrapper">
+    <!-- header -->
+    <header class="header-wrap">
+      헤더영역
+    </header>
+    <!-- container -->
+    <section class="container">
+      <!-- contents -->
+      <article class="contents">
+      <!--20.10.27 고객센터 L.H.A -->
+        <!-- 고객센터 상단 이미지 배너 -->
+        <div class="cs-cont">
+          <div>
+            <!-- 임시 이미지 입니다. 추후 교체 필요 -->
+            <img src="https://m.k2.co.kr/medias/200818-list-mo.jpg?context=bWFzdGVyfHJvb3R8MTIzODY3fGltYWdlL2pwZWd8aDEyL2hkO
+            C84OTE2MjMxNTUzMDU0LmpwZ3xkZWYzOWFiMjAzZDM5OTIzNzY0Mjk2NTNmMmU3MjZkNmMwZDE3Y2E2MDRkYWNiOThlNDc1ZTVkOTFkOTIxM2Qy" alt="고객센터 배너 이미지"
+            width="100%">
+          </div>
+
+          <!-- 문의 리스트 -->
+          <div class="cs-list">
+            <!-- 1. 상품 관련문의-->
+            <div class="title-area">
+              <h3><b>상품</b> 관련 문의가 있으신가요?</h3>
+            </div>
+            <div class="btn-area">
+              <a href="#popup1"><button type="button" class="btn-black mb5">상품 정보문의</button></a>
+              <div class="btn-steps">
+                <button type="button" class="btn-white">상품 재고</button>
+                <button type="button" class="btn-white">가격 관련</button>
+                <button type="button" class="btn-white">상품 출시</button>
+              </div>
+            </div>
+            <!-- 2. 판매 관련문의-->
+            <div class="title-area">
+              <h3><b>판매</b> 관련 문의가 있으신가요?</h3>
+            </div>
+            <div class="btn-area">
+              <button type="button" class="btn-black">판매 센터문의</button>
+            </div>
+            <!-- 3. 서비스 관련문의-->
+            <div class="title-area">
+              <h3><b>서비스</b> 관련 문의가 있으신가요?</h3>
+            </div>
+            <div class="btn-area">
+              <button type="button" class="btn-black">서비스 문의</button>
+            </div>
+            <!-- 4. 전화문의-->
+            <div class="title-area">
+              <h3><b>전화 문의</b></h3>
+              <p>오전 9시 - 오후 6시 (주말/공휴일 휴무)</p>
+            </div>
+            <div class="call-area">
+              <a href="tel:1899-9500" class="btn-white"><span class="name">상품 재고문의</span><span class="tel">1899 - 9500</span></a>
+              <a href="tel:1899-9500" class="btn-white"><span class="name">상품 재고문의</span><span class="tel">1899 - 9500</span></a>
+              <a href="tel:1833-6418" class="btn-white"><span class="name">상품 출시 문의</span><span class="tel">1833 - 6418</span></a>
+            </div>
+          </div>
+          <!-- 자주하는 질문 -->
+          <div class="qna-list">
+            <div class="title-area">
+              <h3><b>자주하는 질문</b></h3>
+            </div>
+            <button class="accordion">주문을 확인하고 싶어요</button>
+            <div class="panel">
+              <p>MY > 주문내역에서 주문번호를 선택하여 상세 주문 내역 확인이 가능합니다.</p>
+            </div>
+
+            <button class="accordion">여러 개의 상품을 주문했는데, 일부만 취소하고 싶어요.</button>
+            <div class="panel">
+              <p>답변</p>
+            </div>
+
+            <button class="accordion">현금영수증을 받을 수 있나요?</button>
+            <div class="panel">
+              <p>답변</p>
+            </div>
+
+            <button class="accordion">입접 신청은 어떻게 하나요?</button>
+            <div class="panel">
+              <p>답변</p>
+            </div>
+            <button class="accordion">배송기간은 얼마나 걸리나요?</button>
+            <div class="panel">
+              <p>답변</p>
+            </div>
+          </div>
+          <!-- 팝업(상품정보 문의) -->
+          <div id="popup1" class="popup-wrap">
+            <div class="popup-container">
+              <div class="popup-header">
+                <h3 class="title">상품 정보 문의</h3>
+                <div class="btn-left">
+                  <button type="button" class="btn-icon-close" >닫기</button>
+                </div>
+                <h2 class="sub-title">상품 관련 문의가 있으신가요?</h2>
+              </div><!--//  popup-header-->
+
+              <div class="popup-content">
+                <div class="opt-select">
+                  <select name="" id="">
+                    <option value="">문의 유형을 선택해 주세요.</option>
+                    <option value="">상품 재고</option>
+                    <option value="">가격 관련</option>
+                    <option value="">상품 출시</option>
+                    <option value="">기타</option>
+                  </select>
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="문의내용을 입력해 주세요." style="height: 68vh;"></textarea>
+              </div>
+            </div><!--//  popup-container -->
+
+            <div class="btn-area no-round bottom-fixed">
+              <button type="button" class="btn-black">문의하기</button>
+            </div>
+          </div><!--// popup-wrap -->
+
+        </div>
+        <!--// 20.10.27 고객센터 L.H.A -->
+      </article>
+    </section>
+    <!-- 하단 고정 네비 -->
+    <nav class="tab-bar">
+      <footer-menu v-if="showFooterMenu"></footer-menu>
+    </nav>
+  </div>
+<!--  20.10.27 고객센터 L.H.A CSS -->
+  <style>
+    /* 공통 */
+    .mb5 {margin-bottom: 5px;}
+    .hide {display:none;}
+    .cs-cont .title-area {padding: 20px 0 10px;}
+    .cs-cont .title_area h3 {font-weight: 500; font-size: 13px;}
+    .cs-cont button, .call-area a span {font-size: 12px;}
+    .cs-list {padding: 15px 15px;}
+
+    /* 버튼 공통 - 칸 나뉨 */
+    .btn-steps, .call-area {display: flex; width: 100%; flex-direction: row; justify-content: space-between; flex-wrap: nowrap;}
+    .btn-steps button, .call-area a {margin: 0px .3em; flex-grow: 1; border-radius: 4px;}
+    .btn-steps button:first-child, .call-area a:first-child {margin-left: 0;}
+    .btn-steps button:last-child, .call-area a:last-child {margin-right: 0;}
+    .call-area a span {display: block; text-align: center; line-height: 22px;}
+
+    /* 버튼 공통 */
+    .btn-area button {width: 100%; height: auto; border-radius: 4px; line-height: 32px;}
+    .btn-black {background-color: #555555; color: #ffffff;}
+    .btn-white {border:1px solid #333333; background-color: #ffffff; color: #000000;}
+    .no-round button {border-radius: 0px;}
+    .bottom-fixed {position: fixed; bottom: 0; width: 100%; max-width: 640px;}
+    .btn-left {position: absolute;  left:0; top: 0;}
+    /* 글라이드 이미지 임시사용 추후 수정 필요 */
+    .btn-icon-close {display: inline-block; width: 32px; height: 32px; background: url(http://glyde-dev-public-publish-s3.s3-website.ap-northeast-2.amazonaws.com/common/images/header/icon-header-close.svg) no-repeat;
+                     background-size: 32px; font-size: 0!important; text-indent: -9999px;}
+
+    /*자주하는 질문 */
+    .qna-list .title-area {padding: 20px 15px 10px;}
+    .accordion, .panel {padding: 12px 30px}
+    .accordion {cursor: pointer; width: 100%; text-align: left;  outline: none; transition: 0.4s;  border : none;
+                border-top: 1px solid #999999; color: #333333; position: relative; /*margin-top: -1px;*/}
+    .panel {background-color: #eeeeee8f; overflow: hidden;transition: max-height 0.2s ease-out; border-top: 1px dashed #333333; position: relative;}
+    .accordion:before, .panel:before{ content: '\0051'; color: #333333; font-weight: bold; position: absolute; top: 14px; left: 14px;}
+    .panel:before{content: '\0041';}
+    .accordion:after {content: '\2227';color: #777;position: absolute; top: 14px; right: 15px;font-size: 10px;}
+    .active:after {content: "\2228";}
+
+     /* 팝업 */
+    .popup-wrap {overflow-x: hidden; margin: 0 auto; position: fixed;  top: 0; bottom: 0; left: 0; right: 0; max-width: 640px; border-left: 1px solid #e8e8e8;
+                 border-right: 1px solid #e8e8e8; background: #ffffff; visibility: hidden; opacity: 0; z-index: 30000; transition: opacity 0.5s;}
+    .popup-wrap:target {visibility: visible; opacity:1; }
+    .popup-wrap .popup-container {padding: 15px 15px;}
+    .popup-header {position: relative; line-height: normal;}
+    .popup-header .title {padding: 4px 0px 20px; text-align: center; font-size: 17px;}
+    .popup-header .sub-title {padding-bottom: 20px;font-size: 15px;}
+    .popup-container .opt-select {margin-bottom: 20px; padding-bottom: 5px; border-bottom: 1px solid #333333;}
+    .popup-container .opt-select select {width: 100%; font-size: 14px;}
+  </style>
+
+  <script type="text/javascript" src="../../common/js/swiper.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-2.6.11.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-awesome-swiper.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-lazyload.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/httpVueLoader.js"></script>
+  <script type="text/javascript" src="../../common/js/sem-vue/plugins/sem-plugin.js"></script>
+  <script type="text/javascript" src="../../common/js/style.js"></script>
+  <script>
+    Vue.use(VueLazyload);
+  </script>
+  <script type="text/javascript" th:inline="javascript">
+    _PageMixins.push({
+      components: {
+        'main-banner-1': semVueLoader('../../common/js/sem-vue/components/conner/main-banner-1.vue'),
+
+      },
+      data() {
+        return {
+          classValue : true,
+        }
+      }
+    });
+  </script>
+  <script type="text/javascript" th:inline="javascript">
+    const reqUrl = window.location.pathname;
+
+    _PageMixins.push({
+      components: {
+        'footer-menu': semVueLoader('../../common/js/sem-vue/components/common/tabMenu.vue'),
+      },
+      data() {
+        return {
+          showFooterMenu: reqUrl.includes('/home') || reqUrl.includes('/shop') || reqUrl.includes('/drawer') || reqUrl.includes('/mypage')
+        };
+      },
+      computed: {
+        subTitle() {
+          return this.pageTitle || '';
+        }
+      }
+    });
+  </script>
+  <script type="text/javascript" src="../../common/js/sem-vue/sem.main.js"></script>
+</body>
+</html>

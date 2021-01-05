@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="pragma" content="no-cache">
+  <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,shrink-to-fit=no,viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" type="image/x-icon" href="../common/images/common/favicon.ico">
+  <title>마이페이지 - 공지사항</title>
+  <link rel="stylesheet" href="../../common/css/mypage.css">
+<!--  <link rel="stylesheet" href="../../common/css/guide.css">-->
+  <script type="text/javascript" th:inline="javascript">
+    /*<![CDATA[*/
+    const _PageMixins = [];
+    function semVueLoader(url) {
+      return httpVueLoader(url);
+    }
+    /*]]>*/
+  </script>
+</head>
+<body>
+  <div id="app" class="wrapper">
+    <!-- header -->
+    <header class="header-wrap">
+      <!-- 서브타이틀,카테고리타이틀(서브메뉴),서브카테고리(서브메뉴),메인아이콘,뒤로가기버튼,검색버튼,내서랍버튼-->
+      <header-common :sub-title="'공지사항'"
+                     :category-title="false"
+                     :sub-category="false"
+                     :is-main-icon="false"
+                     :is-back-btn="true"
+                     :is-home-btn="false"
+                     :is-search-btn="true"
+                     :is-drawer-btn="true"
+                     :is-search-box="false"
+      ></header-common>
+      <div class="append-box"></div>
+    </header>
+    <!-- container -->
+    <section class="container">
+      <!-- contents -->
+      <article class="contents">
+        <div class="mypage-wrap notice">
+          <div class="notice-list-box">
+            <p class="guide-txt">*공지사항은 30일 후 사라집니다.</p>
+            <ul class="notice-list">
+              <li class="new">
+                <button type="button" onclick="openPopup('notice-detail-popup');">
+                  <span class="date">2020.10.10</span>
+                  <p>계속되는 비로 꿉꿉해진 기분을 상쾌하게 만들어 줄 9.0.0 업데이트 안내</p>
+                </button>
+              </li>
+              <li>
+                <button type="button">
+                  <span class="date">2020.10.10</span>
+                  <p>이벤트 당첨자 발표</p>
+                </button>
+              </li>
+              <li>
+                <button type="button">
+                  <span class="date">2020.10.10</span>
+                  <p>계속되는 비로 꿉꿉해진 기분을 상쾌하게 만들어 줄 9.0.0 업데이트 안내</p>
+                </button>
+              </li>
+              <li>
+                <button type="button">
+                  <span class="date">2020.10.10</span>
+                  <p>이벤트 당첨자 발표</p>
+                </button>
+              </li>
+              <li>
+                <button type="button">
+                  <span class="date">2020.10.10</span>
+                  <p>계속되는 비로 꿉꿉해진 기분을 상쾌하게 만들어 줄 9.0.0 업데이트 안내</p>
+                </button>
+              </li>
+              <li>
+                <button type="button">
+                  <span class="date">2020.10.10</span>
+                  <p>이벤트 당첨자 발표</p>
+                </button>
+              </li>
+              <li>
+                <button type="button">
+                  <span class="date">2020.10.10</span>
+                  <p>계속되는 비로 꿉꿉해진 기분을 상쾌하게 만들어 줄 9.0.0 업데이트 안내</p>
+                </button>
+              </li>
+              <li>
+                <button type="button">
+                  <span class="date">2020.10.10</span>
+                  <p>이벤트 당첨자 발표</p>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <home-footer></home-footer>
+      </article>
+    </section>
+    <div class="modal-wrap big notice-detail-popup" style="display:none;">
+      <div class="modal-layer">
+        <div class="inner-box">
+          <strong class="modal_tit">11</strong>
+          <div class="modal_cont">
+            <div class="top-box">
+              <p>계속되는 비로 꿉꿉해진 기분을 상쾌하게 만들어 줄 9.0.0 업데이트 안내</p>
+              <span class="date">2020.10.10</span>
+            </div>
+            <div class="bottom-box scr-box">
+              <p>안녕하세요 이랜드 입니다.<br>
+                이랜드 앱이 업데이트(버전 9.0.0)되었습니다.<br>
+                일부 기능 개선 및 서비스 안정화를 위해 업데이트되었습니다. 안정적인 서비스를 위해 최신 버전으로 업데이트 하여 이용하시기 바랍니다.
+                더 편리하게 쇼핑하실 수 있도록 노력하겠습니다.<br>
+                감사합니다.</p>
+            </div>
+          </div>
+          <!-- 내서랍 리스트 편집버튼 -->
+          <div class="button-box" style="display: none;">
+            <button type="button" class="modal-blk-btn w100"><span>편집</span></button>
+          </div>
+          <button type="button" class="icon-header-close">팝업닫기</button>
+        </div>
+      </div>
+      <div class="dim"></div>
+    </div>
+    <!-- 하단 고정 네비 -->
+    <nav class="tab-bar">
+      <footer-menu v-if="showFooterMenu"></footer-menu>
+    </nav>
+  </div>
+  <script type="text/javascript" src="../../common/js/swiper.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-2.6.11.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-awesome-swiper.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-lazyload.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/httpVueLoader.js"></script>
+  <script type="text/javascript" src="../../common/js/sem-vue/plugins/sem-plugin.js"></script>
+  <script type="text/javascript" src="../../common/js/style.js"></script>
+
+  <script>
+    Vue.use(VueLazyload);
+  </script>
+  <script type="text/javascript" th:inline="javascript">
+    _PageMixins.push({
+      components: {
+        'mypage-cs-qna': semVueLoader('../../common/js/sem-vue/components/mypage/mypage-cs-qna.vue'),
+
+        'home-branch-nav': semVueLoader('../../common/js/sem-vue/components/home/home-branch-nav.vue'),
+        'home-footer': semVueLoader('../../common/js/sem-vue/components/home/footer.vue'),
+      },
+      data() {
+        return {
+          classValue : true,
+        }
+      }
+    });
+  </script>
+  <script type="text/javascript" th:inline="javascript">
+    const reqUrl = window.location.pathname;
+
+    _PageMixins.push({
+      components: {
+        'header-common': semVueLoader('../../common/js/sem-vue/components/common/HeaderCommonComponent.vue'),
+        'footer-menu': semVueLoader('../../common/js/sem-vue/components/common/tabMenu.vue'),
+      },
+      data() {
+        return {
+          showFooterMenu: reqUrl.includes('/home') || reqUrl.includes('/shop') || reqUrl.includes('/drawer') || reqUrl.includes('/mypage')
+        };
+      },
+      mounted:function(){
+        window.actionseet();
+      },
+      computed: {
+        subTitle() {
+          return this.pageTitle || '';
+        }
+      }
+    });
+  </script>
+  <script type="text/javascript" src="../../common/js/sem-vue/sem.main.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+@charset "utf-8";
+@import
+'../sass-module/_var',
+'../sass-module/font',
+'../sass-module/_reset-md',
+'../sass-module/_mixin-md',
+'../sass-module/_layout',
+'../sass-module/_common-md',
+'../sass-module/_swiper',
+'../sass-module/_conner-md',
+'../sass-module/actionsheet',
+'../sass-module/_shop-md',
+'../sass-module/_modal';
+@include home-footer;
+
+.wrapper .container .gap-box{padding:20px 0;}
+.wrapper .container .gap-box.last{padding-bottom:0;}

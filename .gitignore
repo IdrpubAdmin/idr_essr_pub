@@ -1,0 +1,5 @@
+/bak/
+/.idea
+/.git
+/pub-dev/node_modules/
+/pub-dev/package-lock.json

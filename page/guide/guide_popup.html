@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="pragma" content="no-cache">
+  <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,shrink-to-fit=no,viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" type="image/x-icon" href="../common/images/common/favicon.ico">
+  <title>팝업</title>
+<!--  <link rel="stylesheet" href="../../common/css/TEST.css">-->
+  <link rel="stylesheet" href="../../common/css/guide.css">
+  <link rel="stylesheet" href="../../common/css/video-js-7.7.5.min.css">
+  <script type="text/javascript" th:inline="javascript">
+    /*<![CDATA[*/
+    const _PageMixins = [];
+
+    function semVueLoader(url) {
+      return httpVueLoader(url);
+    }
+    /*]]>*/
+  </script>
+</head>
+<body>
+
+  <div id="app" class="wrapper">
+    <!-- container -->
+    <section class="container">
+      <!-- contents -->
+      <article class="contents">
+        <p style="padding:20px;font-size:17px;color:#000;">* 버튼에 btn-modal-close 클래스 적용시 팝업 닫기 버튼 적용</p>
+        <div class="ui-box" style="text-align: center;">
+          <p class="box-title">메세지 팝업 버튼 1</p>
+          <div class="button-box" style="padding:20px;">
+            <button type="button" class="modal-blk-btn" style="width:80%;" onclick="openPopup('mes-pop-btn1');"><span>메세지 팝업</span></button>
+          </div>
+          <div class="modal-wrap popup-type-message mes-pop-btn1" style="display:none;">
+            <div class="modal-layer">
+              <div class="inner-box">
+                <strong class="modal_tit"></strong>
+                <div class="modal_cont">
+                  <div class="message-box">
+                    <p class="msg-txt ta-center">2개의 상품을<br>내 서랍에서 삭제하시겠습니까?</p>
+                  </div>
+                </div>
+                <div class="button-box">
+                  <button type="button" class="modal-blk-btn"><span>삭제</span></button>
+                </div>
+                <button type="button" class="icon-header-close">팝업닫기</button>
+              </div>
+            </div>
+            <div class="dim"></div>
+          </div>
+        </div>
+        <div class="ui-box" style="text-align: center;">
+          <p class="box-title">메세지 팝업 버튼 2</p>
+          <div class="button-box" style="padding:20px;">
+            <button type="button" class="modal-blk-btn" style="width:80%;" onclick="openPopup('mes-pop-btn2');"><span>팝업</span></button>
+          </div>
+          <div class="modal-wrap popup-type-message mes-pop-btn2" style="display:none;">
+            <div class="modal-layer">
+              <div class="inner-box">
+                <strong class="modal_tit"></strong>
+                <div class="modal_cont">
+                  <div class="message-box">
+                    <p class="msg-txt ta-center">2개의 상품을<br>내 서랍에서 삭제하시겠습니까?</p>
+                  </div>
+                </div>
+                <div class="button-box">
+                  <!-- 내서랍 상품이동 -->
+                  <!--            <button type="button" class="modal-blk-btn"><span>내 서랍 확인</span></button>-->
+                  <!-- 내서랍 리스트 삭제 -->
+                  <button type="button" class="modal-gray-btn"><span>취소</span></button>
+                  <button type="button" class="modal-blk-btn"><span>삭제</span></button>
+                </div>
+                <button type="button" class="icon-header-close">팝업닫기</button>
+              </div>
+            </div>
+            <div class="dim"></div>
+          </div>
+        </div>
+        <div class="ui-box" style="text-align: center;">
+          <p class="box-title">alert 팝업</p>
+          <div class="button-box" style="padding:20px;">
+            <button type="button" class="modal-blk-btn" style="width:80%;" onclick="openPopup('sys-modal');"><span>alert 팝업</span></button>
+          </div>
+          <div class="modal-wrap sys-modal" style="display: none;">
+            <div class="modal-layer">
+              <strong id="sysAlertTitle" class="modal_tit no-tit">test</strong><!-- 타이틀 없는 경우 .no-tit class명 붙임-->
+              <div class="modal_cont" id="sysMsg">
+                <div class="alrt_txt ta-center"><!-- ta-center 적용시 중앙정렬 -->
+                  <p>popup sample</p>
+                </div>
+              </div>
+              <div class="modal_btn">
+                <button type="button" id="altCloseBtn" class="modal-blk-btn btn-modal-close">
+                  <span>확인</span>
+                </button>
+              </div>
+            </div>
+            <div class="dim"></div>
+          </div>
+        </div>
+        <div class="ui-box" style="text-align: center;">
+          <p class="box-title">toast 팝업</p>
+          <div class="button-box" style="padding:20px;">
+            <button type="button" class="modal-blk-btn" style="width:80%;" onclick="openToast('test');"><span>toast 팝업</span></button>
+          </div>
+          <div class="toast-popup test">
+            <div class="dim-box"></div>
+            <div class="toast-inner">
+              <p>
+                공유가<br>완료 되었습니다.
+              </p>
+              <a href="#none"><span>링크이동</span></a>
+              <div class="button-box">
+                <button type="button"><span>버튼</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui-box" style="text-align: center;">
+          <p class="box-title">팝업 안내형 1</p>
+          <div class="button-box" style="padding:20px;">
+            <button type="button" class="modal-blk-btn" style="width:80%;" onclick="openPopup('info-pop-1');"><span>팝업 안내형 1</span></button>
+          </div>
+          <div class="modal-wrap info-popup info-pop-1">
+            <div class="modal-layer">
+              <div class="inner-box">
+                <strong class="modal_tit">타이틀 영역</strong>
+                <div class="modal_cont">
+                  <div class="desc-box">
+                    <p class="tit-txt">회원님의 가입을 환영합니다.</p>
+                    <div class="lst-box">
+                      <p>유의사항</p>
+                      <ul class="scr-box">
+                        <li>유의사항은 이렇게 나오면 됩니다. <br>줄바꿈시에는 이렇게 텍스트 나오게 됩니다. </li>
+                        <li>두번째 유의사항은 이렇게 나와요.  </li>
+                        <li>세번째 유의사항은 이렇게 나와요.  </li>
+                        <li>네번째 유의사항 이후 나오는 영역은 스크롤영역 </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="button-box">
+                  <button type="button" class="modal-blk-btn" ><span>확인</span></button>
+                </div>
+                <button type="button" class="icon-header-close">팝업닫기</button>
+              </div>
+            </div>
+            <div class="dim"></div>
+          </div>
+        </div>
+        <div class="ui-box" style="text-align: center;">
+          <p class="box-title">팝업 안내형 2</p>
+          <div class="button-box" style="padding:20px;">
+            <button type="button" class="modal-blk-btn" style="width:80%;" onclick="openPopup('info-pop-2');"><span>팝업 안내형 2</span></button>
+          </div>
+          <div class="modal-wrap info-popup info-pop-2">
+            <div class="modal-layer">
+              <div class="inner-box">
+                <strong class="modal_tit">타이틀 영역</strong>
+                <div class="modal_cont">
+                  <div class="select-box">
+                    <p class="sel-tit">COLOR</p>
+                    <select name="detail-color">
+                      <option value="">선택</option>
+                      <option value="BLUE">BLUE</option>
+                      <option value="GREEN">GREEN</option>
+                      <option value="ETC">ETC</option>
+                    </select>
+                  </div>
+
+
+
+                  <div class="text-box type-nor">
+                    <p class="tit-txt">input title</p>
+                    <div class="ipt-txt-box">
+                      <div>
+                        <input type="text" placeholder="서랍명을 입력해주세요" maxlength="10" class="input-type-nb">
+                        <button type="button" class="txt-reset-btn" style="">입력값 삭제</button>
+                        <p class="ipt-count"><span class="crt-len">0</span>/<span class="max-len">10</span></p>
+                        <p id="p_errorText" class="input-error" style="">한글 또는 영문는 2 자 이상이어야합니다</p>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="switch-box">
+                    <p class="state-txt">
+                      <span class="state-txt0"></span>
+                      <span class="state-txt1"></span>
+                    </p>
+                    <label for="capAddSld0" class="switch">
+                      <input type="checkbox" id="capAddSld0" chekced="">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="button-box">
+                  <button type="button" class="modal-blk-btn disabled" ><span>확인</span></button>
+                </div>
+                <button type="button" class="icon-header-close">팝업닫기</button>
+              </div>
+            </div>
+            <div class="dim"></div>
+          </div>
+        </div>
+        <div class="ui-box" style="text-align: center;">
+          <p class="box-title">팝업 화면하단(이벤트/광고)</p>
+          <div class="button-box" style="padding:20px;">
+            <button type="button" class="modal-blk-btn" style="width:80%;" onclick="document.querySelector('.popup-banner').style.display='block';"><span>팝업 화면하단(이벤트/광고)</span></button>
+          </div>
+          <popup-banner></popup-banner>
+        </div>
+        <div class="ui-box" style="text-align: center;">
+          <p class="box-title">팝업 전체화면(이벤트/광고)</p>
+          <div class="button-box" style="padding:20px;">
+            <button type="button" class="modal-blk-btn" style="width:80%;" onclick="document.querySelector('.popup-banner-2').style.display='block';"><span>팝업 전체화면(이벤트/광고)</span></button>
+          </div>
+          <popup-banner-2></popup-banner-2>
+        </div>
+      </article>
+    </section>
+  </div>
+  <script type="text/javascript" src="../../common/js/swiper.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-2.6.11.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-awesome-swiper.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-lazyload.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/httpVueLoader.js"></script>
+  <script type="text/javascript" src="../../common/js/sem-vue/plugins/sem-plugin.js"></script>
+  <script type="text/javascript" src="../../common/js/video-7.7.5.min.js"></script>
+  <script type="text/javascript" src="../../common/js/style.js"></script>
+
+  <script>
+    Vue.use(VueLazyload);
+  </script>
+  <script type="text/javascript" th:inline="javascript">
+    _PageMixins.push({
+      components: {
+        'line-banner': semVueLoader('../../common/js/sem-vue/components/conner/line-banner.vue'),
+        'main-banner-1': semVueLoader('../../common/js/sem-vue/components/conner/main-banner-1.vue'),
+        'main-banner-2': semVueLoader('../../common/js/sem-vue/components/conner/main-banner-2.vue'),
+        'movie-banner': semVueLoader('../../common/js/sem-vue/components/conner/movie-banner.vue'),
+        'bottom-banner': semVueLoader('../../common/js/sem-vue/components/conner/bottom-banner.vue'),
+        'bottom-banner-type2': semVueLoader('../../common/js/sem-vue/components/conner/bottom-banner-type2.vue'),
+        'temp-swiper': semVueLoader('../../common/js/sem-vue/components/conner/temp-swiper.vue'),
+        'temp-conner-1': semVueLoader('../../common/js/sem-vue/components/conner/temp-conner-1.vue'),
+        'temp-conner-2-1': semVueLoader('../../common/js/sem-vue/components/conner/temp-conner-2-1.vue'),
+        'temp-conner-2-2': semVueLoader('../../common/js/sem-vue/components/conner/temp-conner-2-2.vue'),
+        'temp-conner-2-3': semVueLoader('../../common/js/sem-vue/components/conner/temp-conner-2-3.vue'),
+        'temp-conner-2-4': semVueLoader('../../common/js/sem-vue/components/conner/temp-conner-2-4.vue'),
+        'temp-conner-3': semVueLoader('../../common/js/sem-vue/components/conner/temp-conner-3.vue'),
+        'temp-conner-4': semVueLoader('../../common/js/sem-vue/components/conner/temp-conner-4.vue'),
+        'product-style': semVueLoader('../../common/js/sem-vue/components/conner/product-style.vue'),
+        'popup-banner': semVueLoader('../../common/js/sem-vue/components/conner/popup-banner.vue'),
+        'popup-banner-2': semVueLoader('../../common/js/sem-vue/components/conner/popup-banner-2.vue'),
+      },
+      data() {
+        return {
+          classValue : true,
+        }
+      }
+    });
+  </script>
+  <script type="text/javascript" src="../../common/js/sem-vue/sem.main.js"></script>
+</body>
+</html>

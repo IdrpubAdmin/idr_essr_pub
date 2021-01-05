@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="pragma" content="no-cache">
+  <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,shrink-to-fit=no,viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" type="image/x-icon" href="../common/images/common/favicon.ico">
+  <title>내 서랍</title>
+  <link rel="stylesheet" href="../../common/css/mycab.css">
+<!--  <link rel="stylesheet" href="../../common/css/guide.css">-->
+  <script type="text/javascript" th:inline="javascript">
+    /*<![CDATA[*/
+    const _PageMixins = [];
+    function semVueLoader(url) {
+      return httpVueLoader(url);
+    }
+    /*]]>*/
+  </script>
+</head>
+<body>
+  <div id="app" class="wrapper">
+    <!-- header -->
+    <header class="header-wrap">
+      <!-- 서브타이틀,카테고리타이틀(서브메뉴),서브카테고리(서브메뉴),메인아이콘,뒤로가기버튼,검색버튼,내서랍버튼-->
+      <header-common :sub-title="'서랍'"
+                     :category-title="false"
+                     :sub-category="false"
+                     :is-main-icon="false"
+                     :is-back-btn="true"
+                     :is-home-btn="false"
+                     :is-search-btn="true"
+                     :is-drawer-btn="true"
+                     :is-search-box="false"
+      ></header-common>
+      <div class="append-box"></div>
+    </header>
+    <!-- container -->
+    <section class="container">
+      <!-- contents -->
+      <article class="contents">
+        <div class="mycap-wrap">
+          <div class="def-box mycap-info-box">
+            <div class="bg-box" style="background-color: #191919;">
+<!--              <img src="../../common/images/temp/tempImg_2_3_2.png" alt="">-->
+            </div>
+            <div class="inner-box">
+              <div class="top-box">
+                <p class="tit"><b>이랜드관리자</b></p>
+                <p class="sub-tit">환영합니다!</p>
+                <div class="img-box"><img src="../../common/images/temp/tempImg_1.png" alt=""></div>
+              </div>
+              <div class="bottom-box">
+                <dl>
+                  <dt><p>상품공유</p></dt>
+                  <dd><span class="crt-txt"><b>5</b></span><span class="total-txt">/<em>112</em></span></dd>
+                </dl>
+                <dl>
+                  <dt><p>이번달 주문</p></dt>
+                  <dd><span class="crt-txt"><b>200</b></span></dd>
+                </dl>
+              </div>
+              <div class="button-box">
+                <button type="button"><span>판매 현황 보기</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="def-box mycap-add-box">
+            <div class="inner-box">
+              <p>나만의 서랍를 만들고<br>원하는 대로 상품들을 담아보세요.</p>
+              <button type="button" class="red-btn"><span>상품담기</span></button>
+            </div>
+          </div>
+          <div class="my-cap-box">
+            <div class="title-box">
+              <p class="tit-txt">내서랍 보기</p>
+              <button type="button" class="set-btn" onclick="openPopup('mycap-setting-popup');"><span>서랍 설정</span></button>
+            </div>
+            <ul class="cap-list">
+              <li>
+                <a href="#none">
+                  <div class="img-box">
+                    <div>
+                      <img src="../../common/images/temp/tempImg_1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="cate-tex-box">
+                    <p class="tit">기본</p>
+                    <p class="num">16</p>
+                  </div>
+                </a>
+                <button type="button" class="kakao-btn"></button>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-box">
+                    <img src="../../common/images/temp/tempImg_1.png" alt="">
+                  </div>
+                  <div class="cate-tex-box">
+                    <p class="tit">가방</p>
+                    <p class="num">16</p>
+                  </div>
+                </a>
+                <button type="button" class="kakao-btn"></button>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-box">
+                    <img src="../../common/images/temp/tempImg_1.png" alt="">
+                  </div>
+                  <div class="cate-tex-box">
+                    <p class="tit">리빙</p>
+                    <p class="num">16</p>
+                  </div>
+                </a>
+                <button type="button" class="kakao-btn"></button>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-box">
+                    <img src="../../common/images/temp/tempImg_1.png" alt="">
+                  </div>
+                  <div class="cate-tex-box">
+                    <p class="tit">구두</p>
+                    <p class="num">16</p>
+                  </div>
+                </a>
+                <button type="button" class="kakao-btn"></button>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-box">
+                    <img src="../../common/images/temp/tempImg_1.png" alt="">
+                  </div>
+                  <div class="cate-tex-box">
+                    <p class="tit">선물하기</p>
+                    <p class="num">99</p>
+                  </div>
+                </a>
+                <button type="button" class="kakao-btn"></button>
+              </li>
+              <li>
+                <a href="#none">
+                  <div class="img-box">
+                    <img src="../../common/images/temp/tempImg_1.png" alt="">
+                  </div>
+                  <div class="cate-tex-box">
+                    <p class="tit">어피스오브</p>
+                    <p class="num">0</p>
+                  </div>
+                </a>
+                <button type="button" class="kakao-btn"></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <home-footer></home-footer>
+      </article>
+    </section>
+    <!--  내 서랍 설정  -->
+    <div class="modal-wrap big mycap-setting-popup" style="display: none;">
+      <div class="modal-layer">
+        <div class="inner-box">
+          <strong class="modal_tit">내 서랍 설정</strong>
+          <div class="modal_cont">
+            <div class="mycap-setting-box">
+              <div class="cap-add-box nor">
+                <button type="button" class="red-btn h96"><span>새 서랍 추가</span></button>
+              </div>
+              <div class="cap-add-box">
+                <button type="button" class="red-btn h96"><span>새 서랍 추가</span></button>
+                <button type="button" class="gray-btn2 h96"><span>순서편집</span></button>
+              </div>
+              <div class="edit-button-box">
+                <span>서랍의 순서를 편집해 보세요.</span>
+                <button type="button" class="modal-blk-btn h80"><span>완료</span></button>
+              </div>
+              <div class="mycap-list-box">
+                <div class="set-box first">
+                  <p class="cate-txt"><em class="name-txt">기본</em><em class="num-txt">(10)</em></p>
+                </div>
+                <div class="list-inner-box edit-mode">
+                  <div class="set-box">
+                    <div class="button-box">
+                      <button type="button" class="up-btn" onclick="cabEditPosition(this);"></button>
+                      <button type="button" class="down-btn" onclick="cabEditPosition(this);"></button>
+                    </div>
+                    <p class="cate-txt"><em class="name-txt">가방</em><em class="num-txt">(10)</em></p>
+                    <div class="switch-box">
+                      <span class="state-txt"></span>
+                      <label for="sld1" class="switch">
+                        <input type="checkbox" id="sld1" chekced="">
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                    <div class="edit-box">
+                      <button type="button" class="modify-btn"><span>수정</span></button>
+                      <button type="button" class="delete-btn"><span>삭제</span></button>
+                    </div>
+                  </div>
+                  <div class="set-box">
+                    <div class="button-box">
+                      <button type="button" class="up-btn" onclick="cabEditPosition(this);"></button>
+                      <button type="button" class="down-btn" onclick="cabEditPosition(this);"></button>
+                    </div>
+                    <p class="cate-txt"><em class="name-txt">리빙</em><em class="num-txt">(10)</em></p>
+                    <div class="switch-box">
+                      <span class="state-txt"></span>
+                      <label for="sld2" class="switch">
+                        <input type="checkbox" id="sld2" chekced="">
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                    <div class="edit-box">
+                      <button type="button" class="modify-btn"><span>수정</span></button>
+                      <button type="button" class="delete-btn"><span>삭제</span></button>
+                    </div>
+                  </div>
+                  <div class="set-box">
+                    <div class="button-box">
+                      <button type="button" class="up-btn" onclick="cabEditPosition(this);"></button>
+                      <button type="button" class="down-btn" onclick="cabEditPosition(this);"></button>
+                    </div>
+                    <p class="cate-txt"><em class="name-txt">구두</em><em class="num-txt">(10)</em></p>
+                    <div class="switch-box">
+                      <span class="state-txt"></span>
+                      <label for="sld3" class="switch">
+                        <input type="checkbox" id="sld3" checked="true">
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                    <div class="edit-box">
+                      <button type="button" class="modify-btn"><span>수정</span></button>
+                      <button type="button" class="delete-btn"><span>삭제</span></button>
+                    </div>
+                  </div>
+                  <div class="set-box">
+                    <div class="button-box">
+                      <button type="button" class="up-btn" onclick="cabEditPosition(this);"></button>
+                      <button type="button" class="down-btn" onclick="cabEditPosition(this);"></button>
+                    </div>
+                    <p class="cate-txt"><em class="name-txt">구두1</em><em class="num-txt">(10)</em></p>
+                    <div class="switch-box">
+                      <span class="state-txt"></span>
+                      <label for="sld4" class="switch">
+                        <input type="checkbox" id="sld4" checked="true">
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                    <div class="edit-box">
+                      <button type="button" class="modify-btn"><span>수정</span></button>
+                      <button type="button" class="delete-btn"><span>삭제</span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="set-box last">
+                  <p class="cate-txt"><em class="name-txt">공유한 상품</em><em class="num-txt">(10)</em></p>
+                  <p class="guide-txt">내가 공유한 상품을 모아 보는 서랍 입니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="icon-header-close">팝업닫기</button>
+        </div>
+      </div>
+      <div class="dim"></div>
+    </div>
+    <!--  상품이동 , 내 서랍 담기  -->
+    <div class="modal-wrap big mycap-setting-popup" style="display: none;">
+      <div class="modal-layer">
+        <div class="inner-box has-btn">
+          <strong class="modal_tit">상품 이동</strong>
+          <div class="modal_cont">
+            <div class="mycap-setting-box">
+              <div class="cap-add-box">
+                <button type="button" class="red-btn h96"><span>새 서랍 추가</span></button>
+                <p>* 서랍 하나당 최대 10개까지 상품을 담을 수 있습니다.</p>
+              </div>
+              <div class="mycap-list-box">
+                <div class="set-box chk-type first">
+                  <p class="cate-txt"><em class="name-txt">기본</em><em class="num-txt">(10)</em></p>
+                  <label for="chkBoxId0" class="chk-box">
+                    <input type="checkbox" id="chkBoxId0" chekced="">
+                    <span class="square"></span>
+                  </label>
+                </div>
+                <div class="list-inner-box">
+                  <div class="set-box chk-type disabled">
+                    <div class="button-box">
+                      <button type="button" class="up-btn"></button>
+                      <button type="button" class="down-btn"></button>
+                    </div>
+                    <p class="cate-txt"><em class="name-txt">가방</em><em class="num-txt">(10)</em></p>
+                    <label for="chkBoxId1" class="chk-box">
+                      <input type="checkbox" id="chkBoxId1" chekced="" disabled>
+                      <span class="square"></span>
+                    </label>
+                  </div>
+                  <div class="set-box chk-type">
+                    <div class="button-box">
+                      <button type="button" class="up-btn"></button>
+                      <button type="button" class="down-btn"></button>
+                    </div>
+                    <p class="cate-txt"><em class="name-txt">가방</em><em class="num-txt">(10)</em></p>
+                    <label for="chkBoxId2" class="chk-box">
+                      <input type="checkbox" id="chkBoxId2" chekced="" disabled>
+                      <span class="square"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="set-box chk-type last">
+                  <p class="cate-txt"><em class="name-txt"><b>공유한 상품</b></em><em class="num-txt">(10)</em></p>
+                  <label for="chkBoxId3" class="chk-box">
+                    <input type="checkbox" id="chkBoxId3" chekced="">
+                    <span class="square"></span>
+                  </label>
+                  <p class="guide-txt">내가 공유한 상품을 모아 보는 서랍 입니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button-box">
+            <button type="button" class="modal-blk-btn"><span>확인</span></button>
+          </div>
+          <button type="button" class="icon-header-close">팝업닫기</button>
+        </div>
+      </div>
+      <div class="dim"></div>
+    </div>
+    <!--  상품리스트 팝업  -->
+    <div class="modal-wrap big prod-list-popup" style="display:block;">
+      <div class="modal-layer">
+        <div class="inner-box has-btn">
+          <strong class="modal_tit"></strong>
+          <div class="modal_cont">
+            <div class="title-box">
+              <p class="tit-txt">가방</p>
+              <button type="button" class="kakao-btn"><span>서랍 공유</span></button>
+            </div>
+
+            <!--
+  :is-page-type="'shop'" //home , shop , mycab ,search 각각화면에 맞는 클래스 적용(하단 여백)
+  :is-count="true" // 검색결과 상품수
+  :is-sort-left="true" //상품정렬 왼쪽에있을경우 true 오른쪽에 있을경우 false
+  :is-sort-right="false"//상품정렬 오른쪽에있을경우 true 왼쪽에 있을경우 false
+  :is-filter="true" //필터 노출유무
+  :is-view-type-one="true" // 리스트 형태 1개
+  :is-view-type-two="true"// 리스트 형태  2개
+  :is-chk-box="true"// 전체 선택 체크박스
+ -->
+            <product-list :is-page-type="'shop'"
+                          :is-count="true"
+                          :is-sort-left="false"
+                          :is-sort-right="false"
+                          :is-filter="false"
+                          :is-view-type-one="true"
+                          :is-view-type-two="false"
+                          :is-chk-box="true"
+            ></product-list>
+            <div class="result-wrap">
+              <span class="ico"></span>
+              <p>서랍에 담긴 상품이 없습니다.</p>
+              <span class="desc">나만의 서랍를 만들고<br> 원하는 대로 상품들을 담아보세요.</span>
+              <div class="button-box">
+                <button type="button" class="home-btn"><span>상품담기</span></button>
+              </div>
+            </div>
+          </div>
+          <!-- 내서랍 리스트 편집버튼 -->
+          <div class="button-box" style="display: none;">
+            <button type="button" class="modal-blk-btn w100"><span>편집</span></button>
+          </div>
+          <!-- 내서랍 리스트 취소 상품이동 삭제 버튼 -->
+          <div class="button-box share-mode">
+            <button type="button" class="gray-btn h80 cancle-btn"><span>취소</span></button>
+            <button type="button" class="kakao-btn h80"><span>공유(2)</span></button>
+          </div>
+          <!-- 내서랍 리스트 취소 상품이동 삭제 버튼 -->
+          <div class="button-box edit-mode" style="display: none;">
+            <button type="button" class="gray-btn h80 cancle-btn"><span>취소</span></button>
+            <button type="button" class="gray-btn h80 move-btn"><span>상품이동(2)</span></button>
+            <button type="button" class="modal-blk-btn h80 delete-btn"><span>삭제(2)</span></button>
+          </div>
+          <button type="button" class="icon-header-close">팝업닫기</button>
+        </div>
+      </div>
+      <div class="dim"></div>
+    </div>
+    <!-- 내 서랍 리스트 삭제,내 서랍 상품이동 팝업 -->
+    <div class="modal-wrap popup-type-message" style="display:none;">
+      <div class="modal-layer">
+        <div class="inner-box">
+          <strong class="modal_tit"></strong>
+          <div class="modal_cont">
+            <div class="message-box">
+              <p class="msg-txt ta-center">2개의 상품을<br>내 서랍에서 삭제하시겠습니까?</p>
+            </div>
+          </div>
+          <div class="button-box">
+            <!-- 내서랍 상품이동 -->
+<!--            <button type="button" class="modal-blk-btn"><span>내 서랍 확인</span></button>-->
+            <!-- 내서랍 리스트 삭제 -->
+            <button type="button" class="modal-gray-btn"><span>취소</span></button>
+            <button type="button" class="modal-blk-btn"><span>삭제</span></button>
+          </div>
+          <button type="button" class="icon-header-close">팝업닫기</button>
+        </div>
+      </div>
+      <div class="dim"></div>
+    </div>
+    <!-- 내 서랍 추가,서랍명 수정 팝업 -->
+    <div class="modal-wrap mycap-add-popup" style="display:none;">
+      <div class="modal-layer">
+        <div class="inner-box">
+          <strong class="modal_tit">새 서랍 추가</strong>
+          <div class="modal_cont">
+            <div class="text-box type-nor">
+              <div class="ipt-txt-box">
+                <input maxlength="20" value="" placeholder="서랍명을 입력해주세요." type="text" class="input-type-nb">
+                <button type="button" class="txt-reset-btn"></button>
+              </div>
+              <p class="ipt-count"><span class="crt-len">0</span>/<span class="max-len">20</span></p>
+            </div>
+            <div class="switch-box">
+              <p class="state-txt">
+                <span class="state-txt0"></span>
+                <span class="state-txt1"></span>
+              </p>
+              <label for="capAddSld0" class="switch">
+                <input type="checkbox" id="capAddSld0" chekced="">
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+          <div class="button-box">
+              <button type="button" class="modal-blk-btn disabled" ><span>확인</span></button>
+          </div>
+          <button type="button" class="icon-header-close">팝업닫기</button>
+        </div>
+      </div>
+      <div class="dim"></div>
+    </div>
+
+    <div class="modal-wrap sys-modal" style="display: none;">
+      <div class="modal-layer">
+        <strong id="sysAlertTitle" class="modal_tit no-tit">test</strong><!-- 타이틀 없는 경우 .no-tit class명 붙임-->
+        <div class="modal_cont" id="sysMsg">
+          <div class="alrt_txt ta-center"><!-- ta-center 적용시 중앙정렬 -->
+            <p>popup sample</p>
+          </div>
+        </div>
+        <div class="modal_btn">
+          <button type="button" id="altCloseBtn" class="modal-blk-btn">
+            <span>확인</span>
+          </button>
+        </div>
+      </div>
+      <div class="dim"></div>
+    </div>
+    <!-- 하단 고정 네비 -->
+    <nav class="tab-bar">
+      <footer-menu v-if="showFooterMenu"></footer-menu>
+    </nav>
+  </div>
+  <script type="text/javascript" src="../../common/js/swiper.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-2.6.11.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-awesome-swiper.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-lazyload.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/httpVueLoader.js"></script>
+  <script type="text/javascript" src="../../common/js/sem-vue/plugins/sem-plugin.js"></script>
+  <script type="text/javascript" src="../../common/js/style.js"></script>
+
+  <script>
+    Vue.use(VueLazyload);
+  </script>
+  <script type="text/javascript" th:inline="javascript">
+    _PageMixins.push({
+      components: {
+        'product-list': semVueLoader('../../common/js/sem-vue/components/common/product-list.vue'),
+        'home-branch-nav': semVueLoader('../../common/js/sem-vue/components/home/home-branch-nav.vue'),
+        'home-footer': semVueLoader('../../common/js/sem-vue/components/home/footer.vue'),
+      },
+      data() {
+        return {
+          classValue : true,
+        }
+      }
+    });
+  </script>
+  <script type="text/javascript" th:inline="javascript">
+    const reqUrl = window.location.pathname;
+
+    _PageMixins.push({
+      components: {
+        'header-common': semVueLoader('../../common/js/sem-vue/components/common/HeaderCommonComponent.vue'),
+        'footer-menu': semVueLoader('../../common/js/sem-vue/components/common/tabMenu.vue'),
+      },
+      data() {
+        return {
+          showFooterMenu: reqUrl.includes('/home') || reqUrl.includes('/shop') || reqUrl.includes('/drawer') || reqUrl.includes('/mypage')
+        };
+      },
+      computed: {
+        subTitle() {
+          return this.pageTitle || '';
+        }
+      }
+    });
+  </script>
+  <script type="text/javascript" src="../../common/js/sem-vue/sem.main.js"></script>
+</body>
+</html>

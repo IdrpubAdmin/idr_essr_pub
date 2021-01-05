@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* ========================================================== */
+/* file		: shop                                      	  */
+// date		: 20201022
+/* conner s ================================================= */
+//shop main top
+.shop-main-top {
+  background-color: #fff;
+  .inner-box {
+    .search-box {
+      width: 100%;padding: 15px;box-sizing: border-box;
+      .input-type {
+        width: 100%;height: 43px;padding:0 10px;background: #f5f5f5 url($img-path + 'icon/searchIcon_767676.png') no-repeat calc(100% - 10px) center;background-size: 28px;border: none;border-radius: 5px;
+      }
+    }
+    .cate-box {
+      overflow: hidden;width: 100%;padding: 5px 20px 50px;box-sizing: border-box;
+      ul {
+        float: left;width: 50%;
+        li {
+          margin-top: 30px;
+          &:first-child {margin-top: 0;}
+          a {color:$font-clr-1;letter-spacing: -0.02em;}
+        }
+      }
+      .cate-list {
+        li {
+          a {font-size:$font-36px;font-weight: bold;}
+        }
+      }
+      .search-list {
+        li {
+          padding-left: 30px;
+          a {font-size:$font-34px;}
+        }
+      }
+    }
+  }
+}
+
+
+.shop-main-category {
+  background-color: #fff;
+  .inner-box {
+    padding-top: 20px;
+    .cate-box {
+      .cate-list {
+        overflow: hidden;
+        li {
+          float: left;width: 50%;height: 50px;padding-left: 20px;background: url($img-path + "icon/arrLeft_24x24_191919.png") no-repeat calc(100% - 10px) center;background-size: 12px;border-bottom: 1px solid $common-clr-1;box-sizing: border-box;
+          a {font-size: $font-28px;color: $font-clr-1;letter-spacing: -0.02em;line-height: 3.2em;}
+        }
+      }
+    }
+  }
+}

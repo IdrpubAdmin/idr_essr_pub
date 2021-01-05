@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="pragma" content="no-cache">
+  <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,shrink-to-fit=no,viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" type="image/x-icon" href="../common/images/common/favicon.ico">
+  <title>상품상세</title>
+  <link rel="stylesheet" href="../../common/css/detail.css">
+<!--  <link rel="stylesheet" href="../../common/css/guide.css">-->
+  <script type="text/javascript" th:inline="javascript">
+    /*<![CDATA[*/
+    const _PageMixins = [];
+    function semVueLoader(url) {
+      return httpVueLoader(url);
+    }
+    /*]]>*/
+  </script>
+</head>
+<body>
+  <div id="app" class="wrapper visual-wrap-type">
+    <!-- header -->
+    <header class="header-wrap">
+      <!-- 서브타이틀,카테고리타이틀(서브메뉴),서브카테고리(서브메뉴),메인아이콘,뒤로가기버튼,검색버튼,내서랍버튼-->
+      <header-common :sub-title="''"
+                     :category-title="false"
+                     :sub-category="false"
+                     :is-main-icon="false"
+                     :is-back-btn="true"
+                     :is-home-btn="true"
+                     :is-search-btn="true"
+                     :is-drawer-btn="true"
+                     :is-search-box="false"
+      ></header-common>
+      <div class="append-box"></div>
+    </header>
+    <!-- container -->
+    <section class="container">
+      <!-- contents -->
+      <article class="contents">
+        <div class="detail-visual-wrap">
+          <goods-banner></goods-banner>
+        </div>
+        <div class="goods-wrap">
+          <div class="prod-detail">
+            <div class="info-box">
+              <p class="tit"><b>스파오</b> 스파오  해리포터 콜라보 반팔 티셔츠 MARDI BROWN-YELLOW</p>
+              <div class="price-box">
+                <span class="price"><b>53,900</b><i>원</i></span>
+                <span class="ori"><b>59,900</b><i>원</i></span>
+                <span class="per"><b>10</b><i>%</i></span>
+<!--                <p class="period">2020.10.10 - 2020.10.20</p>-->
+              </div>
+              <div class="option-box">
+                <button type="button" class="opt-btn" onclick="openPopup('goods-opt-popup')">상품 옵션보기</button>
+                <div class="modal-wrap goods-opt-popup">
+                  <div class="modal-layer">
+                    <div class="inner-box">
+                      <strong class="modal_tit">상품 옵션보기</strong>
+                      <div class="modal_cont">
+                        <div class="select-box">
+                          <p class="sel-tit">COLOR</p>
+                          <select name="detail-color">
+                            <option value="">선택</option>
+                            <option value="BLUE">BLUE</option>
+                            <option value="GREEN">GREEN</option>
+                            <option value="ETC">ETC</option>
+                          </select>
+                        </div>
+                        <div class="select-box">
+                          <p class="sel-tit">SIZE</p>
+                          <select name="detail-size" disabled>
+                            <option value="">선택</option>
+                            <option value="90">90</option>
+                            <option value="100">100</option>
+                            <option value="110">110</option>
+                          </select>
+                        </div>
+                        <p class="desc mt-15">*본 상품의 옵션 정보는 이랜드몰의 상품 정보입니다.</p>
+                      </div>
+                      <button type="button" class="icon-header-close">팝업닫기</button>
+                    </div>
+                  </div>
+                  <div class="dim"></div>
+                </div>
+              </div>
+              <div class="tag-box">
+                <a href="#none">#콜라보</a>
+                <a href="#none">#티셔츠</a>
+                <a href="#none">#해리포터콜라보 콜라보</a>
+              </div>
+            </div>
+            <div class="brand-banner">
+              <a href="#none">
+                <p class="tit">스파오</p>
+              </a>
+            </div>
+          </div>
+          <div class="prod-info-container">
+            <div class="detail-tab-container">
+              <detail-tab-menu></detail-tab-menu>
+            </div>
+            <!-- 상품설명 -->
+            <div class="prod-info-box" style="display: block;">
+              <img src="../../common/images/temp/main_banner.png" alt="">
+            </div>
+            <!-- 구매정보 -->
+            <div class="prod-info-box">
+              <goods-accordion-box></goods-accordion-box>
+            </div>
+            <!-- 배송/반품/교환 -->
+            <div class="prod-info-box">
+              <div class="def-box">
+                <div class="inner-box">
+                  <div class="delivery-box">
+                    <p class="tit-txt"><b>상품 문의안내</b></p>
+                    <address><span>담당셀러 </span><a href="mailto:soo@eland.co.kr">soo@eland.co.kr</a></address>
+                  </div>
+                  <div class="delivery-box">
+                    <p class="tit-txt"><b>취소/반품/교환 안내</b></p>
+                    <dl>
+                      <dt><span>주문취소</span></dt>
+                      <dd>
+                        <p>주문취소는 입금대기/입금완료에서 가능합니다. 가구 등 주문제작 상품의 경우에는 상품준비중 단계부터 불가능하며 상품 수령 후, 반품 신청을 하실 수 있습니다.</p>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt><span>반품/교환 배송비 안내</span></dt>
+                      <dd>
+                        <p>
+                          2,500원 예상 (편도기준)<br>
+                          반품/교환 배송비는 고객 변심의 경우에만 발생됩니다.<br>
+                          구매 후 반품/교환 시 예상금액과 차이가 있을 수 있습니다.
+                        </p>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt><span>반품/교환 안내</span></dt>
+                      <dd>
+                        <p>반품/교환은 상품 수령일 7일 이내에 신청해주셔야 하며 단순 고객변심으로 인한 왕복 배송비는 고객님께서 부담하셔야 합니다.</p>
+                        <p>표시광고와 상이하여 상품에 하자가 있는 경우 상품수령 후 3개월 이내, 해당사실을 안(알 수 있었던)날로부터 30일 이내에 교환/반품을 신청을 할 수 있습니다.</p>
+                        <p>반품/교환 시 제품 원형 그대로 보내 주셔야 가능 합니다. 반품/교환은 꼭 승인과정을 거쳐서 진행해주세요.<br>
+                          보내질 경우 수취거부로 인해 왕복 배송비가 부과될 수 있습니다.</p>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt><span>반품/교환 불가 안내</span></dt>
+                      <dd>
+                        <p>고객님이 상품 포장을 개봉하여 사용 또는 설치 완료되어 상품의 가치가 훼손된 경우 (단, 내용 확인을 위한 포장 개봉의 경우는 예외, 가전/디지털 미개봉 새 상품은 개봉 및 설치 후 기능 상 하자가 아닌 단순변심으로 인한 반품은 불가합니다.) </p>
+                        <p>고객님의 단순변심으로 인한 교환/반품 신청이 상품 수령한 날로부터 7일이 경과한 경우</p>
+                        <p>고객님의 사용 또는 일부 소비에 의해 상품의 가치가 훼손된 경우</p>
+                        <p>시간 경과에 따라 재판매가 어려운 상품 등의 가치가 현저히 감소한 경우 (신선식품의 경우 선도저하 및 상품불량일 경우 수령일로부터 1~2일 내 교환/반품 신청)</p>
+                        <p>복제가 가능한 재화 등의 포장을 훼손한 경우(포장인증된 전자제품, DVD,CD 도서 등 복제 가능한 상품)</p>
+                        <p>배송된 상품이 하자 없음을 확인한 후 설치가 완료된 상품의 경우(가전,가구,헬스기구 등)</p>
+                        <p>고객님의 요청에 따라 개별적으로 주문제작되는 상품의 경우(수제화, 귀금속 등)</p>
+                        <p>구매한 상품의 구성품이 누락된 경우(화장품 세트, 의류부착 악세서리, 가전제품 부속품,사은품 등)</p>
+                        <p>기타,상품의 교환, 환불 및 상품 결함 등의 보상은 재정경제부고시,소비자피해보상규정에 의함</p>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-menu-box">
+            <button type="button" class="share-btn">
+              <span class="ico"></span>
+            </button>
+            <button type="button" class="like-btn on">
+              <span class="ico"></span>
+            </button>
+            <button type="button" class="drawer-btn sold-out"><p>내 서랍에 담기</p></button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+
+  <script type="text/javascript" src="../../common/js/swiper.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-2.6.11.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-awesome-swiper.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-lazyload.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/httpVueLoader.js"></script>
+  <script type="text/javascript" src="../../common/js/sem-vue/plugins/sem-plugin.js"></script>
+  <script type="text/javascript" src="../../common/js/style.js"></script>
+
+  <script>
+    Vue.use(VueLazyload);
+  </script>
+  <script type="text/javascript" th:inline="javascript">
+    _PageMixins.push({
+      components: {
+        'goods-banner': semVueLoader('../../common/js/sem-vue/components/goods/goods-banner.vue'),
+        'detail-tab-menu': semVueLoader('../../common/js/sem-vue/components/goods/detail-prod-tab.vue'),
+        'goods-accordion-box': semVueLoader('../../common/js/sem-vue/components/goods/goods-accordion-box.vue'),
+      },
+      data() {
+        return {
+          classValue : true,
+        }
+      }
+    });
+  </script>
+  <script type="text/javascript" th:inline="javascript">
+    const reqUrl = window.location.pathname;
+
+    _PageMixins.push({
+      components: {
+        'header-common': semVueLoader('../../common/js/sem-vue/components/common/HeaderCommonComponent.vue'),
+        'footer-menu': semVueLoader('../../common/js/sem-vue/components/common/tabMenu.vue'),
+      },
+      data() {
+        return {
+          showFooterMenu: reqUrl.includes('/home') || reqUrl.includes('/shop') || reqUrl.includes('/drawer') || reqUrl.includes('/mypage')
+        };
+      },
+      computed: {
+        subTitle() {
+          return this.pageTitle || '';
+        }
+      }
+    });
+  </script>
+  <script type="text/javascript" src="../../common/js/sem-vue/sem.main.js"></script>
+</body>
+</html>

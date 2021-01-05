@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/* ========================================================== */
+/*                                                            */
+/* file     : font                                            */
+// date     : 20200915
+/*                                                            */
+/* ========================================================== */
+
+/* ---------------------------------------------------------- */
+/* font s =================================================== */
+/* @font-face {
+	font-family: 'NotoSans';
+	font-weight: 300;
+	font-style: normal;
+	src: url("../font/NotoSansKR-Light.otf") format("opentype"),
+	url("../font/NotoSansKR-Light.woff2") format("woff2"),
+	url("../font/NotoSansKR-Light.woff") format("woff");
+} */
+
+@font-face {
+  font-family: 'NotoSans';
+  font-weight: 400;
+  font-style: normal;
+  src: /*url("../font/NotoSansKR_Regular.otf") format("opentype"),*/
+          url("../font/NotoSansKR-Regular.woff2") format("woff2"),
+          url("../font/NotoSansKR-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: 'NotoSans';
+  font-weight: 500;
+  font-style: normal;
+  src: /*url("../font/NotoSansKR_Regular.otf") format("opentype"),*/
+          url("../font/NotoSansKR-Medium.woff2") format("woff2"),
+          url("../font/NotoSansKR-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: 'NotoSans';
+  font-weight: 700;
+  font-style: bold;
+  src: url("../font/NotoSansKR-Bold.otf") format("opentype"),
+  url("../font/NotoSansKR-Bold.woff2") format("woff2"),
+  url("../font/NotoSansKR-Bold.woff") format("woff");
+}
+
+/* @font-face {
+	font-family: 'NotoSans';
+	font-weight: 900;
+	font-style: normal;
+	src: url("../font/NotoSansKR-Black.otf") format("opentype"),
+	url("../font/NotoSansKR-Black.woff2") format("woff2"),
+	url("../font/NotoSansKR-Black.woff") format("woff");
+} */
+
+@font-face {
+  font-family: 'NotoSerif';
+  font-weight: 300;
+  font-style: normal;
+  src: url("../font/NotoSerifKR-Light.woff2") format("woff2"),
+  url("../font/NotoSerifKR-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'NotoSerif';
+  font-weight: 700;
+  font-style: normal;
+  src: url("../font/NotoSerifKR-Bold.woff2") format("woff2"),
+  url("../font/NotoSerifKR-Bold.woff") format("woff");
+}
+
+/* @font-face {
+	font-family: 'NotoSerif';
+	font-weight: 400;
+	font-style: normal;
+	src: url("../font/NotoSerifCJKkr-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: 'NotoSerif';
+	font-weight: 700;
+	font-style: normal;
+	src: url("../font/NotoSerifCJKkr-Bold.woff") format("woff");
+} */
+
+/* @font-face {
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-style: normal;
+	src: url("../font/Roboto-Light.eot");
+	src: url("../font/Roboto-Light.eot?#iefix") format("embedded-opentype"),
+	url("../font/Roboto-Light.woff2") format("woff2"),
+	url("../font/Roboto-Light.woff") format("woff"),
+	url("../font/Roboto-Light.ttf") format("truetype");
+} */
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  /*src: url("../font/Roboto-Regular.eot");*/
+  src: /*url("../font/Roboto-Regular.eot?#iefix") format("embedded-opentype"),*/
+          url("../font/Roboto-Regular.woff2") format("woff2"),
+          url("../font/Roboto-Regular.woff") format("woff");
+  /*url("../font/Roboto-Regular.ttf") format("truetype");*/
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-style: normal;
+  /*src: url("../font/Roboto-Regular.eot");*/
+  src: /*url("../font/Roboto-Regular.eot?#iefix") format("embedded-opentype"),*/
+          url("../font/Roboto-Medium.woff2") format("woff2"),
+          url("../font/Roboto-Medium.woff") format("woff");
+  /*url("../font/Roboto-Regular.ttf") format("truetype");*/
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-style: normal;
+  /*src: url("../font/Roboto-Bold.eot");*/
+  src: /*url("../font/Roboto-Bold.eot?#iefix") format("embedded-opentype"),*/
+          url("../font/Roboto-Bold.woff2") format("woff2"),
+          url("../font/Roboto-Bold.woff") format("woff");
+  /*url("../font/Roboto-Bold.ttf") format("truetype");*/
+}
+
+/* font e =================================================== */
+/* ---------------------------------------------------------- */

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="pragma" content="no-cache">
+  <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,shrink-to-fit=no,viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" type="image/x-icon" href="../common/images/common/favicon.ico">
+  <title>코너리스트</title>
+<!--  <link rel="stylesheet" href="../../common/css/TEST.css">-->
+  <link rel="stylesheet" href="../../common/css/guide.css">
+  <link rel="stylesheet" href="../../common/css/video-js-7.7.5.min.css">
+  <script type="text/javascript" th:inline="javascript">
+    /*<![CDATA[*/
+    const _PageMixins = [];
+
+    function semVueLoader(url) {
+      return httpVueLoader(url);
+    }
+    /*]]>*/
+  </script>
+</head>
+<body>
+
+  <div id="app" class="wrapper">
+    <!-- container -->
+    <section class="container">
+      <!-- contents -->
+      <article class="contents">
+        <div class="title-type"><!-- 타이틀타입 샘플 -->
+          <div class="title-box">
+            <p class="tit-txt">템플릿_스와이핑 패션(직사각형)</p>
+          </div>
+          <div class="title-box">
+            <p class="tit-txt">템플릿_스와이핑 패션(직사각형)</p>
+            <a href="#none" class="more-btn">ALL</a>
+          </div>
+          <div class="title-box">
+            <p class="tit-txt">템플릿_스와이핑 패션(직사각형)</p>
+            <p class="sub-txt">여기가 #콜라보맛집 인가요?</p>
+            <a href="#none" class="more-btn">ALL</a>
+          </div>
+          <div class="title-box">
+            <p class="tit-txt">템플릿_스와이핑 패션(직사각형)</p>
+            <span class="right-txt"><em>2020.10.05 00:05:00</em>기준</span>
+          </div>
+        </div>
+        <div class="ui-box">
+          <p class="box-title">Corner No.2 메인배너2</p>
+          <main-banner-2></main-banner-2>
+        </div>
+        <div class="ui-box">
+          <p class="box-title">Corner No.3 영상배너</p>
+          <movie-banner></movie-banner>
+        </div>
+        <div class="ui-box">
+          <p class="box-title">Corner No.4 띠배너1</p>
+          <line-banner></line-banner>
+        </div>
+        <div class="ui-box">
+          <p class="box-title">Corner No.4 띠배너2</p>
+          <line-banner :class="{ type2 : classValue }"></line-banner>
+        </div>
+        <div class="ui-box">
+          <p class="box-title">Corner No.5 하단배너 이미지 타입</p>
+          <bottom-banner></bottom-banner>
+        </div>
+        <div class="ui-box">
+          <p class="box-title">Corner No.5 하단배너 영상 타입</p>
+          <bottom-banner-type2></bottom-banner-type2>
+        </div>
+        <div class="ui-box">
+          <p class="box-title">Corner No.6 스와이핑(패션/일반)</p>
+          <temp-swiper></temp-swiper>
+        </div>
+        <div class="ui-box">
+          <p class="box-title">Corner No.7 묶음코너 1</p>
+          <temp-conner-1></temp-conner-1>
+        </div>
+        <div class="ui-box">
+          <p class="box-title">Corner No.8 묶음코너 2-1</p>
+          <temp-conner-2-1></temp-conner-2-1>
+        </div>
+        <div class="ui-box">
+          <p class="box-title">Corner No.9 묶음코너 2-2</p>
+          <temp-conner-2-2></temp-conner-2-2>
+        </div>
+        <div class="ui-box">
+          <p class="box-title">Corner No.10 묶음코너 2-3</p>
+          <temp-conner-2-3></temp-conner-2-3>
+        </div>
+        <div class="ui-box">
+          <p class="box-title">Corner No.11 묶음코너 2-4</p>
+          <temp-conner-2-4></temp-conner-2-4>
+        </div>
+        <div class="ui-box">
+          <p class="box-title">Corner No.12 묶음코너 3</p>
+          <temp-conner-3></temp-conner-3>
+        </div>
+        <div class="ui-box">
+          <p class="box-title">Corner No.13 묶음코너 4</p>
+          <temp-conner-4></temp-conner-4>
+        </div>
+        <div class="ui-box">
+          <p class="box-title">---상품 샘플</p>
+          <product-style></product-style>
+        </div>
+        <div class="ui-box">
+          <p class="box-title">---상품 리스트 샘플</p>
+          <!--
+            :is-page-type="'shop'" //home , shop , mycab ,search 각각화면에 맞는 클래스 적용(하단 여백)
+            :is-product-type="'img-size-s0'" img-size-s0(166 묶음코너1) , img-size-s1(190 묶음코너3) ,img-size-s2(196 랭킹구좌) .img-size-s3(230 기획전)
+            :is-count="true" // 검색결과 상품수
+            :is-sort-left="true" //상품정렬 왼쪽에있을경우 true 오른쪽에 있을경우 false
+            :is-sort-right="false"//상품정렬 오른쪽에있을경우 true 왼쪽에 있을경우 false
+            :is-filter="true" //필터 노출유무
+            :is-view-type-one="true" // 리스트 형태 1개
+            :is-view-type-two="true"// 리스트 형태  2개
+            :is-chk-box="true"// 전체 선택 체크박스
+           -->
+          <product-list :is-page-type="''"
+                        :is-product-type="'img-size-s1'"
+                        :is-count="true"
+                        :is-sort-left="false"
+                        :is-sort-right="true"
+                        :is-filter="true"
+                        :is-view-type-one="true"
+                        :is-view-type-two="true"
+                        :is-chk-box="false"
+          ></product-list>
+        </div>
+      </article>
+    </section>
+  </div>
+  <script type="text/javascript" src="../../common/js/swiper.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-2.6.11.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-awesome-swiper.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-lazyload.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/httpVueLoader.js"></script>
+  <script type="text/javascript" src="../../common/js/sem-vue/plugins/sem-plugin.js"></script>
+  <script type="text/javascript" src="../../common/js/video-7.7.5.min.js"></script>
+  <script type="text/javascript" src="../../common/js/style.js"></script>
+
+  <script>
+    Vue.use(VueLazyload);
+  </script>
+  <script type="text/javascript" th:inline="javascript">
+    _PageMixins.push({
+      components: {
+        'line-banner': semVueLoader('../../common/js/sem-vue/components/conner/line-banner.vue'),
+        'main-banner-1': semVueLoader('../../common/js/sem-vue/components/conner/main-banner-1.vue'),
+        'main-banner-2': semVueLoader('../../common/js/sem-vue/components/conner/main-banner-2.vue'),
+        'movie-banner': semVueLoader('../../common/js/sem-vue/components/conner/movie-banner.vue'),
+        'bottom-banner': semVueLoader('../../common/js/sem-vue/components/conner/bottom-banner.vue'),
+        'bottom-banner-type2': semVueLoader('../../common/js/sem-vue/components/conner/bottom-banner-type2.vue'),
+        'temp-swiper': semVueLoader('../../common/js/sem-vue/components/conner/temp-swiper.vue'),
+        'temp-conner-1': semVueLoader('../../common/js/sem-vue/components/conner/temp-conner-1.vue'),
+        'temp-conner-2-1': semVueLoader('../../common/js/sem-vue/components/conner/temp-conner-2-1.vue'),
+        'temp-conner-2-2': semVueLoader('../../common/js/sem-vue/components/conner/temp-conner-2-2.vue'),
+        'temp-conner-2-3': semVueLoader('../../common/js/sem-vue/components/conner/temp-conner-2-3.vue'),
+        'temp-conner-2-4': semVueLoader('../../common/js/sem-vue/components/conner/temp-conner-2-4.vue'),
+        'temp-conner-3': semVueLoader('../../common/js/sem-vue/components/conner/temp-conner-3.vue'),
+        'temp-conner-4': semVueLoader('../../common/js/sem-vue/components/conner/temp-conner-4.vue'),
+        'product-list': semVueLoader('../../common/js/sem-vue/components/common/product-list.vue'),
+        'product-style': semVueLoader('../../common/js/sem-vue/components/conner/product-style.vue'),
+      },
+      data() {
+        return {
+          classValue : true,
+        }
+      }
+    });
+  </script>
+  <script type="text/javascript" src="../../common/js/sem-vue/sem.main.js"></script>
+</body>
+</html>

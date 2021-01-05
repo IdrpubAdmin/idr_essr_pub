@@ -1,0 +1,49 @@
+@charset "utf-8";
+@import
+'../sass-module/_var',
+'../sass-module/font',
+'../sass-module/_reset-md',
+'../sass-module/_mixin-md',
+'../sass-module/_layout',
+'../sass-module/_common-md',
+'../sass-module/_actionsheet',
+'../sass-module/_swiper',
+'../sass-module/_conner-md',
+'../sass-module/_modal';
+@include home-footer;
+@include md-cap;
+
+.mycap-wrap{}
+.mycap-wrap .mycap-info-box{position:relative;background-color:$main-clr;}
+.mycap-wrap .mycap-info-box .bg-box{position:absolute;left:0;top:0;width:100%;height:100%;}
+.mycap-wrap .mycap-info-box .bg-box:before{content:'';display: block;position:absolute;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,0.05);z-index: 0;}
+.mycap-wrap .mycap-info-box .inner-box{padding:30px 0 37px;}
+.mycap-wrap .mycap-info-box .top-box{position:relative;}
+.mycap-wrap .mycap-info-box .top-box p{color:$font-clr-4;}
+.mycap-wrap .mycap-info-box .top-box .tit{font-size:$font-52px;}
+.mycap-wrap .mycap-info-box .top-box .sub-tit{font-size:$font-24px;}
+.mycap-wrap .mycap-info-box .top-box .img-box{position:absolute;right:20px;top: 50%;margin-top: -26px;width:53px;height:53px;border-radius: 50%;overflow:hidden;}
+.mycap-wrap .mycap-info-box .top-box .img-box img{width:100%;height:100%;}
+.mycap-wrap .mycap-info-box .bottom-box{overflow: hidden;padding:30px 0;}
+.mycap-wrap .mycap-info-box .bottom-box dl{float:left;width:50%;}
+.mycap-wrap .mycap-info-box .bottom-box dl dt{}
+.mycap-wrap .mycap-info-box .bottom-box dl dt p{font-size:$font-24px;letter-spacing: -0.02em;color:$font-clr-2;}
+.mycap-wrap .mycap-info-box .bottom-box dl dd{padding-top:10px;}
+.mycap-wrap .mycap-info-box .bottom-box dl dd span{font-family:'Roboto';}
+.mycap-wrap .mycap-info-box .bottom-box dl dd .crt-txt{font-size:$font-60px;color:$font-clr-4;}
+.mycap-wrap .mycap-info-box .bottom-box dl dd .total-txt{font-size:$font-28px;color:$font-clr-2;}
+.mycap-wrap .mycap-info-box .button-box{}
+.mycap-wrap .mycap-info-box .button-box button{width:100%;height:38px;font-size:12px;text-align: center;border:1px solid #767676;}
+.mycap-wrap .mycap-info-box .button-box button span{font-size:$font-26px;color:$font-clr-4;}
+.mycap-wrap .mycap-add-box{}
+.mycap-wrap .mycap-add-box .inner-box{padding:40px 0;text-align: center;}
+.mycap-wrap .mycap-add-box p{font-size:$font-32px;letter-spacing:-0.05em;line-height: 1.3em;}
+.mycap-wrap .mycap-add-box button{width:220px;margin-top:10px;}
+
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+@charset "utf-8";
+// ======================================================================== //
+// file		: variables
+// date		: 20200915
+// ======================================================================== //
+
+// variables
+$img-path:'../images/';
+//$img-path:'/resources/static/images/';
+$mini-pc-w: 640px;
+$mini-mo-w: $mini-pc-w - 1;
+
+$dflt-pd1: 16px;
+$dflt-pd2: 24px;
+$dflt-pd3: 40px;
+
+$main-clr : #191919;
+$point-clr : #f30000;//text,icon
+$font-clr-1:#191919;
+$font-clr-2:#767676;
+$font-clr-3:#b9b9b9;
+$font-clr-4:#fff;
+
+$btn-clr-1:#191919;
+
+$font-18px:0.875em;
+$font-20px:1em;
+$font-22px:1.083em;
+$font-24px:1.167em;
+$font-26px:1.250em;
+$font-28px:1.333em;
+$font-30px:1.417em;
+$font-32px:1.500em;
+$font-34px:1.583em;
+$font-36px:1.667em;
+$font-40px:1.833em;
+$font-46px:2.084em;
+$font-48px:2.167em;
+$font-50px:2.250em;
+$font-52px:2.333em;
+$font-60px:2.50em;
+
+//$font-18px:0.875em;
+//$font-20px:1em;
+//$font-22px:1.083em;
+//$font-24px:1.125em;
+//$font-26px:1.25em;
+//$font-28px:1.375em;
+//$font-30px:1.5em;
+//$font-32px:1.625em;
+//$font-34px:1.75em;
+//$font-36px:1.875em;
+//$font-40px:2.125em;
+//$font-48px:2.425em;
+//$font-50px:2.75em;
+
+$common-clr-1:#f5f5f5;//line
+$common-clr-2:#ddd;//line,shape
+$common-clr-3:#000;//
+$common-clr-4:#fff;//shape,line,icon

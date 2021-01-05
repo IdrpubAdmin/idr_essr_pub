@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="pragma" content="no-cache">
+  <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,shrink-to-fit=no,viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" type="image/x-icon" href="../common/images/common/favicon.ico">
+  <title>shop-mainCategory</title>
+  <link rel="stylesheet" href="../../common/css/shop.css">
+<!--  <link rel="stylesheet" href="../../common/css/guide.css">-->
+  <script type="text/javascript" th:inline="javascript">
+    /*<![CDATA[*/
+    const _PageMixins = [];
+    function semVueLoader(url) {
+      return httpVueLoader(url);
+    }
+    /*]]>*/
+  </script>
+</head>
+<body>
+  <div id="app" class="wrapper">
+    <!-- header -->
+    <header class="header-wrap">
+      <header-common :sub-title="''"
+                     :category-title="true"
+                     :sub-category="false"
+                     :is-main-icon="false"
+                     :is-back-btn="true"
+                     :is-home-btn="false"
+                     :is-search-btn="true"
+                     :is-drawer-btn="true"
+                     :is-search-box="false"
+      ></header-common>
+      <div class="append-box"></div>
+    </header>
+    <!-- container -->
+    <section class="container">
+
+      <!-- contents -->
+      <article class="contents">
+        <main-banner-2></main-banner-2>
+        <div class="gap-box">
+          <shop-main-category></shop-main-category>
+        </div>
+        <div class="gap-box">
+          <temp-conner-2-3></temp-conner-2-3>
+        </div>
+        <div class="gap-box">
+          <temp-swiper></temp-swiper>
+        </div>
+        <div class="gap-box">
+          <line-banner :class="{ type2 : classValue }"></line-banner>
+        </div>
+        <div class="gap-box">
+          <temp-conner-4></temp-conner-4>
+        </div>
+
+      </article>
+    </section>
+    <!-- 하단 고정 네비 -->
+    <nav class="tab-bar">
+      <footer-menu v-if="showFooterMenu"></footer-menu>
+    </nav>
+  </div>
+  <script type="text/javascript" src="../../common/js/swiper.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-2.6.11.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-awesome-swiper.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-lazyload.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/httpVueLoader.js"></script>
+  <script type="text/javascript" src="../../common/js/sem-vue/plugins/sem-plugin.js"></script>
+  <script type="text/javascript" src="../../common/js/style.js"></script>
+
+  <script>
+    Vue.use(VueLazyload);
+  </script>
+  <script type="text/javascript" th:inline="javascript">
+    _PageMixins.push({
+      components: {
+        'main-banner-2': semVueLoader('../../common/js/sem-vue/components/conner/main-banner-2.vue'),
+        'shop-main-category': semVueLoader('../../common/js/sem-vue/components/shop/shop-main-category.vue'),
+        'temp-conner-2-3': semVueLoader('../../common/js/sem-vue/components/conner/temp-conner-2-3.vue'),
+        'temp-swiper': semVueLoader('../../common/js/sem-vue/components/conner/temp-swiper.vue'),
+        'line-banner': semVueLoader('../../common/js/sem-vue/components/conner/line-banner.vue'),
+        'temp-conner-4': semVueLoader('../../common/js/sem-vue/components/conner/temp-conner-4.vue'),
+        'home-branch-nav': semVueLoader('../../common/js/sem-vue/components/home/home-branch-nav.vue'),
+        'home-footer': semVueLoader('../../common/js/sem-vue/components/home/footer.vue'),
+      },
+      data() {
+        return {
+          classValue : true,
+        }
+      }
+    });
+  </script>
+  <script type="text/javascript" th:inline="javascript">
+    const reqUrl = window.location.pathname;
+
+    _PageMixins.push({
+      components: {
+        'header-common': semVueLoader('../../common/js/sem-vue/components/common/HeaderCommonComponent.vue'),
+        'footer-menu': semVueLoader('../../common/js/sem-vue/components/common/tabMenu.vue'),
+      },
+      data() {
+        return {
+          showFooterMenu: reqUrl.includes('/home') || reqUrl.includes('/shop') || reqUrl.includes('/drawer') || reqUrl.includes('/mypage')
+        };
+      },
+      computed: {
+        subTitle() {
+          return this.pageTitle || '';
+        }
+      }
+    });
+  </script>
+  <script type="text/javascript" src="../../common/js/sem-vue/sem.main.js"></script>
+</body>
+</html>

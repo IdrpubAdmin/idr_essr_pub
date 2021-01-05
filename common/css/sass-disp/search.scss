@@ -1,0 +1,37 @@
+@charset "utf-8";
+@import
+'../sass-module/_var',
+'../sass-module/font',
+'../sass-module/_reset-md',
+'../sass-module/_mixin-md',
+'../sass-module/_layout',
+'../sass-module/_common-md',
+'../sass-module/_swiper',
+'../sass-module/_conner-md',
+'../sass-module/actionsheet',
+'../sass-module/_modal';
+
+
+@include home-footer;
+
+.search-wrap .gap-box{padding-bottom:35px;}
+.search-wrap .keyword-wrap{position:fixed;left:50%;top:60px;transform:translateX(-50%);width:100%;height:calc(100% - 60px);max-width:640px;padding:20px;background-color:#fff;box-sizing: border-box;z-index: 1000;    border-left: 1px solid #e8e8e8;border-right: 1px solid #e8e8e8;}
+.search-wrap .keyword-box{}
+.search-wrap .keyword-box .keyword-list{}
+.search-wrap .keyword-box .keyword-list li{position:relative;overflow: hidden;margin-top:15px;}
+.search-wrap .keyword-box .keyword-list li:first-child{margin-top:0;}
+.search-wrap .keyword-box .keyword-list li a{float:left;font-size:$font-28px;color:$font-clr-1;letter-spacing:-0.05em;line-height: 1.5em;}
+.search-wrap .keyword-box .keyword-list li .right-box{float:right;}
+.search-wrap .keyword-box .keyword-list li .right-box .date{font-size:$font-22px;color:$font-clr-3;line-height: 1.8em;}
+.search-wrap .keyword-box .keyword-list li .right-box .dlt-btn{display:inline-block;position:relative;top:2px;width:18px;height:18px;margin-left: 5px;vertical-align:text-bottom;background:url($img-path + "icon/close_36x36_767676.png") no-repeat left top;background-size:100%;}
+.search-wrap .keyword-box .more-btn{font-size:12px;border-bottom:1px solid $font-clr-3;margin-top:20px;}
+.search-wrap .keyword-box .more-btn span{font-size:$font-26px;color:$font-clr-3;letter-spacing: -0.05em;font-weight: 500;}
+.search-wrap .keyword-box .more-btn span:after{content:'';display: inline-block;position: relative;top: -2px;width: 9px;height: 9px;margin-left: 2px;background:url($img-path + "icon/plus_14x14_b9b9b9.png") no-repeat left top;background-size:100%;}
+
+.search-wrap .recommend-box{}
+.search-wrap .recommend-box a{display:inline-block;height:32px;padding:0 10px;margin-right:3px;border:1px solid #ddd;border-radius: 50px;margin-bottom:5px;}
+.search-wrap .recommend-box a span{font-size:$font-24px;color:$font-clr-2;letter-spacing: -0.05em;line-height: 2.3em;white-space: nowrap;}
+
+.search-wrap .resualt-box{text-align:center;padding:36px 0;}
+.search-wrap .resualt-box p{font-size:$font-36px;color:$font-clr-1;letter-spacing: -0.05em;}
+.search-wrap .resualt-box span{font-size:$font-28px;color:$font-clr-3;letter-spacing: -0.05em;margin-top:10px;}
