@@ -243,8 +243,11 @@
         img {position: relative;width: 100%;}
         &:nth-child(1) {margin-bottom: 10px;}
         &:nth-child(1)~li {
-          width: calc(50% - 5px);height: 27.5vw;overflow: hidden;
-          img {top: 50%;transform: translateY(-50%);}
+          width: calc(50% - 5px);
+          //height: 27.5vw;
+          overflow: hidden;
+          vertical-align: middle;
+          //img {top: 50%;transform: translateY(-50%);}
         }
         &:nth-child(3) {margin-left: 10px;}
       }
