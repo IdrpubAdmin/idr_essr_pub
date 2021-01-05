@@ -1,5 +1,6 @@
 /bak/
 /.idea
 /.git
+/.gitlab-ci.yml
 /pub-dev/node_modules/
 /pub-dev/package-lock.json
