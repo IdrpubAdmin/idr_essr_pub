@@ -55,13 +55,14 @@
               </div>
               <div class="button-box last">
                 <p>셀러쇼룸이 처음이신가요?</p>
-                <button type="button" class="white-btn w100"><span>회원가입</span></button>
+                <button type="button" class="white-btn w100 btn-modal" data-modal="seller-agree-popup"><span>회원가입</span></button>
               </div>
             </div>
           </div>
         </div>
         <home-footer></home-footer>
       </article>
+
       <!--   셀러쇼룸 가입 동의 팝업   -->
       <div class="modal-wrap big seller-agree-popup" style="display:none;">
         <div class="modal-layer">
@@ -163,40 +164,18 @@
             </div>
             <div class="button-box">
               <!-- 버튼 비활성화 상태 disabled 추가 -->
-              <button type="button" class="modal-blk-btn w100" disabled><span>동의</span></button>
+              <!--<button type="button" class="modal-blk-btn w100 btn-modal" disabled data-modal="seller-info-popup"><span>동의</span></button>-->
+              <button type="button" class="modal-blk-btn w100 btn-modal" data-modal="seller-info-popup"><span>동의</span></button>
             </div>
-            <button type="button" class="icon-header-close evt-none">팝업닫기</button>
+            <button type="button" class="icon-header-close">팝업닫기</button>
           </div>
         </div>
         <div class="dim"></div>
       </div>
-      <!--   셀러쇼룸 가입완료 팝업   -->
-      <div class="modal-wrap big seller-complete-popup" style="display:none;">
-        <div class="modal-layer">
-          <div class="inner-box has-btn">
-            <strong class="modal_tit">셀러쇼룸 가입</strong>
-            <div class="modal_cont">
-              <div class="complete-box">
-                <div class="img-box">
-                  <img src="../../common/images/temp/myselling-top.png" alt="">
-                </div>
-                <div class="text-box">
-                  <p><b><em>SOO</em>님<br>가입이 완료되었습니다!</b></p>
-                  <p>셀러쇼룸 안에서 셀러로 활동을 해보세요!</p>
-                </div>
-              </div>
-            </div>
-            <div class="button-box">
-              <!-- 버튼 비활성화 상태 disabled 추가 -->
-              <button type="button" class="modal-blk-btn w100"><span>확인</span></button>
-            </div>
-            <button type="button" class="icon-header-close evt-none">팝업닫기</button>
-          </div>
-        </div>
-        <div class="dim"></div>
-      </div>
-      <!--   셀러쇼룸 가입완료 팝업   -->
-      <div class="modal-wrap big seller-info-popup" style="display:block;">
+      <!--   //셀러쇼룸 가입 동의 팝업   -->
+
+      <!--   셀러쇼룸 추가정보 팝업   -->
+      <div class="modal-wrap big seller-info-popup" style="display:none;">
         <div class="modal-layer">
           <div class="inner-box has-btn">
             <strong class="modal_tit">셀러 추가정보</strong>
@@ -204,7 +183,7 @@
               <div class="seller-info-box">
                 <div class="top-box">
                   <div class="bg-box">
-<!--                    <img src="../../common/images/temp/tempImg_2_2_1.png" alt="">-->
+                    <!--<img src="../../common/images/temp/tempImg_2_2_1.png" alt="">-->
                   </div>
                   <div class="text-box">
                     <p>셀러 마켓 가입을 환영합니다.<br>
@@ -332,15 +311,45 @@
               </div>
             </div>
             <div class="button-box">
-              <!-- 버튼 비활성화 상태 disabled 추가 -->
               <button type="button" class="modal-gray-btn"><span>나중에 등록</span></button>
-              <button type="button" class="modal-blk-btn" disabled><span>지금등록</span></button>
+              <!-- 버튼 비활성화 상태 disabled 추가 -->
+              <!--<button type="button" class="modal-blk-btn" disabled><span>지금등록</span></button>-->
+              <button type="button" class="modal-blk-btn btn-modal" data-modal="seller-complete-popup"><span>지금등록</span></button>
             </div>
-            <button type="button" class="icon-header-close evt-none">팝업닫기</button>
+            <button type="button" class="icon-header-close">팝업닫기</button>
           </div>
         </div>
         <div class="dim"></div>
       </div>
+      <!--   //셀러쇼룸 추가정보 팝업   -->
+
+      <!--   셀러쇼룸 가입완료 팝업   -->
+      <div class="modal-wrap big seller-complete-popup" style="display:none;">
+        <div class="modal-layer">
+          <div class="inner-box has-btn">
+            <strong class="modal_tit">셀러쇼룸 가입</strong>
+            <div class="modal_cont">
+              <div class="complete-box">
+                <div class="img-box">
+                  <img src="../../common/images/temp/myselling-top.png" alt="">
+                </div>
+                <div class="text-box">
+                  <p><b><em>SOO</em>님<br>가입이 완료되었습니다!</b></p>
+                  <p>셀러쇼룸 안에서 셀러로 활동을 해보세요!</p>
+                </div>
+              </div>
+            </div>
+            <div class="button-box">
+              <!-- 버튼 비활성화 상태 disabled 추가 -->
+              <button type="button" class="modal-blk-btn w100"><span>확인</span></button>
+            </div>
+            <button type="button" class="icon-header-close">팝업닫기</button>
+          </div>
+        </div>
+        <div class="dim"></div>
+      </div>
+      <!--   //셀러쇼룸 가입완료 팝업   -->
+
     </section>
     <!-- 하단 고정 네비 -->
     <nav class="tab-bar">
@@ -353,7 +362,7 @@
   <script type="text/javascript" src="../../common/js/vuejs/vue-lazyload.js"></script>
   <script type="text/javascript" src="../../common/js/vuejs/httpVueLoader.js"></script>
   <script type="text/javascript" src="../../common/js/sem-vue/plugins/sem-plugin.js"></script>
-  <script type="text/javascript" src="../../common/js/style.js"></script>
+  <script type="text/javascript" defer src="../../common/js/style.js"></script>
 
   <script>
     Vue.use(VueLazyload);

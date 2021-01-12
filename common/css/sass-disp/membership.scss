@@ -9,6 +9,7 @@
 '../sass-module/_modal',
 '../sass-module/_actionsheet';
 @include md-login;
+@include home-footer;
 
 .seller-agree-popup{}
 .seller-agree-popup .agree-container{padding-bottom:30px;}
