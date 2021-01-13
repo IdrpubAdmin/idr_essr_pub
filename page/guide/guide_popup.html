@@ -173,8 +173,6 @@
                     </select>
                   </div>
 
-
-
                   <div class="text-box type-nor">
                     <p class="tit-txt">input title</p>
                     <div class="ipt-txt-box">
@@ -186,8 +184,6 @@
                       </div>
                     </div>
                   </div>
-
-
 
                   <div class="switch-box">
                     <p class="state-txt">
@@ -223,6 +219,17 @@
           </div>
           <popup-banner-2></popup-banner-2>
         </div>
+        
+        <!-- mkp-add : 20210113 -->
+        <div class="ui-box" style="text-align: center;">
+          <p class="box-title">팝업 공유하기</p>
+          <div class="button-box" style="padding:20px;">
+            <button type="button" class="modal-blk-btn" style="width:80%;" onclick="openPopup('popup-share-wrap');"><span>팝업 공유하기</span></button>
+          </div>
+          <popup-share></popup-share>
+        </div>
+        <!-- //mkp-add : 20210113 -->
+        
       </article>
     </section>
   </div>
@@ -258,6 +265,7 @@
         'product-style': semVueLoader('../../common/js/sem-vue/components/conner/product-style.vue'),
         'popup-banner': semVueLoader('../../common/js/sem-vue/components/conner/popup-banner.vue'),
         'popup-banner-2': semVueLoader('../../common/js/sem-vue/components/conner/popup-banner-2.vue'),
+        'popup-share': semVueLoader('../../common/js/sem-vue/components/conner/popup-share.vue'),
       },
       data() {
         return {

@@ -1577,9 +1577,9 @@ label {
   position: absolute;
   right: 10px;
   bottom: 10px;
-  width: 28px;
-  height: 28px;
-  background: url("../images/icon/product_drawerIco_b.png") no-repeat left top;
+  width: 36px;
+  height: 36px;
+  background: url("../images/icon/product_drawerIco_b_v2.png") no-repeat left top;
   background-size: 100%;
 }
 .prod-box .img-box .sold-dim {
@@ -1690,23 +1690,26 @@ label {
   font-size: 1em;
   color: #767676;
 }
+.prod-box .share-btn-0 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  background: url("../images/icon/ico_menu_more.png") no-repeat center;
+  background-size: 60%;
+}
 .prod-box .drawer-btn-1 {
   position: absolute;
-  top: 50%;
+  bottom: 0;
   right: 0;
-  -webkit-transform: translateY(-50%);
-  -khtml-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 28px;
-  height: 28px;
-  background: url("../images/icon/product_drawerIco_w.png") no-repeat left top;
+  width: 36px;
+  height: 36px;
+  background: url("../images/icon/product_drawerIco_w_v2.png") no-repeat left top;
   background-size: 100%;
 }
 .prod-box .drawer-btn-1.sold-out {
-  background: url("../images/icon/product_drawerIco_d.png") no-repeat left top;
+  background: url("../images/icon/product_drawerIco_d_v2.png") no-repeat left top;
   background-size: 100%;
 }
 .prod-box.align-center .img-box {
@@ -1725,6 +1728,11 @@ label {
 }
 .prod-box.align-center .drawer-btn-1 {
   display: none;
+}
+.prod-box.align-center .share-btn-0 {
+  top: unset;
+  right: 5px;
+  bottom: 0;
 }
 .prod-box.align-left.img-size-order {
   height: 75px;
@@ -5164,7 +5172,7 @@ label {
   max-width: 530px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
   opacity: 0;
   box-sizing: border-box;
@@ -5319,6 +5327,43 @@ label {
 
 .info-popup .modal-layer .button-box button {
   width: 100%;
+}
+
+/* 팝업 공유하기 */
+.popup-share-wrap .modal_tit {
+  border-bottom: 0;
+}
+.popup-share-wrap .share-box {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.popup-share-wrap .share-box .btn-share {
+  display: inline-block;
+  padding-top: 105px;
+  width: 81px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000;
+}
+.popup-share-wrap .share-box .share-kakao-btn {
+  display: inline-block;
+  margin-right: 5%;
+}
+.popup-share-wrap .share-box .share-kakao-btn .btn-share {
+  background: url("../images/icon/icon_share_kakao.png") no-repeat left top;
+  background-size: 100%;
+}
+.popup-share-wrap .share-box .share-url-btn {
+  display: inline-block;
+  margin-left: 5%;
+}
+.popup-share-wrap .share-box .share-url-btn .btn-share {
+  background: url("../images/icon/icon_share_url.png") no-repeat left top;
+  background-size: 100%;
+}
+.popup-share-wrap .toast-inner {
+  text-align: center;
 }
 
 /* modal e ================================================== */

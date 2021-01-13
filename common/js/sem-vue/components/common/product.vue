@@ -33,6 +33,9 @@
       </div>
     </div>
     <button type="button" class="drawer-btn-1" :class="{'sold-out' : soldout}" v-if="options.drawer">내서랍</button>
+    <!-- mkp-add : 20210113 -->
+    <button type="button" class="share-btn-0" @click="shareGoods($event.target)" data-param-url="paramUrl">공유하기</button>
+    <!-- //mkp-add : 20210113 -->
   </div>
 </template>
 <script>
@@ -114,6 +117,20 @@ module.exports = {
           kakaoBtn:false,
         }
       }
+    }
+  },
+  methods: {
+    shareGoods: function(obj){
+      /*
+      //temp-conner-5.vue 참조해서 사용 필요
+      let urlInfo = obj.getAttribute('data-param-url');
+      this.$emit('btnshareclick', {
+        urlInfo: urlInfo,
+      });
+      */
+      //공유하기 팝업모달만 오픈(개발자 변경 필요)
+      //parent에 [popup-share] component 필요
+      openPopup('popup-share-wrap');
     }
   }
 };

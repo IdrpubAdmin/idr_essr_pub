@@ -87,6 +87,11 @@
                       :is-view-type-two="true"
                       :is-chk-box="false"
         ></product-list>
+  
+        <!-- mkp-add : 20210113 -->
+        <popup-share></popup-share>
+        <!-- //mkp-add : 20210113 -->
+        
       </article>
     </section>
     <!-- 하단 고정 네비 -->
@@ -110,6 +115,7 @@
       components: {
         'main-banner-1': semVueLoader('../../common/js/sem-vue/components/conner/main-banner-1.vue'),
         'product-list-align-left': semVueLoader('../../common/js/sem-vue/components/common/product-list-align-left.vue'),
+        'popup-share': semVueLoader('../../common/js/sem-vue/components/conner/popup-share.vue'),
       },
       data() {
         return {

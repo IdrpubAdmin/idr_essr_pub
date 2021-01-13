@@ -77,7 +77,18 @@
     .chk-box{position:absolute;left:0;bottom:0;}
     .share-btn{position:absolute;right:10px;bottom:10px;width:28px;height:28px;background:url($img-path + "icon/prod_share.png") no-repeat left top;background-size:100%;}
     .kakao-btn{position:absolute;bottom:0px;right:0px;width:37px;height:37px;background:url($img-path + "icon/kakao_share_74x74.png") no-repeat left top;background-size:100%;}
-    .drawer-btn-0{position:absolute;right:10px;bottom:10px;width:28px;height:28px;background:url($img-path + "icon/product_drawerIco_b.png") no-repeat left top;background-size:100%;}
+    .drawer-btn-0{
+      position:absolute;
+      right:10px;
+      bottom:10px;
+      width:36px;
+      height:36px;
+      //width:28px;
+      //height:28px;
+      //background:url($img-path + "icon/product_drawerIco_b.png") no-repeat left top;
+      background:url($img-path + "icon/product_drawerIco_b_v2.png") no-repeat left top;
+      background-size:100%;
+    }
     .sold-dim{position:absolute;right:0;bottom:0;width:100%;height:100%;background-color: rgba(0,0,0,0.5);}
   }
   .info-box {
@@ -119,8 +130,33 @@
     }
     .sell{font-size: 1em;color:$font-clr-2;}
   }
-  .drawer-btn-1{position:absolute;top:50%;right:0;@include css3-prefix(transform, translateY(-50%));width:28px;height:28px;background:url($img-path + "icon/product_drawerIco_w.png") no-repeat left top;background-size:100%;}
-  .drawer-btn-1.sold-out{background:url($img-path + "icon/product_drawerIco_d.png") no-repeat left top;background-size:100%;}
+  .share-btn-0{
+    position:absolute;
+    top:0;
+    right:0;
+    width:36px;
+    height:36px;
+    background:url($img-path + "icon/ico_menu_more.png") no-repeat center;
+    background-size:60%;
+  }
+  .drawer-btn-1{
+    position:absolute;
+    //top:50%;
+    bottom:0;
+    right:0;
+    //@include css3-prefix(transform, translateY(-50%));
+    width:36px;
+    height:36px;
+    //width:28px;
+    //height:28px;
+    //background:url($img-path + "icon/product_drawerIco_w.png") no-repeat left top;
+    background:url($img-path + "icon/product_drawerIco_w_v2.png") no-repeat left top;
+    background-size:100%;
+    &.sold-out{
+      background:url($img-path + "icon/product_drawerIco_d_v2.png") no-repeat left top;
+      background-size:100%;
+    }
+  }
   &.align-center{
     .img-box{margin-bottom:8px;}
     .info-box{
@@ -129,6 +165,11 @@
       .social-box{margin-top:7px;}
     }
     .drawer-btn-1{display: none;}
+    .share-btn-0{
+      top:unset;
+      right:5px;
+      bottom:0;
+    }
   }
   &.align-left{
     //img-size-s0(166 묶음코너1) , img-size-s1(190 묶음코너3) ,img-size-s2(196 랭킹구좌) .img-size-s3(230 기획전)

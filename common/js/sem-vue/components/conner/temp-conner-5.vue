@@ -30,6 +30,8 @@
                 :stkad="''"
                 :stknew="''"
                 :options="productOption"
+                :soldout="'1'"
+                @btnshareclick="openPopupShare"
             ></product-box>
           </li>
           <li>
@@ -47,7 +49,10 @@
                 :sell="''"
                 :stkad="''"
                 :stknew="''"
+                :soldout="''"
                 :options="productOption"
+                :soldout="''"
+                @btnshareclick="openPopupShare"
             ></product-box>
           </li>
         </ul>
@@ -74,5 +79,12 @@ module.exports = {
       },
     }
   },
+  methods: {
+    openPopupShare: function(param) {
+      console.log(param.urlInfo)//이후 전달은 고민이 필요함
+      //parent에 [popup-share] component 필요
+      openPopup('popup-share-wrap');
+    }
+  }
 }
 </script>

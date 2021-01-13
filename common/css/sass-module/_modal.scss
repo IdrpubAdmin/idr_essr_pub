@@ -227,7 +227,7 @@
 .toast-popup.show{display:block;transition: opacity 0.3s 0.2s;z-index:1010;}
 .toast-popup .dim-box{position:absolute;left:0;top:0;width:100%;height:100%;background-color: rgba(0,0,0,0.5);opacity: 0;transition: opacity 0.3s 0.2s;}
 .toast-popup.show .dim-box{-webkit-animation: toast-dim 3s ease-out;-moz-animation: toast-dim 3s ease-out;}
-.toast-popup .toast-inner{position:absolute;bottom:70px;width:83%;max-width:530px;left:50%;transform: translateX(-50%);background-color:rgba(0,0,0,0.5);padding:20px;opacity:0;box-sizing: border-box;}
+.toast-popup .toast-inner{position:absolute;bottom:70px;width:83%;max-width:530px;left:50%;transform: translateX(-50%);background-color:rgba(0,0,0,0.7);padding:20px;opacity:0;box-sizing: border-box;}
 .toast-popup.show .toast-inner{display:block;-webkit-animation: slide-up 3s ease-out;-moz-animation: slide-up 3s ease-out;}
 .toast-popup p{font-size:$font-26px;color:#fff;letter-spacing: -0.05em;}
 .toast-popup a{font-size:$font-26px;color:#fff;letter-spacing: -0.05em;text-decoration: underline;}
@@ -265,6 +265,44 @@
 .info-popup .modal-layer .button-box{display: flex;flex-wrap: nowrap;}
 .info-popup .modal-layer .button-box button{width:100%;}
 
+/* 팝업 공유하기 */
+.popup-share-wrap {
+  .modal_tit {
+    border-bottom:0;
+  }
+  .share-box {
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:center;
+    .btn-share {
+      display:inline-block;
+      padding-top:105px;
+      width:81px;
+      font-size:15px;
+      font-weight:bold;
+      color:#000;
+    }
+    .share-kakao-btn {
+      display:inline-block;
+      margin-right:5%;
+      .btn-share {
+        background:url($img-path + "icon/icon_share_kakao.png") no-repeat left top;
+        background-size:100%;
+      }
+    }
+    .share-url-btn {
+      display:inline-block;
+      margin-left:5%;
+      .btn-share {
+        background:url($img-path + "icon/icon_share_url.png") no-repeat left top;
+        background-size:100%;
+      }
+    }
+  }
+  .toast-inner {
+    text-align:center;
+  }
+}
 /* modal e ================================================== */
 /* ---------------------------------------------------------- */
 @-webkit-keyframes slide-up {

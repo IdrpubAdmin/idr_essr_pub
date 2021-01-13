@@ -56,7 +56,7 @@
       </swiper>
       <div class="button-box">
         <button type="button" class="modal-blk-btn"><span>다시 보지 않기</span></button>
-        <button type="button" class="modal-blk-btn" onclick="document.querySelector('.popup-banner').style.display='none';"><span>닫기</span></button>
+        <button type="button" class="modal-blk-btn" onclick="document.querySelector('.popup-banner-2').style.display='none';"><span>닫기</span></button>
       </div>
     </div>
   </div>
