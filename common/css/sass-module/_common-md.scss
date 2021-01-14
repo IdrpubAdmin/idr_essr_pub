@@ -37,6 +37,15 @@
 //타이틀
 .title-box{position: relative;padding: 20px 0;}
 .title-box .tit-txt{font-size:$font-36px;color:$font-clr-1;font-weight:bold;letter-spacing:-0.05em;line-height: 1.25em;}
+.title-box .tit-sub-txt{
+  display:block;
+  padding-top:10px;
+  font-size:$font-14r;
+  color:$font-clr-1;
+  font-weight:bold;
+  letter-spacing:-0.05em;
+  line-height: 1.25em;
+}
 .title-box .sub-txt{font-size:$font-30px;color:$font-clr-1;letter-spacing:-0.05em;line-height: 1.2em;margin-top:7px;width: calc(100% - 50px);white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
 .title-box .sub-txt.allTxt{width: 100%;white-space: normal;text-overflow: initial;}
 .title-box .right-txt{position: absolute;right:0;bottom: 25px;font-size:$font-24px;color:$font-clr-3;line-height: 1.2em;}

@@ -120,6 +120,7 @@ html {
   padding: 0px;
   margin: 0;
   height: 100%;
+  font-size: 62.5%;
 }
 
 html, body {
@@ -1377,6 +1378,16 @@ label {
 
 .title-box .tit-txt {
   font-size: 1.667em;
+  color: #191919;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  line-height: 1.25em;
+}
+
+.title-box .tit-sub-txt {
+  display: block;
+  padding-top: 10px;
+  font-size: 1.4rem;
   color: #191919;
   font-weight: bold;
   letter-spacing: -0.05em;
