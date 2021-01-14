@@ -7,7 +7,7 @@
         템플릿_묶음코너1
         <span class="tit-sub-txt">기획전 코너에 MD 안내멘트 영역 노출입니다.</span>
       </p>
-      <!-- mkp-edit : 20210114 -->
+      <!-- //mkp-edit : 20210114 -->
     </div>
     <div class="inner-box">
       <div class="top-box">
