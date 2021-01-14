@@ -167,7 +167,7 @@
             </div>
           </div>
           <div class="bottom-menu-box">
-            <button type="button" class="share-btn">
+            <button type="button" class="share-btn" @click="shareGoods($event.target)" data-param-url="paramUrl">
               <span class="ico"></span>
             </button>
             <button type="button" class="like-btn on">
@@ -176,6 +176,11 @@
             <button type="button" class="drawer-btn sold-out"><p>내 서랍에 담기</p></button>
           </div>
         </div>
+
+        <!-- mkp-add : 20210113 -->
+        <popup-share></popup-share>
+        <!-- //mkp-add : 20210113 -->
+
       </article>
     </section>
   </div>
@@ -197,10 +202,18 @@
         'goods-banner': semVueLoader('../../common/js/sem-vue/components/goods/goods-banner.vue'),
         'detail-tab-menu': semVueLoader('../../common/js/sem-vue/components/goods/detail-prod-tab.vue'),
         'goods-accordion-box': semVueLoader('../../common/js/sem-vue/components/goods/goods-accordion-box.vue'),
+        'popup-share': semVueLoader('../../common/js/sem-vue/components/conner/popup-share.vue'),
       },
       data() {
         return {
           classValue : true,
+        }
+      },
+      methods: {
+        shareGoods: function(obj){
+          //공유하기 팝업모달만 오픈(개발자 변경 필요)
+          //[popup-share] component 필요
+          openPopup('popup-share-wrap');
         }
       }
     });

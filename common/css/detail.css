@@ -4980,12 +4980,12 @@ label {
 }
 
 .goods-wrap .bottom-menu-box .share-btn .ico {
-  background: url("../images/icon/detail_share_0.png") no-repeat center;
+  background: url("../images/icon/detail_share_0_v2.png") no-repeat center;
   background-size: 100%;
 }
 
 .goods-wrap .bottom-menu-box .share-btn.on .ico {
-  background-image: url("../images/icon/detail_share_1.png");
+  background-image: url("../images/icon/detail_share_1_v2.png");
 }
 
 .goods-wrap .bottom-menu-box .share-btn p {
