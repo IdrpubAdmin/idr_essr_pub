@@ -377,7 +377,7 @@
 .text-box.type-nor{width:100%;box-sizing: border-box;overflow: hidden;}
 .text-box.type-nor .ipt-txt-box{position:relative;width:100%;margin-bottom:5px;}
 .text-box.type-nor .tit-txt{font-size:$font-30px;color:$font-clr-1;letter-spacing: -0.05em;line-height: 1.3em;text-align:left;margin-bottom: 5px;}
-.text-box.type-nor .tit-txt .red{color:$point-clr;}
+.tit-txt .red{color:$point-clr !important;}
 .text-box .ipt-txt-box .txt-reset-btn{position:absolute;right: 5px;top: 6px;width:28px;height:28px;background:url($img-path + "icon/text-reset-icon.png") no-repeat center;background-size:100%;}
 .text-box.type-nor .ipt-txt-box input[type="text"]{height:40px;font-size:$font-26px;letter-spacing:-0.05em;border:1px solid $common-clr-2;padding:0 10px;}
 .text-box.type-nor.border-type2 .ipt-txt-box input[type="text"]{border-width: 0 0 1px;}

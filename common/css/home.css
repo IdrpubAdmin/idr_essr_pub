@@ -2318,8 +2318,8 @@ label {
   margin-bottom: 5px;
 }
 
-.text-box.type-nor .tit-txt .red {
-  color: #f30000;
+.tit-txt .red {
+  color: #f30000 !important;
 }
 
 .text-box .ipt-txt-box .txt-reset-btn {

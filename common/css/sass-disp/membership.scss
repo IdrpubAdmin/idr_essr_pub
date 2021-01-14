@@ -67,3 +67,35 @@
 .seller-info-popup .seller-info-box .bottom-box dl dd .text-box.type-acount .confirm-btn.on span{color:#fff;}
 .seller-info-popup .button-box{display: flex;flex-wrap: nowrap;}
 .seller-info-popup .button-box button{width: 100%;}
+
+.type-regident-num {
+  .input-type-rn {
+    float:left;
+  }
+  .input-type-rn:nth-child(1) {
+    width:40%;
+    margin-right:2%
+  }
+  .input-type-rn:nth-child(2) {
+    width:58%;
+  }
+  .confirm-btn{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width:50px;
+    height:30px;
+    font-size:12px;
+    border:1px solid #ddd;
+    span{
+      font-size:$font-26px;
+      letter-spacing:-0.05em;
+      color:$font-clr-3;
+    }
+    &.on{
+      border:none;
+      background-color:$point-clr;
+      span{color:#fff;}
+    }
+  }
+}

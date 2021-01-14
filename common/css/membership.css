@@ -2318,8 +2318,8 @@ label {
   margin-bottom: 5px;
 }
 
-.text-box.type-nor .tit-txt .red {
-  color: #f30000;
+.tit-txt .red {
+  color: #f30000 !important;
 }
 
 .text-box .ipt-txt-box .txt-reset-btn {
@@ -4969,6 +4969,38 @@ label {
 
 .seller-info-popup .button-box button {
   width: 100%;
+}
+
+.type-regident-num .input-type-rn {
+  float: left;
+}
+.type-regident-num .input-type-rn:nth-child(1) {
+  width: 40%;
+  margin-right: 2%;
+}
+.type-regident-num .input-type-rn:nth-child(2) {
+  width: 58%;
+}
+.type-regident-num .confirm-btn {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 50px;
+  height: 30px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+}
+.type-regident-num .confirm-btn span {
+  font-size: 1.25em;
+  letter-spacing: -0.05em;
+  color: #b9b9b9;
+}
+.type-regident-num .confirm-btn.on {
+  border: none;
+  background-color: #f30000;
+}
+.type-regident-num .confirm-btn.on span {
+  color: #fff;
 }
 
 /*# sourceMappingURL=membership.css.map */
