@@ -25,7 +25,18 @@
 .modal-gray-btn{height:52px;text-align:center;font-size:12px;color:$font-clr-1;background-color:#F8F8FA;}
 .modal-gray-btn span{font-size:$font-30px;}
 /* my page btns */
-.white-btn{display:inline-block;height:48px;font-size:$font-30px;color:$font-clr-1;text-align:center;line-height: 2.7em;background-color:#fff;border:1px solid #B9B9B9;border-radius:5px;}
+.white-btn{
+  display:inline-block;
+  height:48px;
+  line-height:48px;
+  //font-size:$font-30px;
+  font-size:$font-15r;
+  color:$font-clr-1;
+  text-align:center;
+  background-color:#fff;
+  border:1px solid #B9B9B9;
+  border-radius:5px;
+}
 .white-btn.h80{height:40px;font-size:$font-26px;color:$font-clr-1;line-height: 2.7em;}
 .gray-btn{display:inline-block;height:40px;font-size:$font-26px;color:$font-clr-1;text-align:center;line-height: 2.8em;background-color:#F5F5F5;border-radius:5px;}
 .gray-btn.h80{height:40px;font-size:$font-26px;line-height: 2.8em;}

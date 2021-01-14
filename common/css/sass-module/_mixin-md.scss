@@ -95,12 +95,12 @@
   transform: rotate($deg);
 }
 @mixin setDfPadding(){
-  padding-right:$con_pd;
-  padding-left:$con_pd;
+  padding-right:$dflt-pd1;
+  padding-left:$dflt-pd1;
 }
 @mixin setFullBox(){
-  margin-right:-$con_pd;
-  margin-left:-$con_pd;
+  margin-right:-$dflt-pd1;
+  margin-left:-$dflt-pd1;
 }
 @mixin s-vh($property, $value) {
   #{$property}:calc((var(--vh, 1vh) * 100) + #{$value});
@@ -149,9 +149,18 @@
 
   body.lock{touch-action:none;overflow:hidden;position:absolute;top:0;bottom:0;left:0;right:0;height:auto;}
 
-  .grid-type1{padding:0 $dflt-pd1;}
-  .grid-type2{padding:0 $dflt-pd2;}
-  .grid-type3{padding:0 $dflt-pd3;}
+  .grid-type1{
+    padding-right:$dflt-pd1;
+    padding-left:$dflt-pd1;
+  }
+  .grid-type2{
+    padding-right:$dflt-pd2;
+    padding-left:$dflt-pd2;
+  }
+  .grid-type3{
+    padding-right:$dflt-pd3;
+    padding-left:$dflt-pd3;
+  }
 
   .num-type1{font-size:17px; font-weight:700; color:#000;letter-spacing:0;}
   .num-type2{font-size:17px; font-weight:700; color:#000;letter-spacing:0;}
@@ -626,11 +635,30 @@
 
 /* 공통 ui -----------------------------------------------------------------------------*/
 @mixin md-cap{
+  .cap-list-tab {
+    margin-right:-20px;
+    margin-bottom:26px;
+    margin-left:-20px;
+  }
   /* 내 창고보기 */
-  .my-cap-box{padding:0 20px 20px;}
-  .my-cap-box .title-box{}
-  .my-cap-box .title-box .set-btn{display:inline-block;position: absolute;right: 0;bottom: 23px;font-size:12px;}
-  .my-cap-box .title-box .set-btn span{font-size:$font-26px;color:$font-clr-2;text-decoration: underline;}
+  .my-cap-box{
+    @include setDfPadding();
+    .title-box{
+      padding-bottom:0;
+      .set-btn{
+        display:inline-block;
+        position:absolute;
+        right:0;
+        bottom:3px;
+        font-size:12px;
+        span{
+          font-size:$font-26px;
+          color:$font-clr-2;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
   .my-cap-box .cap-list{overflow: hidden;}
   .my-cap-box .cap-list li{position:relative;float:left;width:calc(50% - 2px);margin-top:40px;}
   .my-cap-box .cap-list li:nth-child(2n + 1){margin-right:4px;}

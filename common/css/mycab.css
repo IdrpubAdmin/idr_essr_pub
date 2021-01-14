@@ -1172,10 +1172,10 @@ label {
 .white-btn {
   display: inline-block;
   height: 48px;
-  font-size: 1.417em;
+  line-height: 48px;
+  font-size: 1.5rem;
   color: #191919;
   text-align: center;
-  line-height: 2.7em;
   background-color: #fff;
   border: 1px solid #B9B9B9;
   border-radius: 5px;
@@ -2363,6 +2363,54 @@ label {
 
 .text-box.type-nor .input-error.red {
   color: #f30000;
+}
+
+/* tab-menu */
+.tab-menu-wrap ul {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.tab-menu-wrap ul:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #f5f5f5;
+}
+.tab-menu-wrap ul li {
+  padding-right: 30px;
+  text-align: center;
+}
+.tab-menu-wrap ul li button {
+  position: relative;
+  font-size: 12px;
+  height: 59px;
+  width: auto;
+}
+.tab-menu-wrap ul li button em {
+  font-size: 1.333em;
+  color: #767676;
+  letter-spacing: -0.02em;
+}
+.tab-menu-wrap ul li.on button em {
+  color: #191919;
+  font-weight: bold;
+}
+.tab-menu-wrap ul li.on button:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #191919;
 }
 
 /* 결과 없음 페이지*/
@@ -5547,19 +5595,27 @@ label {
   color: #191919;
 }
 
-/* 내 창고보기 */
-.my-cap-box {
-  padding: 0 20px 20px;
+.cap-list-tab {
+  margin-right: -20px;
+  margin-bottom: 26px;
+  margin-left: -20px;
 }
 
+/* 내 창고보기 */
+.my-cap-box {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.my-cap-box .title-box {
+  padding-bottom: 0;
+}
 .my-cap-box .title-box .set-btn {
   display: inline-block;
   position: absolute;
   right: 0;
-  bottom: 23px;
+  bottom: 3px;
   font-size: 12px;
 }
-
 .my-cap-box .title-box .set-btn span {
   font-size: 1.25em;
   color: #767676;

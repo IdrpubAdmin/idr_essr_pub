@@ -36,13 +36,40 @@
 .mypage-wrap.index .my-setting-box .menu-box .grade-box .grade-icon.vip{background-color:#191919;}
 .mypage-wrap.index .my-setting-box .menu-box .grade-box .benefit-btn{position:relative;float:right;font-size:$font-26px;color:$font-clr-1;line-height: 1.3em;}
 .mypage-wrap.index .my-setting-box .menu-box .grade-box .benefit-btn:after{content:'';display: block;position:absolute;left:0;bottom:0;width:100%;height:1px;background-color:#191919;}
-.mypage-wrap.index .my-setting-box .menu-box .button-box{overflow: hidden;margin-top:10px;}
-.mypage-wrap.index .my-setting-box .menu-box .button-box > a:nth-child(2){margin-top:10px;}
-.mypage-wrap.index .my-setting-box .menu-box .button-box a.white-btn{width:100%;margin-bottom:2px;}
-.mypage-wrap.index .my-setting-box .menu-box .button-box ul{widht:100%;overflow: hidden;}
-.mypage-wrap.index .my-setting-box .menu-box .button-box ul li{float:left;width:calc(50% - 5px);margin-top:10px;}
-.mypage-wrap.index .my-setting-box .menu-box .button-box ul li a.gray-btn{width:100%;}
-.mypage-wrap.index .my-setting-box .menu-box .button-box ul li:nth-child(2n + 1){margin-right:10px;}
+.mypage-wrap{
+  &.index {
+    .my-setting-box{
+      .menu-box {
+        .button-box {
+          display:flex;
+          justify-content:space-between;
+          flex-wrap:wrap;
+          margin-top:10px;
+          overflow: hidden;
+          a.white-btn {
+            width: 49%;
+            margin-bottom:2%;
+          }
+          ul{
+            widht:100%;
+            overflow: hidden;
+            li{
+              float:left;
+              width:calc(50% - 5px);
+              margin-top:10px;
+              a.gray-btn{
+                width:100%;
+              }
+              &:nth-child(2n + 1){
+                margin-right:10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 
 /* 셀러 프로필 편집 팝업 */
