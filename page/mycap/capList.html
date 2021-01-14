@@ -42,10 +42,11 @@
     <section class="container">
       <!-- contents -->
       <article class="contents">
+
         <div class="mycap-wrap">
           <div class="def-box mycap-info-box">
             <div class="bg-box" style="background-color: #191919;">
-<!--              <img src="../../common/images/temp/tempImg_2_3_2.png" alt="">-->
+              <!--img src="../../common/images/temp/tempImg_2_3_2.png" alt="">-->
             </div>
             <div class="inner-box">
               <div class="top-box">
@@ -68,17 +69,29 @@
               </div>
             </div>
           </div>
+
           <div class="def-box mycap-add-box">
             <div class="inner-box">
               <p>나만의 서랍를 만들고<br>원하는 대로 상품들을 담아보세요.</p>
               <button type="button" class="red-btn"><span>상품담기</span></button>
             </div>
           </div>
+
           <div class="my-cap-box">
             <div class="title-box">
               <p class="tit-txt">내서랍 보기</p>
-              <button type="button" class="set-btn" onclick="openPopup('mycap-setting-popup');"><span>서랍 설정</span></button>
+              <button type="button" class="set-btn" onclick="openPopup('ppp-mycap-setting');"><span>서랍 설정</span></button>
             </div>
+
+            <!-- mkp-add : 20210114 -->
+            <div class="cap-list-tab tab-menu-wrap">
+              <ul>
+                <li class="on"><button type="button"><em>상품(5)</em></button></li>
+                <li><button type="button"><em>라이브(2)</em></button></li>
+              </ul>
+            </div>
+            <!-- //mkp-add : 20210114 -->
+
             <ul class="cap-list">
               <li>
                 <a href="#none">
@@ -160,19 +173,20 @@
         <home-footer></home-footer>
       </article>
     </section>
+
     <!--  내 서랍 설정  -->
-    <div class="modal-wrap big mycap-setting-popup" style="display: none;">
+    <div class="modal-wrap big mycap-setting-popup ppp-mycap-setting" style="display: none;">
       <div class="modal-layer">
         <div class="inner-box">
           <strong class="modal_tit">내 서랍 설정</strong>
           <div class="modal_cont">
             <div class="mycap-setting-box">
               <div class="cap-add-box nor">
-                <button type="button" class="red-btn h96"><span>새 서랍 추가</span></button>
+                <button type="button" class="red-btn h96" onclick="openPopup('ppp-mycap-add');"><span>새 서랍 추가</span></button>
               </div>
               <div class="cap-add-box">
-                <button type="button" class="red-btn h96"><span>새 서랍 추가</span></button>
-                <button type="button" class="gray-btn2 h96"><span>순서편집</span></button>
+                <button type="button" class="red-btn h96" onclick="openPopup('ppp-mycap-add');"><span>새 서랍 추가</span></button>
+                <button type="button" class="gray-btn2 h96" onclick="openPopup('ppp-mycap-sort-edit');"><span>순서편집</span></button>
               </div>
               <div class="edit-button-box">
                 <span>서랍의 순서를 편집해 보세요.</span>
@@ -198,7 +212,7 @@
                     </div>
                     <div class="edit-box">
                       <button type="button" class="modify-btn"><span>수정</span></button>
-                      <button type="button" class="delete-btn"><span>삭제</span></button>
+                      <button type="button" class="delete-btn" onclick="openPopup('ppp-mycap-del');"><span>삭제</span></button>
                     </div>
                   </div>
                   <div class="set-box">
@@ -268,15 +282,17 @@
       </div>
       <div class="dim"></div>
     </div>
+    <!--  //내 서랍 설정  -->
+
     <!--  상품이동 , 내 서랍 담기  -->
-    <div class="modal-wrap big mycap-setting-popup" style="display: none;">
+    <div class="modal-wrap big mycap-setting-popup ppp-mycap-sort-edit" style="display:none;">
       <div class="modal-layer">
         <div class="inner-box has-btn">
           <strong class="modal_tit">상품 이동</strong>
           <div class="modal_cont">
             <div class="mycap-setting-box">
               <div class="cap-add-box">
-                <button type="button" class="red-btn h96"><span>새 서랍 추가</span></button>
+                <button type="button" class="red-btn h96" onclick="openPopup('ppp-mycap-add');"><span>새 서랍 추가</span></button>
                 <p>* 서랍 하나당 최대 10개까지 상품을 담을 수 있습니다.</p>
               </div>
               <div class="mycap-list-box">
@@ -330,8 +346,10 @@
       </div>
       <div class="dim"></div>
     </div>
-    <!--  상품리스트 팝업  -->
-    <div class="modal-wrap big prod-list-popup" style="display:block;">
+    <!--  //상품이동 , 내 서랍 담기  -->
+
+    <!--  상품리스트 팝업  : 개발일정상 추후 개발   -->
+    <div class="modal-wrap big prod-list-popup" style="display:none;">
       <div class="modal-layer">
         <div class="inner-box has-btn">
           <strong class="modal_tit"></strong>
@@ -342,16 +360,18 @@
             </div>
 
             <!--
-  :is-page-type="'shop'" //home , shop , mycab ,search 각각화면에 맞는 클래스 적용(하단 여백)
-  :is-count="true" // 검색결과 상품수
-  :is-sort-left="true" //상품정렬 왼쪽에있을경우 true 오른쪽에 있을경우 false
-  :is-sort-right="false"//상품정렬 오른쪽에있을경우 true 왼쪽에 있을경우 false
-  :is-filter="true" //필터 노출유무
-  :is-view-type-one="true" // 리스트 형태 1개
-  :is-view-type-two="true"// 리스트 형태  2개
-  :is-chk-box="true"// 전체 선택 체크박스
- -->
+              :is-page-type="'shop'" //home , shop , mycab ,search 각각화면에 맞는 클래스 적용(하단 여백)
+              :is-product-type="'img-size-s0'" img-size-s0(166 묶음코너1) , img-size-s1(190 묶음코너3) ,img-size-s2(196 랭킹구좌) .img-size-s3(230 기획전)
+              :is-count="true" // 검색결과 상품수
+              :is-sort-left="true" //상품정렬 왼쪽에있을경우 true 오른쪽에 있을경우 false
+              :is-sort-right="false"//상품정렬 오른쪽에있을경우 true 왼쪽에 있을경우 false
+              :is-filter="true" //필터 노출유무
+              :is-view-type-one="true" // 리스트 형태 1개
+              :is-view-type-two="true"// 리스트 형태  2개
+              :is-chk-box="true"// 전체 선택 체크박스
+             -->
             <product-list :is-page-type="'shop'"
+                          :is-product-type="'img-size-s1'"
                           :is-count="true"
                           :is-sort-left="false"
                           :is-sort-right="false"
@@ -389,8 +409,10 @@
       </div>
       <div class="dim"></div>
     </div>
+    <!--  //상품리스트 팝업  -->
+
     <!-- 내 서랍 리스트 삭제,내 서랍 상품이동 팝업 -->
-    <div class="modal-wrap popup-type-message" style="display:none;">
+    <div class="modal-wrap popup-type-message ppp-mycap-del" style="display:none;">
       <div class="modal-layer">
         <div class="inner-box">
           <strong class="modal_tit"></strong>
@@ -411,8 +433,10 @@
       </div>
       <div class="dim"></div>
     </div>
+    <!-- //내 서랍 리스트 삭제,내 서랍 상품이동 팝업 -->
+
     <!-- 내 서랍 추가,서랍명 수정 팝업 -->
-    <div class="modal-wrap mycap-add-popup" style="display:none;">
+    <div class="modal-wrap mycap-add-popup ppp-mycap-add" style="display:none;">
       <div class="modal-layer">
         <div class="inner-box">
           <strong class="modal_tit">새 서랍 추가</strong>
@@ -443,6 +467,7 @@
       </div>
       <div class="dim"></div>
     </div>
+    <!-- //내 서랍 추가,서랍명 수정 팝업 -->
 
     <div class="modal-wrap sys-modal" style="display: none;">
       <div class="modal-layer">
@@ -460,10 +485,13 @@
       </div>
       <div class="dim"></div>
     </div>
+
     <!-- 하단 고정 네비 -->
     <nav class="tab-bar">
       <footer-menu v-if="showFooterMenu"></footer-menu>
     </nav>
+    <!-- //하단 고정 네비 -->
+
   </div>
   <script type="text/javascript" src="../../common/js/swiper.js"></script>
   <script type="text/javascript" src="../../common/js/vuejs/vue-2.6.11.js"></script>
