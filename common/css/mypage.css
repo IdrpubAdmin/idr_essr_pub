@@ -7225,6 +7225,9 @@ label {
   margin-right: 2%;
   margin-left: 2%;
 }
+.mypage-wrap.faq-wrap {
+  padding-top: 20px;
+}
 .mypage-wrap .guide-txt {
   margin-top: 10px;
 }

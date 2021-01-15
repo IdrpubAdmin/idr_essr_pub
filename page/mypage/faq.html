@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,shrink-to-fit=no,viewport-fit=cover">
   <meta name="format-detection" content="telephone=no">
   <link rel="shortcut icon" type="image/x-icon" href="../common/images/common/favicon.ico">
-  <title>마이페이지 - 문의하기</title>
+  <title>마이페이지 - 자주하는 질문</title>
   <link rel="stylesheet" href="../../common/css/mypage.css">
 <!--  <link rel="stylesheet" href="../../common/css/guide.css">-->
   <script type="text/javascript" th:inline="javascript">
@@ -26,7 +26,7 @@
     <!-- header -->
     <header class="header-wrap">
       <!-- 서브타이틀,카테고리타이틀(서브메뉴),서브카테고리(서브메뉴),메인아이콘,뒤로가기버튼,검색버튼,내서랍버튼-->
-      <header-common :sub-title="'문의하기'"
+      <header-common :sub-title="'자주하는 질문'"
                      :category-title="false"
                      :sub-category="false"
                      :is-main-icon="false"
@@ -43,35 +43,11 @@
       <!-- contents -->
       <article class="contents">
         
-        <div class="mypage-wrap qna-wrap">
+        <div class="mypage-wrap faq-wrap">
           <div class="def-box">
             <div class="inner-box">
-              
-              <dl>
-                <dd>
-                  <button type="button" class="underline-link btn-my-qna" onclick="openPopup('my-inquire-list')">내 문의 내역</button>
-                  <div class="button-box">
-                    <button type="button" class="white-btn h80" onclick="openPopup('my-cs-prod')">상품 정보 문의</button>
-                    <button type="button" class="white-btn h80" onclick="openPopup('my-cs-service')">서비스 문의</button>
-                    <button type="button" class="white-btn h80" onclick="openPopup('my-cs-sale')">판매문의</button>
-                  </div>
-                  <p class="guide-txt">*배송 및 판매 관련 C/S 는 (주)이랜드몰에서 담당합니다.</p>
-                </dd>
-              </dl>
   
-              <dl>
-                <dt>
-                  <div class="title-box-type2">
-                    <h3 class="tit-txt"><b>전화문의</b></h3>
-                  </div>
-                </dt>
-                <dd>
-                  <div class="call-area">
-                    <a href="tel:1899-9500"><span class="name">이랜드몰 대표 C/S 센터</span><span class="tel">1899 - 9500</span></a>
-                  </div>
-                  <p class="guide-txt">오전 9시 ~ 오후 6시(주말/공휴일 휴무)</p>
-                </dd>
-              </dl>
+              <mypage-cs-faq></mypage-cs-faq>
               
             </div>
           </div>
@@ -86,22 +62,6 @@
       <footer-menu v-if="showFooterMenu"></footer-menu>
     </nav>
     <!-- //하단 고정 네비 -->
-  
-    <!-- mkp-edit : 20210115 -->
-    <ppp-my-inquire></ppp-my-inquire>
-    <!-- //mkp-edit : 20210115 -->
-    
-    <!-- mkp-edit : 20210115 -->
-    <ppp-cs-prod></ppp-cs-prod>
-    <!-- //mkp-edit : 20210115 -->
-  
-    <!-- mkp-edit : 20210115 -->
-    <ppp-cs-service></ppp-cs-service>
-    <!-- //mkp-edit : 20210115 -->
-  
-    <!-- mkp-edit : 20210115 -->
-    <ppp-cs-sale></ppp-cs-sale>
-    <!-- //mkp-edit : 20210115 -->
     
   </div>
   <script type="text/javascript" src="../../common/js/swiper.js"></script>
@@ -119,14 +79,10 @@
     _PageMixins.push({
       components: {
         'home-footer': semVueLoader('../../common/js/sem-vue/components/home/footer.vue'),
-        'ppp-my-inquire': semVueLoader('../../common/js/sem-vue/components/mypage/ppp-my-inquire.vue'),
-        'ppp-cs-prod': semVueLoader('../../common/js/sem-vue/components/mypage/ppp-cs-prod.vue'),
-        'ppp-cs-service': semVueLoader('../../common/js/sem-vue/components/mypage/ppp-cs-service.vue'),
-        'ppp-cs-sale': semVueLoader('../../common/js/sem-vue/components/mypage/ppp-cs-sale.vue'),
+        'mypage-cs-faq': semVueLoader('../../common/js/sem-vue/components/mypage/mypage-cs-faq.vue'),
       },
       data() {
         return {
-          classValue : true,
         }
       }
     });
