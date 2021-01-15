@@ -2379,6 +2379,10 @@ label {
   color: #f30000;
 }
 
+.text-box.type-nor .input-error.blue {
+  color: #2989f8;
+}
+
 /* tab-menu */
 .tab-menu-wrap ul {
   position: relative;
