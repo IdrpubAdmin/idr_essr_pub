@@ -22,6 +22,12 @@
   </script>
 </head>
 <body>
+  <script type="text/javascript" src="../../common/js/swiper.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-2.6.11.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-awesome-swiper.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/vue-lazyload.js"></script>
+  <script type="text/javascript" src="../../common/js/vuejs/httpVueLoader.js"></script>
+  <script type="text/javascript" src="../../common/js/sem-vue/plugins/sem-plugin.js"></script>
   <div id="app" class="wrapper">
     <!-- header -->
     <header class="header-wrap">
@@ -104,132 +110,31 @@
               <div class="title-box-type2">
                 <h3 class="tit-txt"><b>자주하는 질문</b></h3>
               </div>
-              <mypage-cs-qna></mypage-cs-qna>
+              <mypage-cs-faq></mypage-cs-faq>
             </div>
           </div>
         </div>
         <home-footer></home-footer>
       </article>
     </section>
-    <div class="modal-wrap big my-cs-popup my-cs-prod" style="display:none;">
-      <div class="modal-layer">
-        <div class="inner-box has-btn">
-          <strong class="modal_tit">상품 정보 문의</strong>
-          <div class="modal_cont">
-            <div class="cs-prod-box">
-              <div class="cate-select-box">
-                <p>상품 관련 문의가 있으 신가요?</p>
-                <button type="button" data-actionsheet="cs-type-popup" class="sel-btn btn-actionseet"><span>문의 유형을 선택해 주세요.</span></button>
-              </div>
-              <div class="text-box">
-                <div class="ipt-txt-box scr-box">
-                  <textarea maxlength="1000" name="" id="cs-prod" cols="" rows="" onkeypress="textareaFitContent('cs-prod');" placeholder="문의 내용을 입력해 주세요."></textarea>
-                </div>
-                <p class="ipt-count"><span class="crt-len">0</span>/<span class="max-len">20</span></p>
-              </div>
-            </div>
-          </div>
-          <div class="button-box">
-            <!-- 버튼 비활성화 상태 disabled 추가 -->
-            <button type="button" class="modal-blk-btn w100" disabled><span>문의 하기</span></button>
-          </div>
-          <button type="button" class="icon-header-close">팝업닫기</button>
-        </div>
-      </div>
-      <div class="dim"></div>
-    </div>
-    <div class="modal-wrap big my-cs-popup my-cs-service" style="display:none;">
-      <div class="modal-layer">
-        <div class="inner-box has-btn">
-          <strong class="modal_tit">서비스 문의</strong>
-          <div class="modal_cont">
-            <div class="cs-prod-box">
-              <div class="cate-select-box">
-                <p>서비스 관련 문의가 있으 신가요?</p>
-              </div>
-              <div class="text-box">
-                <div class="ipt-txt-box">
-                  <textarea maxlength="1000" name="" id="" cols="" rows="" placeholder="문의 내용을 입력해 주세요."></textarea>
-                </div>
-                <p class="ipt-count"><span class="crt-len">0</span>/<span class="max-len">20</span></p>
-              </div>
-            </div>
-          </div>
-          <div class="button-box">
-            <!-- 버튼 비활성화 상태 disabled 추가 -->
-            <button type="button" class="modal-blk-btn w100" disabled><span>문의 하기</span></button>
-          </div>
-          <button type="button" class="icon-header-close">팝업닫기</button>
-        </div>
-      </div>
-      <div class="dim"></div>
-    </div>
-    <div class="modal-wrap big my-cs-popup my-cs-sale" style="display:none;">
-      <div class="modal-layer">
-        <div class="inner-box">
-          <strong class="modal_tit">판매 관련 문의</strong>
-          <div class="modal_cont">
-            <img src="http://placehold.it/640x300" />
-            <div class="button-box">
-              <a href="#none" class="modal-blk-btn w100"><span>이랜드몰 고객센터 가기</span></a>
-            </div>
-          </div>
-          <button type="button" class="icon-header-close">팝업닫기</button>
-        </div>
-      </div>
-      <div class="dim"></div>
-    </div>
-    <div class="fixed-action-sheet select-layer cs-type-popup">
-      <div class="action-sheet-bx">
-        <div class="action-sheet-scr">
-          <ul class="select-list">
-            <li>
-              <label for="rd1-1" class="radio-box">
-                <input type="radio" id="rd1-1" name="rd" checked="">
-                <span class="ico"></span>
-                <span class="form-txt">상품 재고</span>
-              </label>
-            </li>
-            <li>
-              <label for="rd1-2" class="radio-box">
-                <input type="radio" id="rd1-2" name="rd" checked="">
-                <span class="ico"></span>
-                <span class="form-txt">가격 관련</span>
-              </label>
-            </li>
-            <li>
-              <label for="rd1-3" class="radio-box">
-                <input type="radio" id="rd1-3" name="rd" checked="">
-                <span class="ico"></span>
-                <span class="form-txt">상품 출시</span>
-              </label>
-            </li>
-            <li>
-              <label for="rd1-4" class="radio-box">
-                <input type="radio" id="rd1-4" name="rd" checked="">
-                <span class="ico"></span>
-                <span class="form-txt">기타</span>
-              </label>
-            </li>
-          </ul>
-        </div>
-        <div class="button-box">
-          <button type="button" class="modal-blk-btn w100 close-btn"><span>닫기</span></button>
-        </div>
-      </div>
-      <div class="dim"></div>
-    </div>
+  
+    <!-- mkp-edit : 20210115 -->
+    <ppp-cs-prod></ppp-cs-prod>
+    <!-- //mkp-edit : 20210115 -->
+  
+    <!-- mkp-edit : 20210115 -->
+    <ppp-cs-service></ppp-cs-service>
+    <!-- //mkp-edit : 20210115 -->
+  
+    <!-- mkp-edit : 20210115 -->
+    <ppp-cs-sale></ppp-cs-sale>
+    <!-- //mkp-edit : 20210115 -->
+    
     <!-- 하단 고정 네비 -->
     <nav class="tab-bar">
       <footer-menu v-if="showFooterMenu"></footer-menu>
     </nav>
   </div>
-  <script type="text/javascript" src="../../common/js/swiper.js"></script>
-  <script type="text/javascript" src="../../common/js/vuejs/vue-2.6.11.js"></script>
-  <script type="text/javascript" src="../../common/js/vuejs/vue-awesome-swiper.js"></script>
-  <script type="text/javascript" src="../../common/js/vuejs/vue-lazyload.js"></script>
-  <script type="text/javascript" src="../../common/js/vuejs/httpVueLoader.js"></script>
-  <script type="text/javascript" src="../../common/js/sem-vue/plugins/sem-plugin.js"></script>
   <script type="text/javascript" src="../../common/js/style.js"></script>
 
   <script>
@@ -238,10 +143,12 @@
   <script type="text/javascript" th:inline="javascript">
     _PageMixins.push({
       components: {
-        'mypage-cs-qna': semVueLoader('../../common/js/sem-vue/components/mypage/mypage-cs-qna.vue'),
-
+        'mypage-cs-faq': semVueLoader('../../common/js/sem-vue/components/mypage/mypage-cs-faq.vue'),
         'home-branch-nav': semVueLoader('../../common/js/sem-vue/components/home/home-branch-nav.vue'),
         'home-footer': semVueLoader('../../common/js/sem-vue/components/home/footer.vue'),
+        'ppp-cs-prod': semVueLoader('../../common/js/sem-vue/components/mypage/ppp-cs-prod.vue'),
+        'ppp-cs-service': semVueLoader('../../common/js/sem-vue/components/mypage/ppp-cs-service.vue'),
+        'ppp-cs-sale': semVueLoader('../../common/js/sem-vue/components/mypage/ppp-cs-sale.vue'),
       },
       data() {
         return {

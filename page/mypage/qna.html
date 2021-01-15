@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,shrink-to-fit=no,viewport-fit=cover">
   <meta name="format-detection" content="telephone=no">
   <link rel="shortcut icon" type="image/x-icon" href="../common/images/common/favicon.ico">
-  <title>마이페이지 - 설정</title>
+  <title>마이페이지 - 문의하기</title>
   <link rel="stylesheet" href="../../common/css/mypage.css">
 <!--  <link rel="stylesheet" href="../../common/css/guide.css">-->
   <script type="text/javascript" th:inline="javascript">
@@ -26,7 +26,7 @@
     <!-- header -->
     <header class="header-wrap">
       <!-- 서브타이틀,카테고리타이틀(서브메뉴),서브카테고리(서브메뉴),메인아이콘,뒤로가기버튼,검색버튼,내서랍버튼-->
-      <header-common :sub-title="'설정'"
+      <header-common :sub-title="'문의하기'"
                      :category-title="false"
                      :sub-category="false"
                      :is-main-icon="false"
@@ -42,59 +42,67 @@
     <section class="container">
       <!-- contents -->
       <article class="contents">
-        <div class="mypage-wrap my-edit">
-          <div class="edit-box">
-            <p class=""><b>회원정보</b></p>
-            <div>
-              <!-- mkp-edit : 20210114 -->
-              <!--<a href="#none"><span>회원정보 수정</span></a>-->
-              <a href="#none"><span>프로필 설정</span></a>
-              <a href="#none"><span>정산계좌 설정</span></a>
-              <!-- mkp-edit : 20210114 -->
+        
+        <div class="mypage-wrap qna-wrap">
+          <div class="def-box">
+            <div class="inner-box">
+              
+              <dl>
+                <dd>
+                  <button type="button" class="underline-link btn-my-qna" onclick="openPopup('my-inquire-list')">내 문의 내역</button>
+                  <div class="button-box">
+                    <button type="button" class="white-btn h80" onclick="openPopup('my-cs-prod')">상품 정보 문의</button>
+                    <button type="button" class="white-btn h80" onclick="openPopup('my-cs-service')">서비스 문의</button>
+                    <button type="button" class="white-btn h80" onclick="openPopup('my-cs-sale')">판매문의</button>
+                  </div>
+                  <p class="guide-txt">*배송 및 판매 관련 C/S 는 (주)이랜드몰에서 담당합니다.</p>
+                </dd>
+              </dl>
+  
+              <dl>
+                <dt>
+                  <div class="title-box-type2">
+                    <h3 class="tit-txt"><b>전화문의</b></h3>
+                  </div>
+                </dt>
+                <dd>
+                  <div class="call-area">
+                    <a href="tel:1899-9500"><span class="name">이랜드몰 대표 C/S 센터</span><span class="tel">1899 - 9500</span></a>
+                  </div>
+                  <p class="guide-txt">오전 9시 ~ 오후 6시(주말/공휴일 휴무)</p>
+                </dd>
+              </dl>
+              
             </div>
-          </div>
-          <div class="edit-box">
-            <p class=""><b>고객지원</b></p>
-            <div>
-              <a href="notice.html"><span>공지사항</span></a>
-              <!-- mkp-edit : 20210114 -->
-              <!--<a href="#none"><span>고객센터</span></a>-->
-              <a href="#none"><span>자주하는 질문</span></a>
-              <a href="#none"><span>문의하기</span></a>
-              <!-- //mkp-edit : 20210114 -->
-            </div>
-          </div>
-          <div class="edit-box">
-            <p class=""><b>서비스 설명</b></p>
-            <div>
-              <a href="#none"><span>SNS 커머스</span></a>
-              <a href="#none"><span>셀링방식</span></a>
-              <a href="#none"><span>메뉴</span></a>
-              <a href="#none"><span>정산방식</span></a>
-              <a href="#none"><span>정산일</span></a>
-              <a href="#none"><span>C/S</span></a>
-            </div>
-          </div>
-          <div class="edit-box">
-            <p class=""><b>서비스 정책</b></p>
-            <div>
-              <a href="#none"><span>회원가입</span></a>
-              <a href="#none"><span>운영</span></a>
-              <a href="#none"><span>주문 결제 CS</span></a>
-              <a href="#none"><span>정산</span></a>
-            </div>
-          </div>
-          <div class="button-box">
-            <button type="button" class="gray-btn h96"><span>로그아웃</span></button>
           </div>
         </div>
+        
         <home-footer></home-footer>
       </article>
     </section>
+    
     <!-- 하단 고정 네비 -->
     <nav class="tab-bar">
       <footer-menu v-if="showFooterMenu"></footer-menu>
     </nav>
+    <!-- //하단 고정 네비 -->
+  
+    <!-- mkp-edit : 20210115 -->
+    <ppp-my-inquire></ppp-my-inquire>
+    <!-- //mkp-edit : 20210115 -->
+    
+    <!-- mkp-edit : 20210115 -->
+    <ppp-cs-prod></ppp-cs-prod>
+    <!-- //mkp-edit : 20210115 -->
+  
+    <!-- mkp-edit : 20210115 -->
+    <ppp-cs-service></ppp-cs-service>
+    <!-- //mkp-edit : 20210115 -->
+  
+    <!-- mkp-edit : 20210115 -->
+    <ppp-cs-sale></ppp-cs-sale>
+    <!-- //mkp-edit : 20210115 -->
+    
   </div>
   <script type="text/javascript" src="../../common/js/swiper.js"></script>
   <script type="text/javascript" src="../../common/js/vuejs/vue-2.6.11.js"></script>
@@ -110,10 +118,12 @@
   <script type="text/javascript" th:inline="javascript">
     _PageMixins.push({
       components: {
-        'mypage-cs-qna': semVueLoader('../../common/js/sem-vue/components/mypage/mypage-cs-qna.vue'),
-
         'home-branch-nav': semVueLoader('../../common/js/sem-vue/components/home/home-branch-nav.vue'),
         'home-footer': semVueLoader('../../common/js/sem-vue/components/home/footer.vue'),
+        'ppp-my-inquire': semVueLoader('../../common/js/sem-vue/components/mypage/ppp-my-inquire.vue'),
+        'ppp-cs-prod': semVueLoader('../../common/js/sem-vue/components/mypage/ppp-cs-prod.vue'),
+        'ppp-cs-service': semVueLoader('../../common/js/sem-vue/components/mypage/ppp-cs-service.vue'),
+        'ppp-cs-sale': semVueLoader('../../common/js/sem-vue/components/mypage/ppp-cs-sale.vue'),
       },
       data() {
         return {

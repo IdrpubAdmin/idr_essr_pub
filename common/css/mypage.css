@@ -1168,6 +1168,11 @@ label {
   font-size: 1.417em;
 }
 
+.modal-gray-btn.btn-rnd,
+.modal-blk-btn.btn-rnd {
+  border-radius: 5px;
+}
+
 /* my page btns */
 .white-btn {
   display: inline-block;
@@ -1251,9 +1256,18 @@ label {
   line-height: 2.8em;
 }
 
+.underline-link {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
 /* btns e =================================================== */
-.wrapper .container .contents {
-  padding-bottom: 100px;
+.gray-box {
+  background-color: #f5f5f5;
+  border-radius: 5px;
 }
 
 .conner-box {
@@ -5891,6 +5905,8 @@ label {
   height: 28px;
   background: url("../images/icon/my_setting.png") no-repeat;
   background-size: 100%;
+  font-size: 0;
+  text-indent: -9999px;
 }
 
 .mypage-wrap.index .my-setting-box .profile-box .util-box .alm-btn {
@@ -5999,7 +6015,7 @@ label {
   margin-bottom: 2%;
 }
 .mypage-wrap.index .my-setting-box .menu-box .button-box ul {
-  widht: 100%;
+  width: 100%;
   overflow: hidden;
 }
 .mypage-wrap.index .my-setting-box .menu-box .button-box ul li {
@@ -6232,7 +6248,7 @@ label {
   margin-top: 10px;
 }
 
-.mypage-wrap.cs-center .call-area {
+.call-area {
   display: flex;
   width: 100%;
   overflow: hidden;
@@ -6240,43 +6256,40 @@ label {
   justify-content: space-between;
   flex-wrap: nowrap;
 }
-
-.mypage-wrap.cs-center .call-area a {
+.call-area a {
   display: inline-block;
   flex-grow: 1;
   border-radius: 4px;
   background-color: #f5f5f5;
   padding: 15px 0;
 }
-
-.mypage-wrap.cs-center .call-area a:nth-child(2) {
+.call-area a:nth-child(2) {
   margin: 0 10px;
 }
-
-.mypage-wrap.cs-center .call-area a span {
+.call-area a span {
   display: block;
   text-align: center;
   color: #191919;
   letter-spacing: -0.05em;
   line-height: 1.4em;
 }
-
-.mypage-wrap.cs-center .call-area a span.name {
-  font-size: 1.25em;
+.call-area a span.name {
+  font-size: 1.3rem;
   margin-bottom: 2px;
 }
-
-.mypage-wrap.cs-center .qna-box {
-  border-top: 2px solid #191919;
+.call-area a span.tel {
+  font-size: 1.5rem;
 }
 
-.mypage-wrap.cs-center .qna-box dl {
+.faq-box {
+  border-top: 2px solid #191919;
+}
+.faq-box dl {
   text-align: left;
   border-bottom: 1px solid #707070;
   margin-bottom: 0;
 }
-
-.mypage-wrap.cs-center .qna-box dl em {
+.faq-box dl em {
   float: left;
   font-size: 1.583em;
   font-weight: bold;
@@ -6284,17 +6297,14 @@ label {
   padding: 20px 0 20px 5px;
   box-sizing: border-box;
 }
-
-.mypage-wrap.cs-center .qna-box dl dt {
+.faq-box dl dt {
   overflow: hidden;
 }
-
-.mypage-wrap.cs-center .qna-box dl dt em {
+.faq-box dl dt em {
   display: inline-block;
   color: #191919;
 }
-
-.mypage-wrap.cs-center .qna-box dl dt button {
+.faq-box dl dt button {
   position: relative;
   float: left;
   width: calc(100% - 30px);
@@ -6305,8 +6315,7 @@ label {
   padding: 20px 30px 20px 0;
   box-sizing: border-box;
 }
-
-.mypage-wrap.cs-center .qna-box dl dt button:after {
+.faq-box dl dt button:after {
   content: '';
   display: block;
   position: absolute;
@@ -6317,22 +6326,12 @@ label {
   background: url("../images/icon/arr_down_20x10_191919.png") no-repeat left center;
   background-size: 100%;
 }
-
-.mypage-wrap.cs-center .qna-box dl.on dt button:after {
-  transform: rotate(180deg);
-}
-
-.mypage-wrap.cs-center .qna-box dl dd {
+.faq-box dl dd {
   display: none;
   overflow: hidden;
   border-top: 1px solid #f5f5f5;
 }
-
-.mypage-wrap.cs-center .qna-box dl.on dd {
-  display: block;
-}
-
-.mypage-wrap.cs-center .qna-box dl dd p {
+.faq-box dl dd p {
   float: left;
   width: calc(100% - 30px);
   font-size: 1.333em;
@@ -6341,14 +6340,102 @@ label {
   padding: 20px 30px 20px 0;
   box-sizing: border-box;
 }
-
-.mypage-wrap.cs-center .qna-box dl dd em {
+.faq-box dl dd em {
   color: #b9b9b9;
 }
-
-.mypage-wrap.cs-center .qna-box .white-btn {
+.faq-box dl.on dt button:after {
+  transform: rotate(180deg);
+}
+.faq-box dl.on dd {
+  display: block;
+}
+.faq-box .white-btn {
   width: 100%;
   margin-top: 15px;
+}
+
+.qna-box {
+  border-top: 2px solid #191919;
+}
+.qna-box dl {
+  text-align: left;
+  border-bottom: 1px solid #707070;
+  margin-bottom: 0;
+}
+.qna-box dl dt {
+  overflow: hidden;
+}
+.qna-box dl dt button {
+  position: relative;
+  float: left;
+  width: 100%;
+  color: #000;
+  letter-spacing: -0.05em;
+  text-align: left;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.qna-box dl dt button:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 3px;
+  top: 0;
+  width: 12px;
+  height: 100%;
+  background: url("../images/icon/arr_down_20x10_191919.png") no-repeat left center;
+  background-size: 100%;
+}
+.qna-box dl dt button .qna-cate {
+  font-size: 1.3rem;
+}
+.qna-box dl dt button .qna-cate span {
+  padding-left: 20px;
+  color: #e60012;
+}
+.qna-box dl dt button .qna-tit {
+  font-size: 1.4rem;
+}
+.qna-box dl dt button .qna-date {
+  padding-top: 4px;
+  font-size: 1.3rem;
+  color: #767676;
+}
+.qna-box dl dd {
+  display: none;
+  overflow: hidden;
+  border-top: 1px solid #f5f5f5;
+}
+.qna-box dl dd em {
+  float: left;
+  padding: 22px 0 0 25px;
+  width: 50px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #b9b9b9;
+  box-sizing: border-box;
+}
+.qna-box dl dd p {
+  float: left;
+  width: calc(100% - 50px);
+  font-size: 1.333em;
+  color: #767676;
+  letter-spacing: -0.05em;
+  padding: 15px 10px 15px 0;
+  box-sizing: border-box;
+}
+.qna-box dl dd .qna-a em, .qna-box dl dd .qna-a p {
+  color: #000;
+}
+.qna-box dl.on dt button:after {
+  transform: rotate(180deg);
+}
+.qna-box dl.on dd {
+  display: block;
+}
+.qna-box .white-btn {
+  width: 100%;
+  margin-top: 30px;
 }
 
 /* 공지사항 */
@@ -6457,21 +6544,18 @@ label {
 }
 
 /* 고객센터 상품 정보 문의 팝업 */
-.my-cs-popup .modal-layer .inner-box .modal_cont .cs-prod-box {
+.my-cs-popup .cs-prod-box {
   height: 100%;
 }
-
-.my-cs-popup .modal-layer .inner-box .modal_cont .cs-prod-box .cate-select-box {
+.my-cs-popup .cs-prod-box .cate-select-box {
   margin-bottom: 10px;
 }
-
-.my-cs-popup .modal-layer .inner-box .modal_cont .cs-prod-box .cate-select-box p {
+.my-cs-popup .cs-prod-box .cate-select-box p {
   font-size: 1.583em;
   color: #191919;
   letter-spacing: -0.05em;
 }
-
-.my-cs-popup .modal-layer .inner-box .modal_cont .cs-prod-box .cate-select-box .sel-btn {
+.my-cs-popup .cs-prod-box .cate-select-box .sel-btn {
   position: relative;
   height: 40px;
   width: 100%;
@@ -6484,31 +6568,19 @@ label {
   background-size: 11px 7px;
   box-sizing: border-box;
 }
-
-.my-cs-popup .modal-layer .inner-box .modal_cont .cs-prod-box .cate-select-box .sel-btn span {
+.my-cs-popup .cs-prod-box .cate-select-box .sel-btn span {
   font-size: 1.25em;
   color: #191919;
   letter-spacing: -0.02em;
 }
-
-.my-cs-popup .modal-layer .inner-box .modal_cont .cs-prod-box .text-box {
+.my-cs-popup .cs-prod-box .text-box {
   height: calc(100% - 90px);
 }
-
-.my-cs-popup.my-cs-sale .modal-layer .inner-box .modal_cont .cs-prod-box .text-box {
-  height: calc(100% - 40px);
-}
-
-.my-cs-popup.my-cs-service .modal-layer .inner-box .modal_cont .cs-prod-box .text-box {
-  height: calc(100% - 40px);
-}
-
-.my-cs-popup .modal-layer .inner-box .modal_cont .cs-prod-box .text-box .ipt-txt-box {
+.my-cs-popup .cs-prod-box .text-box .ipt-txt-box {
   height: calc(100% - 30px);
   overflow-y: scroll;
 }
-
-.my-cs-popup .modal-layer .inner-box .modal_cont .cs-prod-box .text-box .ipt-txt-box textarea {
+.my-cs-popup .cs-prod-box .text-box .ipt-txt-box textarea {
   height: 100%;
   font-size: 1.25em;
   color: #191919;
@@ -6518,17 +6590,21 @@ label {
   padding: 15px;
   box-sizing: border-box;
 }
-
-.my-cs-popup .modal-layer .inner-box .modal_cont .cs-prod-box .text-box .ipt-count {
+.my-cs-popup .cs-prod-box .text-box .ipt-txt-box .ipt-count {
   font-size: 1.167em;
   color: #191919;
   text-align: right;
   font-family: 'Roboto';
   margin-top: 10px;
 }
-
-.my-cs-popup.my-cs-sale .modal-layer .inner-box .modal_cont .button-box {
+.my-cs-popup.my-cs-sale .text-box {
+  height: calc(100% - 40px);
+}
+.my-cs-popup.my-cs-sale .button-box {
   margin-top: 40px;
+}
+.my-cs-popup.my-cs-service .text-box {
+  height: calc(100% - 40px);
 }
 
 /* 판매현황 */
@@ -7117,6 +7193,51 @@ label {
 
 .mypage-wrap.ex-settlement .order-list-box .button-box button {
   width: 100%;
+}
+
+.mypage-wrap {
+  padding-bottom: 20px;
+  /* 문의하기 */
+}
+.mypage-wrap.qna-wrap {
+  padding-bottom: 80px;
+}
+.mypage-wrap.qna-wrap dl {
+  margin-top: 10px;
+}
+.mypage-wrap.qna-wrap .btn-my-qna {
+  float: right;
+  margin-top: 20px;
+}
+.mypage-wrap.qna-wrap .button-box {
+  display: flex;
+  padding-top: 30px;
+  width: 100%;
+}
+.mypage-wrap.qna-wrap .button-box .white-btn {
+  width: 33.33%;
+}
+.mypage-wrap.qna-wrap .button-box .white-btn:nth-child(2) {
+  margin-right: 2%;
+  margin-left: 2%;
+}
+.mypage-wrap .guide-txt {
+  margin-top: 10px;
+}
+
+.my-inquire-popup .gray-box {
+  margin-bottom: 40px;
+  padding: 30px 10px 20px;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.my-inquire-popup .button-box {
+  display: flex;
+  margin-top: 50px;
+}
+.my-inquire-popup .button-box button {
+  margin-right: 4px;
+  margin-left: 4px;
 }
 
 /*# sourceMappingURL=mypage.css.map */

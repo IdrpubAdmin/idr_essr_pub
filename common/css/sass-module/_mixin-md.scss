@@ -102,6 +102,10 @@
   margin-right:-$dflt-pd1;
   margin-left:-$dflt-pd1;
 }
+@mixin textHide(){
+  font-size:0;
+  text-indent:-9999px;
+}
 @mixin s-vh($property, $value) {
   #{$property}:calc((var(--vh, 1vh) * 100) + #{$value});
 }

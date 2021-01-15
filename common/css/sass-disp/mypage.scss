@@ -23,7 +23,14 @@
 .mypage-wrap.index .my-setting-box .profile-box .img-box img{position:absolute;top:0;left:50%;transform: translateX(-50%);height:100%;width:auto;}
 .mypage-wrap.index .my-setting-box .profile-box .util-box{position:absolute;top:0;left:0;width:100%;padding:15px 20px 0 16px;overflow: hidden;box-sizing: border-box;}
 .mypage-wrap.index .my-setting-box .profile-box .util-box button{}
-.mypage-wrap.index .my-setting-box .profile-box .util-box .set-btn{float:left;width:28px;height:28px;background:url($img-path + "icon/my_setting.png") no-repeat;background-size:100%;}
+.mypage-wrap.index .my-setting-box .profile-box .util-box .set-btn{
+  float:left;
+  width:28px;
+  height:28px;
+  background:url($img-path + "icon/my_setting.png") no-repeat;
+  background-size:100%;
+  @include textHide();
+}
 .mypage-wrap.index .my-setting-box .profile-box .util-box .alm-btn{position:relative;float:left;width:28px;height:28px;margin-left: 11px;background:url($img-path + "icon/my_alarm.png") no-repeat;background-size:100%;}
 .mypage-wrap.index .my-setting-box .profile-box .util-box .alm-btn.on:after{content:'';display:block;position:absolute;right:0;top:0;width:4px;height:4px;background-color:#F30000;border-radius:50%;overflow: hidden;}
 .mypage-wrap.index .my-setting-box .profile-box .util-box .edit-btn{position:relative;float:right;font-size:$font-26px;color:#fff;line-height: 2em;}
@@ -51,7 +58,7 @@
             margin-bottom:2%;
           }
           ul{
-            widht:100%;
+            width:100%;
             overflow: hidden;
             li{
               float:left;
@@ -70,7 +77,6 @@
     }
   }
 }
-
 
 /* 셀러 프로필 편집 팝업 */
 .my-profile-edit .modal-layer .inner-box .modal_cont{padding:0;background-color:$common-clr-1;}
@@ -109,24 +115,213 @@
 .mypage-wrap.cs-center .def-box dl dd .button-box button{display:inline-block;flex-grow: 1;}
 .mypage-wrap.cs-center .def-box dl dd .button-box button:nth-child(2){margin:0 10px;}
 .mypage-wrap.cs-center .def-box dl dd .guide-txt{font-size:$font-26px;color:$font-clr-2;letter-spacing:-0.05em;text-align: left;margin-top:10px;}
-.mypage-wrap.cs-center .call-area{display:flex;width:100%;overflow: hidden;flex-direction: row; justify-content: space-between; flex-wrap: nowrap;}
-.mypage-wrap.cs-center .call-area a{display:inline-block;flex-grow: 1; border-radius: 4px;background-color:$common-clr-1;padding:15px 0;}
-.mypage-wrap.cs-center .call-area a:nth-child(2){margin:0 10px;}
-.mypage-wrap.cs-center .call-area a span{display: block;text-align:center;color:$font-clr-1;letter-spacing: -0.05em;line-height: 1.4em;}
-.mypage-wrap.cs-center .call-area a span.name{font-size:$font-26px;margin-bottom:2px;}
-.mypage-wrap.cs-center .qna-box{border-top:2px solid $main-clr;}
-.mypage-wrap.cs-center .qna-box dl{text-align: left;border-bottom:1px solid #707070;margin-bottom:0;}
-.mypage-wrap.cs-center .qna-box dl em{float:left;font-size:$font-34px;font-weight:bold;width:30px;padding: 20px 0 20px 5px;box-sizing: border-box;}
-.mypage-wrap.cs-center .qna-box dl dt{overflow: hidden;}
-.mypage-wrap.cs-center .qna-box dl dt em{display:inline-block;color:$font-clr-1;}
-.mypage-wrap.cs-center .qna-box dl dt button{position:relative;float:left;width:calc(100% - 30px);font-size:$font-28px;color:$font-clr-1;letter-spacing: -0.05em;text-align: left;padding:20px 30px 20px 0;box-sizing: border-box;}
-.mypage-wrap.cs-center .qna-box dl dt button:after{content:'';display: block;position:absolute;right:3px;top:0;width:12px;height:100%;background:url($img-path + "icon/arr_down_20x10_191919.png") no-repeat left center;background-size:100%;}
-.mypage-wrap.cs-center .qna-box dl.on dt button:after{transform:rotate(180deg);}
-.mypage-wrap.cs-center .qna-box dl dd{display:none;overflow: hidden;border-top:1px solid $common-clr-1;}
-.mypage-wrap.cs-center .qna-box dl.on dd{display:block;}
-.mypage-wrap.cs-center .qna-box dl dd p{float:left;width:calc(100% - 30px);font-size:$font-28px;color:$font-clr-2;letter-spacing: -0.05em;padding:20px 30px 20px 0;box-sizing: border-box;}
-.mypage-wrap.cs-center .qna-box dl dd em{color:$font-clr-3;}
-.mypage-wrap.cs-center .qna-box .white-btn{width: 100%;margin-top:15px;}
+
+.call-area {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  a {
+    display: inline-block;
+    flex-grow: 1;
+    border-radius: 4px;
+    background-color: $common-clr-1;
+    padding: 15px 0;
+    &:nth-child(2) {
+      margin: 0 10px;
+    }
+    span {
+      display: block;
+      text-align: center;
+      color: $font-clr-1;
+      letter-spacing: -0.05em;
+      line-height: 1.4em;
+      &.name {
+        font-size:$font-13r;
+        margin-bottom: 2px;
+      }
+      &.tel {
+        font-size:$font-15r;
+      }
+    }
+  }
+}
+
+.faq-box {
+    border-top: 2px solid $main-clr;
+    dl {
+      text-align: left;
+      border-bottom: 1px solid #707070;
+      margin-bottom: 0;
+      em {
+        float: left;
+        font-size: $font-34px;
+        font-weight: bold;
+        width: 30px;
+        padding: 20px 0 20px 5px;
+        box-sizing: border-box;
+      }
+      dt {
+        overflow: hidden;
+        em {
+          display: inline-block;
+          color: $font-clr-1;
+        }
+        button {
+          position: relative;
+          float: left;
+          width: calc(100% - 30px);
+          font-size: $font-28px;
+          color: $font-clr-1;
+          letter-spacing: -0.05em;
+          text-align: left;
+          padding: 20px 30px 20px 0;
+          box-sizing: border-box;
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 3px;
+            top: 0;
+            width: 12px;
+            height: 100%;
+            background: url($img-path + "icon/arr_down_20x10_191919.png") no-repeat left center;
+            background-size: 100%;
+          }
+
+        }
+      }
+      dd {
+        display: none;
+        overflow: hidden;
+        border-top: 1px solid $common-clr-1;
+        p {
+          float: left;
+          width: calc(100% - 30px);
+          font-size: $font-28px;
+          color: $font-clr-2;
+          letter-spacing: -0.05em;
+          padding: 20px 30px 20px 0;
+          box-sizing: border-box;
+        }
+        em {
+          color: $font-clr-3;
+        }
+      }
+      &.on {
+        dt {
+          button:after {
+            transform: rotate(180deg);
+          }
+
+        }
+        dd {
+          display: block;
+        }
+      }
+    }
+    .white-btn {
+      width: 100%;
+      margin-top: 15px;
+    }
+  }
+
+.qna-box {
+    border-top: 2px solid $main-clr;
+    dl {
+      text-align: left;
+      border-bottom: 1px solid #707070;
+      margin-bottom: 0;
+      
+      dt {
+        overflow: hidden;
+        //em {
+        //  display: inline-block;
+        //  color: $font-clr-1;
+        //}
+        button {
+          position:relative;
+          float:left;
+          width:100%;
+          color:$font-clr-0;
+          letter-spacing: -0.05em;
+          text-align: left;
+          padding:15px;
+          box-sizing: border-box;
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 3px;
+            top: 0;
+            width: 12px;
+            height: 100%;
+            background: url($img-path + "icon/arr_down_20x10_191919.png") no-repeat left center;
+            background-size: 100%;
+          }
+          .qna-cate {
+            font-size:$font-13r;
+            span {
+              padding-left:20px;
+              color:#e60012;
+            }
+          }
+          .qna-tit {
+            font-size:$font-14r;
+          }
+          .qna-date {
+            padding-top:4px;
+            font-size:$font-13r;
+            color: $font-clr-2;
+          }
+        }
+      }
+      dd {
+        display: none;
+        overflow: hidden;
+        border-top: 1px solid $common-clr-1;
+        em {
+          float:left;
+          padding:22px 0 0 25px;
+          width:50px;
+          font-size:$font-17r;
+          font-weight:bold;
+          color: $font-clr-3;
+          box-sizing:border-box;
+        }
+        p {
+          float:left;
+          width:calc(100% - 50px);
+          font-size: $font-28px;
+          color: $font-clr-2;
+          letter-spacing: -0.05em;
+          padding:15px 10px 15px 0;
+          box-sizing: border-box;
+        }
+        .qna-a {
+          em,p {
+            color: $font-clr-0;
+          }
+        }
+      }
+      &.on {
+        dt {
+          button:after {
+            transform: rotate(180deg);
+          }
+        }
+        dd {
+          display: block;
+        }
+      }
+    }
+    .white-btn {
+      width: 100%;
+      margin-top:30px;
+    }
+  }
 
 /* 공지사항 */
 .mypage-wrap.notice{}
@@ -150,19 +345,74 @@
 .mypage-wrap.my-edit .button-box button{width: 100%;background-color:#ddd;color:#fff;}
 
 /* 고객센터 상품 정보 문의 팝업 */
-.my-cs-popup .modal-layer .inner-box .modal_cont{}
-.my-cs-popup .modal-layer .inner-box .modal_cont .cs-prod-box{height:100%;}
-.my-cs-popup .modal-layer .inner-box .modal_cont .cs-prod-box .cate-select-box{margin-bottom:10px;}
-.my-cs-popup .modal-layer .inner-box .modal_cont .cs-prod-box .cate-select-box p{font-size:$font-34px;color:$font-clr-1;letter-spacing:-0.05em;}
-.my-cs-popup .modal-layer .inner-box .modal_cont .cs-prod-box .cate-select-box .sel-btn{position:relative;height:40px;width:100%;font-size:12px;text-align:left;border:1px solid #DDD;padding-left:15px;margin-top:15px;background:url($img-path + "icon/select_arrow.png") no-repeat calc(100% - 15px) center;background-size:11px 7px;box-sizing: border-box;}
-.my-cs-popup .modal-layer .inner-box .modal_cont .cs-prod-box .cate-select-box .sel-btn span{font-size:$font-26px;color:$font-clr-1;letter-spacing:-0.02em;}
-.my-cs-popup .modal-layer .inner-box .modal_cont .cs-prod-box .text-box{height: calc(100% - 90px);}
-.my-cs-popup.my-cs-sale .modal-layer .inner-box .modal_cont .cs-prod-box .text-box{height: calc(100% - 40px);}
-.my-cs-popup.my-cs-service .modal-layer .inner-box .modal_cont .cs-prod-box .text-box{height: calc(100% - 40px);}
-.my-cs-popup .modal-layer .inner-box .modal_cont .cs-prod-box .text-box .ipt-txt-box{height:calc(100% - 30px);overflow-y:scroll;}
-.my-cs-popup .modal-layer .inner-box .modal_cont .cs-prod-box .text-box .ipt-txt-box textarea{height:100%;font-size:$font-26px;color:$font-clr-1;letter-spacing:-0.05em;background-color:$common-clr-1;border:none;padding:15px;box-sizing: border-box;}
-.my-cs-popup .modal-layer .inner-box .modal_cont .cs-prod-box .text-box .ipt-count{font-size:$font-24px;color:$font-clr-1;text-align: right;font-family:'Roboto';margin-top:10px;}
-.my-cs-popup.my-cs-sale .modal-layer .inner-box .modal_cont .button-box{margin-top:40px;}
+.my-cs-popup {
+  .cs-prod-box {
+    height: 100%;
+    .cate-select-box {
+      margin-bottom: 10px;
+      p {
+        font-size: $font-34px;
+        color: $font-clr-1;
+        letter-spacing: -0.05em;
+      }
+      .sel-btn {
+        position: relative;
+        height: 40px;
+        width: 100%;
+        font-size: 12px;
+        text-align: left;
+        border: 1px solid #DDD;
+        padding-left: 15px;
+        margin-top: 15px;
+        background: url($img-path + "icon/select_arrow.png") no-repeat calc(100% - 15px) center;
+        background-size: 11px 7px;
+        box-sizing: border-box;
+        span {
+          font-size: $font-26px;
+          color: $font-clr-1;
+          letter-spacing: -0.02em;
+        }
+      }
+    }
+    .text-box {
+      height: calc(100% - 90px);
+      .ipt-txt-box {
+        height: calc(100% - 30px);
+        overflow-y: scroll;
+        textarea {
+          height: 100%;
+          font-size: $font-26px;
+          color: $font-clr-1;
+          letter-spacing: -0.05em;
+          background-color: $common-clr-1;
+          border: none;
+          padding: 15px;
+          box-sizing: border-box;
+        }
+        .ipt-count {
+          font-size: $font-24px;
+          color: $font-clr-1;
+          text-align: right;
+          font-family: 'Roboto';
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  &.my-cs-sale {
+    .text-box {
+      height: calc(100% - 40px);
+    }
+    .button-box {
+      margin-top: 40px;
+    }
+  }
+  &.my-cs-service {
+    .text-box {
+      height: calc(100% - 40px);
+    }
+  }
+}
 
 /* 판매현황 */
 .mypage-wrap.selling{}
@@ -282,3 +532,50 @@
 .mypage-wrap.ex-settlement .order-list-box ul li button .date{color:$font-clr-2;font-family:'Roboto';}
 .mypage-wrap.ex-settlement .order-list-box .button-box{margin-top:5px;}
 .mypage-wrap.ex-settlement .order-list-box .button-box button{width:100%;}
+
+.mypage-wrap {
+  padding-bottom:20px;
+  /* 문의하기 */
+  &.qna-wrap {
+    padding-bottom:80px;
+    dl {
+      margin-top:10px;
+    }
+    .btn-my-qna {
+      float:right;
+      margin-top:$dflt-pd1;
+    }
+    .button-box {
+      display:flex;
+      padding-top:30px;
+      width:100%;
+      .white-btn {
+        width:33.33%;
+        &:nth-child(2) {
+          margin-right:2%;
+          margin-left:2%;
+        }
+      }
+    }
+  }
+  .guide-txt {
+    margin-top:10px;
+  }
+}
+
+.my-inquire-popup {
+  .gray-box {
+    margin-bottom:40px;
+    padding:30px 10px 20px;
+    font-size:$font-13r;
+    text-align:center;
+  }
+  .button-box {
+    display:flex;
+    margin-top:50px;
+    button {
+      margin-right:4px;
+      margin-left:4px;
+    }
+  }
+}
