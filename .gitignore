@@ -4,3 +4,5 @@
 /.gitlab-ci.yml
 /pub-dev/node_modules/
 /pub-dev/package-lock.json
+/common/css/sass-disp/.sass-cache
+/common/css/sass-disp/**/*.scssc
