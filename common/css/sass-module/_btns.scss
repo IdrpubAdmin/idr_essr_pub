@@ -57,8 +57,11 @@
 .underline-link {
   display:inline-block;
   font-size:$font-13r;
-  font-weight:bold;
+  font-weight:700;
   color:#000;
   border-bottom:1px solid #000;
+  &.thin {
+    font-weight:400;
+  }
 }
 /* btns e =================================================== */

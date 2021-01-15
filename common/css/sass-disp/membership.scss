@@ -34,68 +34,15 @@
 .seller-complete-popup .complete-box .text-box p:nth-child(1){font-size:$font-46px;padding:45px 0 25px;}
 .seller-complete-popup .complete-box .text-box p:nth-child(2){font-size:$font-30px;}
 
-.seller-info-popup{}
-.seller-info-popup .modal_cont{padding:0 0 20px;}
-.seller-info-popup .seller-info-box{}
-.seller-info-popup .seller-info-box .top-box{position:relative;height: 222px;max-height: 400px;text-align:center;overflow: hidden;}
-.seller-info-popup .seller-info-box .top-box .bg-box{position:absolute;width:100%;height:100%;}
-.seller-info-popup .seller-info-box .top-box .bg-box:after{content:'';display:block;position:absolute;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,0.05);}
-.seller-info-popup .seller-info-box .top-box .text-box{padding:25px 0;}
-.seller-info-popup .seller-info-box .top-box .text-box p{font-size:$font-28px;letter-spacing: -0.05em;color:$font-clr-2;}
-.seller-info-popup .seller-info-box .top-box .edit-img-box{display:inline-block;position:relative;width:88px;text-align:center;margin-top:0;}
-.seller-info-popup .seller-info-box .top-box .edit-img-box label .img-box{display:inline-block;position:relative;width:100%;border-radius: 50%;overflow: hidden;}
-.seller-info-popup .seller-info-box .top-box .edit-img-box label .img-box img{position: absolute;width: auto;height: 100%;left: 50%;top: 0;transform: translateX(-50%);}
-.seller-info-popup .seller-info-box .top-box .edit-img-box label .ico{position:absolute;right:0;bottom:0;width:28px;height:28px;background:url($img-path + "icon/my_edit-photo.png") no-repeat;background-size:100%;}
-.seller-info-popup .seller-info-box .top-box .edit-img-box label .img-box:after{content:'';display:block;padding-top:100%;}
-.seller-info-popup .seller-info-box .top-box .edit-img-box input[type="file"]{position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip: rect(0,0,0,0);border: 0;}
-.seller-info-popup .seller-info-box .top-box .edit-bg{position:absolute;right:10px;bottom:10px;}
-.seller-info-popup .seller-info-box .top-box .edit-bg .ico{display:inline-block;width:20px;height:20px;background:url($img-path + "icon/my_edit-photo.png") no-repeat;background-size:100%;}
-.seller-info-popup .seller-info-box .top-box .edit-bg .txt{font-size:$font-24px;color:#fff;letter-spacing: -0.05em;text-shadow: 1px 1px 2px #00000030;margin-left: 2px;vertical-align: super;}
-.seller-info-popup .seller-info-box .top-box .edit-bg input[type="file"]{position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip: rect(0,0,0,0);border: 0;}
-.seller-info-popup .seller-info-box .bottom-box{padding-bottom:30px;}
-.seller-info-popup .seller-info-box .bottom-box dl{padding:20px 20px 0;}
-.seller-info-popup .seller-info-box .bottom-box dl dt span{font-size:$font-28px;color:$font-clr-3;letter-spacing: -0.05em;}
-.seller-info-popup .seller-info-box .bottom-box dl dd{padding:20px 0 0;}
-.seller-info-popup .seller-info-box .bottom-box dl dd .select-wrap{}
-.seller-info-popup .seller-info-box .bottom-box dl dd .select-wrap .tit-txt{font-size: 1.417em;color: #191919;letter-spacing: -0.05em;line-height: 1.3em;text-align: left;margin-bottom: 5px;}
-.seller-info-popup .seller-info-box .bottom-box dl dd .select-wrap .select-btn {position: relative;font-size:$font-26px;color:$font-clr-1;letter-spacing:-0.02em;width:100%;height:40px;border:1px solid #ddd;padding-right: 10px;text-align: left;padding:0 15px;box-sizing: border-box;}
-.seller-info-popup .seller-info-box .bottom-box dl dd .select-wrap .select-btn:after{content: '';position: absolute;right: 15px;top: 0;width: 12px;height: 100%;background: url($img-path + "icon/arr_down_14x22_979797.png") no-repeat left center;background-size: 100%;}
-.seller-info-popup .seller-info-box .bottom-box dl dd .text-box.type-acount .txt-reset-btn{right:55px;}
-.seller-info-popup .seller-info-box .bottom-box dl dd .text-box.type-acount .confirm-btn{position: absolute;right: 0;top: 5px;width:50px;height:30px;font-size:12px;border:1px solid #ddd;}
-.seller-info-popup .seller-info-box .bottom-box dl dd .text-box.type-acount .confirm-btn span{font-size:$font-26px;letter-spacing:-0.05em;color:$font-clr-3;}
-.seller-info-popup .seller-info-box .bottom-box dl dd .text-box.type-acount .confirm-btn.on{border:none;background-color:$point-clr;}
-.seller-info-popup .seller-info-box .bottom-box dl dd .text-box.type-acount .confirm-btn.on span{color:#fff;}
-.seller-info-popup .button-box{display: flex;flex-wrap: nowrap;}
-.seller-info-popup .button-box button{width: 100%;}
-
-.type-regident-num {
-  .input-type-rn {
-    float:left;
+.seller-info-popup {
+  .modal_cont {
+    padding: 0 0 20px;
   }
-  .input-type-rn:nth-child(1) {
-    width:40%;
-    margin-right:2%
-  }
-  .input-type-rn:nth-child(2) {
-    width:58%;
-  }
-  .confirm-btn{
-    position: absolute;
-    right: 0;
-    top: 5px;
-    width:50px;
-    height:30px;
-    font-size:12px;
-    border:1px solid #ddd;
-    span{
-      font-size:$font-26px;
-      letter-spacing:-0.05em;
-      color:$font-clr-3;
-    }
-    &.on{
-      border:none;
-      background-color:$point-clr;
-      span{color:#fff;}
+  .button-box {
+    display: flex;
+    flex-wrap: nowrap;
+    button {
+      width: 100%;
     }
   }
 }

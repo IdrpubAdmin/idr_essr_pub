@@ -582,3 +582,79 @@
     }
   }
 }
+
+.calc-account-wrap {
+  padding-top:20px;
+  padding-bottom:60px;
+  .account-info {
+    position:relative;
+    padding:$dflt-pd1;
+    text-align:center;
+    dl {
+      dt,dd {
+        font-size: $font-14r;
+        color: $font-clr-0;
+        text-align:left;
+        line-height:2rem;
+      }
+    }
+    .red-btn {
+      margin-top:20px;
+      width:60%;
+    }
+    .text-btn {
+      @include posa_tr(15px, $dflt-pd1);
+      font-size: $font-14r;
+      color: $font-clr-1;
+    }
+    &.no-account {
+      padding-top:50px;
+      padding-bottom:50px;
+      background:none;
+      p {
+        font-size: $font-14r;
+        color: $font-clr-0;
+      }
+      .underline-link {
+        padding-top:5px;
+        color:$font-clr-2;
+        border-bottom:1px solid $font-clr-2;
+      }
+    }
+  }
+  .button-box {
+    margin-top:25px;
+    margin-bottom:60px;
+  }
+  .reward-info {
+    padding:25px 25px 20px;
+    dl {
+      display:inline-block;
+      width:100%;
+      dt,dd {
+        font-size: $font-14r;
+        color: #fff;
+        text-align:left;
+        line-height:2rem;
+      }
+      dt {
+        float:left;
+      }
+      dd {
+        float:right;
+      }
+      .will-add-rwd {
+        color:$point-clr;
+      }
+      .will-del-rwd {
+        color:$point-clr-2;
+      }
+    }
+  }
+}
+
+.calc-account-info {
+  .modal_cont {
+    padding:0 0 20px;
+  }
+}
