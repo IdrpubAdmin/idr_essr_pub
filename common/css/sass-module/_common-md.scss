@@ -35,6 +35,8 @@
 .stk-box .stk_new{background-color:$point-clr;font-family:'Roboto';}
 .stk-box .stk_sp{background-color:rgba(0,0,0,0);border:2px solid #fff;box-sizing:border-box;}
 .stk-box .sold_out{width: auto !important;background: #B9B9B9;padding: 0 5px;text-align: center;}
+.stk-box .stk_disp_end{background-color:#959595;font-weight:400;font-size:$font-12r;}
+.stk-box .stk_sell_stop{background-color:#1b1b1b;font-weight:400;font-size:$font-12r;}
 
 .stk-box.prod > span{font-size:$font-18px;min-width: 32px;height: 18px;line-height: 1.85em;margin-left:1px;}
 .stk-box.cnr{top:20px;left:20px;}
@@ -431,6 +433,7 @@
       margin-top: 7px;
     }
     .input-error {
+      clear:both;
       float: left;
       font-size: $font-24px;
       color: $font-clr-1;

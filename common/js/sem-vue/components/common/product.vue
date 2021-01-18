@@ -7,6 +7,10 @@
           <span class="stk_ad" v-if="stkad">AD</span>
           <span class="stk_new" v-if="stknew">NEW</span>
           <span class="sold_out" v-if="soldout">SOLD OUT</span>
+          <!-- mkp-add : 20210118 -->
+          <span class="stk_disp_end" v-if="stkdispend">전시종료</span>
+          <span class="stk_sell_stop" v-if="stksellstop">판매중지</span>
+          <!-- //mkp-add : 20210118 -->
         </div>
       </a>
       <button type="button" class="drawer-btn-0" v-if="options.drawer">내서랍</button>
@@ -16,7 +20,10 @@
         <span class="square"></span>
       </label>
       <button type="button" class="share-btn" v-if="options.shareBtn"><span class="ico">공유하기</span></button>
-      <div class="sold-dim" v-if="soldout"></div>
+      <!-- mkp-edit : 20210118 -->
+      <!--<div class="sold-dim" v-if="soldout"></div>-->
+      <div class="sold-dim" v-if="soldout || stkdispend || stksellstop"></div>
+      <!-- mkp-edit : 20210118 -->
     </div>
     <div class="info-box" :class="{'sold-out' : soldout}">
       <a v-if="link" :href="link">
@@ -90,6 +97,14 @@ module.exports = {
       required: false
     },
     stknew: {
+      type: String,
+      required: false
+    },
+    stkdispend: {
+      type: String,
+      required: false
+    },
+    stksellstop: {
       type: String,
       required: false
     },

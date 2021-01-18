@@ -24,6 +24,8 @@
                     :sell="''"
                     :stkad="''"
                     :stknew="'true'"
+                    :stkdispend="''"
+                    :stksellstop="''"
                     :options="productOption"
                 ></product-box>
               </li>
@@ -42,6 +44,8 @@
                     :sell="''"
                     :stkad="''"
                     :stknew="'true'"
+                    :stkdispend="''"
+                    :stksellstop="''"
                     :options="productOption"
                 ></product-box>
               </li>
@@ -59,7 +63,9 @@
                     :like="''"
                     :sell="''"
                     :stkad="''"
-                    :stknew="'true'"
+                    :stknew="''"
+                    :stkdispend="'true'"
+                    :stksellstop="''"
                     :options="productOption"
                 ></product-box>
               </li>
@@ -77,85 +83,9 @@
                     :like="''"
                     :sell="''"
                     :stkad="''"
-                    :stknew="'true'"
-                    :options="productOption"
-                ></product-box>
-              </li>
-            </ul>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="prod-list prod-2ea list">
-            <ul>
-              <li>
-                <product-box
-                    :link="'#none'"
-                    :img-path="'../../common/images/temp/product_normal.png'"
-                    :chk-box-id="''"
-                    :main-title="'메인타이틀11'"
-                    :sub-title="'서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀'"
-                    :descript="'상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명'"
-                    :percent="'20'"
-                    :price="'43,900'"
-                    :share="''"
-                    :like="''"
-                    :sell="''"
-                    :stkad="''"
-                    :stknew="'true'"
-                    :options="productOption"
-                ></product-box>
-              </li>
-              <li>
-                <product-box
-                    :link="'#none'"
-                    :img-path="'../../common/images/temp/product_normal.png'"
-                    :chk-box-id="''"
-                    :main-title="'메인타이틀11'"
-                    :sub-title="'서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀'"
-                    :descript="'상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명'"
-                    :percent="'20'"
-                    :price="'43,900'"
-                    :share="''"
-                    :like="''"
-                    :sell="''"
-                    :stkad="''"
-                    :stknew="'true'"
-                    :options="productOption"
-                ></product-box>
-              </li>
-              <li>
-                <product-box
-                    :link="'#none'"
-                    :img-path="'../../common/images/temp/product_normal.png'"
-                    :chk-box-id="''"
-                    :main-title="'메인타이틀11'"
-                    :sub-title="'서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀'"
-                    :descript="'상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명'"
-                    :percent="'20'"
-                    :price="'43,900'"
-                    :share="''"
-                    :like="''"
-                    :sell="''"
-                    :stkad="''"
-                    :stknew="'true'"
-                    :options="productOption"
-                ></product-box>
-              </li>
-              <li>
-                <product-box
-                    :link="'#none'"
-                    :img-path="'../../common/images/temp/product_normal.png'"
-                    :chk-box-id="''"
-                    :main-title="'메인타이틀11'"
-                    :sub-title="'서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀'"
-                    :descript="'상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명'"
-                    :percent="'20'"
-                    :price="'43,900'"
-                    :share="''"
-                    :like="''"
-                    :sell="''"
-                    :stkad="''"
-                    :stknew="'true'"
+                    :stknew="''"
+                    :stkdispend="''"
+                    :stksellstop="'true'"
                     :options="productOption"
                 ></product-box>
               </li>
@@ -180,6 +110,28 @@
                     :sell="''"
                     :stkad="''"
                     :stknew="'true'"
+                    :stkdispend="''"
+                    :stksellstop="''"
+                    :options="productOption"
+                ></product-box>
+              </li>
+              <li>
+                <product-box
+                    :link="'#none'"
+                    :img-path="'../../common/images/temp/product_normal.png'"
+                    :chk-box-id="''"
+                    :main-title="'메인타이틀11'"
+                    :sub-title="'서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀'"
+                    :descript="'상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명'"
+                    :percent="'20'"
+                    :price="'43,900'"
+                    :share="''"
+                    :like="''"
+                    :sell="''"
+                    :stkad="''"
+                    :stknew="'true'"
+                    :stkdispend="''"
+                    :stksellstop="''"
                     :options="productOption"
                 ></product-box>
               </li>
@@ -216,24 +168,8 @@
                     :sell="''"
                     :stkad="''"
                     :stknew="'true'"
-                    :options="productOption"
-                ></product-box>
-              </li>
-              <li>
-                <product-box
-                    :link="'#none'"
-                    :img-path="'../../common/images/temp/product_normal.png'"
-                    :chk-box-id="''"
-                    :main-title="'메인타이틀11'"
-                    :sub-title="'서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀'"
-                    :descript="'상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명'"
-                    :percent="'20'"
-                    :price="'43,900'"
-                    :share="''"
-                    :like="''"
-                    :sell="''"
-                    :stkad="''"
-                    :stknew="'true'"
+                    :stkdispend="''"
+                    :stksellstop="''"
                     :options="productOption"
                 ></product-box>
               </li>
@@ -258,6 +194,8 @@
                     :sell="''"
                     :stkad="''"
                     :stknew="'true'"
+                    :stkdispend="''"
+                    :stksellstop="''"
                     :options="productOption"
                 ></product-box>
               </li>
@@ -276,6 +214,8 @@
                     :sell="''"
                     :stkad="''"
                     :stknew="'true'"
+                    :stkdispend="''"
+                    :stksellstop="''"
                     :options="productOption"
                 ></product-box>
               </li>
@@ -294,6 +234,8 @@
                     :sell="''"
                     :stkad="''"
                     :stknew="'true'"
+                    :stkdispend="''"
+                    :stksellstop="''"
                     :options="productOption"
                 ></product-box>
               </li>
@@ -312,6 +254,94 @@
                     :sell="''"
                     :stkad="''"
                     :stknew="'true'"
+                    :stkdispend="''"
+                    :stksellstop="''"
+                    :options="productOption"
+                ></product-box>
+              </li>
+            </ul>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="prod-list prod-2ea list">
+            <ul>
+              <li>
+                <product-box
+                    :link="'#none'"
+                    :img-path="'../../common/images/temp/product_normal.png'"
+                    :chk-box-id="''"
+                    :main-title="'메인타이틀11'"
+                    :sub-title="'서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀'"
+                    :descript="'상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명'"
+                    :percent="'20'"
+                    :price="'43,900'"
+                    :share="''"
+                    :like="''"
+                    :sell="''"
+                    :stkad="''"
+                    :stknew="'true'"
+                    :stkdispend="''"
+                    :stksellstop="''"
+                    :options="productOption"
+                ></product-box>
+              </li>
+              <li>
+                <product-box
+                    :link="'#none'"
+                    :img-path="'../../common/images/temp/product_normal.png'"
+                    :chk-box-id="''"
+                    :main-title="'메인타이틀11'"
+                    :sub-title="'서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀'"
+                    :descript="'상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명'"
+                    :percent="'20'"
+                    :price="'43,900'"
+                    :share="''"
+                    :like="''"
+                    :sell="''"
+                    :stkad="''"
+                    :stknew="'true'"
+                    :stkdispend="''"
+                    :stksellstop="''"
+                    :options="productOption"
+                ></product-box>
+              </li>
+              <li>
+                <product-box
+                    :link="'#none'"
+                    :img-path="'../../common/images/temp/product_normal.png'"
+                    :chk-box-id="''"
+                    :main-title="'메인타이틀11'"
+                    :sub-title="'서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀'"
+                    :descript="'상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명'"
+                    :percent="'20'"
+                    :price="'43,900'"
+                    :share="''"
+                    :like="''"
+                    :sell="''"
+                    :stkad="''"
+                    :stknew="'true'"
+                    :stkdispend="''"
+                    :stksellstop="''"
+                    :options="productOption"
+                ></product-box>
+              </li>
+              <li>
+                <product-box
+                    :link="'#none'"
+                    :img-path="'../../common/images/temp/product_normal.png'"
+                    :chk-box-id="''"
+                    :main-title="'메인타이틀11'"
+                    :sub-title="'서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀서브타이틀'"
+                    :descript="'상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명상품설명'"
+                    :percent="'20'"
+                    :price="'43,900'"
+                    :share="''"
+                    :like="''"
+                    :sell="''"
+                    :stkad="''"
+                    :stknew="'true'"
+                    :stkdispend="''"
+                    :stksellstop="''"
                     :options="productOption"
                 ></product-box>
               </li>

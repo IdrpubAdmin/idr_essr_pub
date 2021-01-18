@@ -1350,6 +1350,18 @@ label {
   text-align: center;
 }
 
+.stk-box .stk_disp_end {
+  background-color: #959595;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.stk-box .stk_sell_stop {
+  background-color: #1b1b1b;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
 .stk-box.prod > span {
   font-size: 0.875em;
   min-width: 32px;
@@ -2363,6 +2375,7 @@ label {
   margin-top: 7px;
 }
 .text-box.type-nor .input-error {
+  clear: both;
   float: left;
   font-size: 1.167em;
   color: #191919;
