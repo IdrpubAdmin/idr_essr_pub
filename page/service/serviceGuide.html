@@ -168,7 +168,6 @@
       },
       data() {
         return {
-          pageTitle : "이용가이드",
         }
       }
     });
@@ -183,7 +182,8 @@
       },
       data() {
         return {
-          showFooterMenu: reqUrl.includes('/home') || reqUrl.includes('/shop') || reqUrl.includes('/drawer') || reqUrl.includes('/mypage')
+          pageTitle : "이용가이드",
+          showFooterMenu: reqUrl.includes('/home') || reqUrl.includes('/shop') || reqUrl.includes('/drawer') || reqUrl.includes('/mypage'),
         };
       },
       mounted:function(){

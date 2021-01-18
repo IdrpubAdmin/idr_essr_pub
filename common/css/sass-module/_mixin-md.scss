@@ -106,6 +106,17 @@
   font-size:0;
   text-indent:-9999px;
 }
+@mixin set-ellipsis($lineNum:1){
+  text-overflow:ellipsis;
+  overflow:hidden;
+  @if $lineNum == 1 {
+    white-space:nowrap;
+  }@else {
+    display:-webkit-box;
+    -webkit-line-clamp:$lineNum;
+    -webkit-box-orient:vertical;
+  }
+}
 @mixin s-vh($property, $value) {
   #{$property}:calc((var(--vh, 1vh) * 100) + #{$value});
 }
@@ -663,23 +674,94 @@
       }
     }
   }
-  .my-cap-box .cap-list{overflow: hidden;}
-  .my-cap-box .cap-list li{position:relative;float:left;width:calc(50% - 2px);margin-top:40px;}
-  .my-cap-box .cap-list li:nth-child(2n + 1){margin-right:4px;}
-  .my-cap-box .cap-list li:nth-child(1){margin-top:0;}
-  .my-cap-box .cap-list li:nth-child(2){margin-top:0;}
-  .my-cap-box .cap-list li a{}
-  .my-cap-box .cap-list li a .img-box{position:relative;width:100%;}
-  .my-cap-box .cap-list li a .img-box img{position:absolute;left:0;top:0;width:100%;height:100%;}
-  .my-cap-box .cap-list li a .img-box:before{content:'';display:block;position:relative;width:100%;padding-top:100%;}
-  .my-cap-box .cap-list li a .img-box:after{content:'';display:block;position:absolute;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,0.4);}
-  .my-cap-box .cap-list li a .cate-tex-box{position:absolute;left:10px;top:10px;}
-  .my-cap-box .cap-list li a .cate-tex-box p{color:#fff;}
-  .my-cap-box .cap-list li a .cate-tex-box .tit{font-size:$font-32px;font-weight: bold;line-height: 1.3em;}
-  .my-cap-box .cap-list li a .cate-tex-box .num{font-size:$font-22px;line-height: 1.5em;}
-  .my-cap-box .cap-list li .kakao-btn{position:absolute;bottom:0px;right:0px;width:37px;height:37px;background:url($img-path + "icon/kakao_share_74x74.png") no-repeat left top;background-size:100%;}
+  .cap-list{
+    overflow: hidden;
+    li {
+      position: relative;
+      float: left;
+      width: calc(50% - 2px);
+      margin-top: 40px;
+      &:nth-child(2n + 1) {
+        margin-right: 4px;
+      }
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-top: 0;
+      }
+      a {
+        .img-box {
+          position: relative;
+          width: 100%;
+          img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+          }
+          &:before {
+            content: '';
+            display: block;
+            position: relative;
+            width: 100%;
+            padding-top: 100%;
+          }
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+          }
+        }
+        .cate-tex-box {
+          position: absolute;
+          left: 10px;
+          top: 10px;
+          width: calc(100% - 20px);
+          p {
+            color: #fff;
+          }
+          .tit {
+            font-size: $font-32px;
+            font-weight: bold;
+            line-height: 1.3em;
+            width: 100%;
+            @include set-ellipsis(3);
+          }
+          .num {
+            font-size: $font-22px;
+            line-height: 1.5em;
+          }
+        }
+      }
+      .kakao-btn {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 37px;
+        height: 37px;
+        background: url($img-path + "icon/kakao_share_74x74.png") no-repeat left top;
+        background-size: 100%;
+      }
+      .share-btn-0 {
+        top:unset;
+        right:5px;
+        bottom:0;
+      }
+      .stk-box {
+        top:unset;
+        bottom:0;
+      }
+    }
+  }
+  
   .my-cap-box .button-box{padding:15px 0;}
   .my-cap-box .button-box button{width:100%;}
+
   /* 내 상품 서랍에 추가하기 */
   .cap-guide-box{text-align:center;margin:20px 0;padding:0 20px;}
   .cap-guide-box .inner-box{border:solid $common-clr-1;border-width:1px 0;padding:43px 0;}
@@ -687,6 +769,7 @@
   .cap-guide-box p{font-size:$font-40px;color:$font-clr-1;letter-spacing:-0.05em;font-weight: bold;margin-top: 17px;line-height: 1.3em;}
   .cap-guide-box a{display:inline-block;position:relative;font-size:$font-22px;letter-spacing:-0.05em;color:$font-clr-3;line-height: 1.4em;margin-top: 10px;}
   .cap-guide-box a:after{content:'';display:inline-block;width: 20px;height: 7px;margin-left: 5px;background:url($img-path + "icon/more_arr_41x14_B9B9B9.png") no-repeat left top;background-size:100%;}
+  
   /* 서랍기능을 사용해보세요. */
   .seller-sign-box{padding:20px;}
   .seller-sign-box .inner-box{background-color:$common-clr-1;text-align:center;width:100%;padding:30px 25px;box-sizing:border-box;}

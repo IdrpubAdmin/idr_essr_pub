@@ -55,6 +55,16 @@
 .red-btn{display:inline-block;height:38px;font-size:$font-26px;color:$font-clr-4;text-align:center;line-height: 2.8em;background-color:$point-clr;border-radius:5px;}
 .red-btn.h96{height:48px;font-size:$font-34px;line-height: 2.8em;}
 
+.share-btn-0{
+  position:absolute;
+  top:0;
+  right:0;
+  width:36px;
+  height:36px;
+  background:url($img-path + "icon/ico_menu_more.png") no-repeat center;
+  background-size:60%;
+}
+
 .underline-link {
   display:inline-block;
   font-size:$font-13r;
