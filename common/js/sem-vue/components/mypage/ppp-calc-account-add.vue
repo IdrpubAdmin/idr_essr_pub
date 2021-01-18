@@ -30,7 +30,7 @@
                     <div class="ipt-txt-box">
                       <div>
                         <input type="text" placeholder="앞 6자리" maxlength="6" class="input-type-rn">
-                        <input type="text" placeholder="뒤 7자리" maxlength="7" class="input-type-rn">
+                        <input type="password" placeholder="뒤 7자리" maxlength="7" class="input-type-rn">
                         <button type="button" class="confirm-btn" style=""><span>인증</span></button>
                         <p class="input-error red">이름과 주민번호가 일치하지 않습니다. 다시 확인 후 입력해주세요.</p>
                         <p class="input-error blue">인증이 완료되었습니다.</p>

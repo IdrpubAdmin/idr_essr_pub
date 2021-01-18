@@ -385,18 +385,77 @@
 .select-box select:disabled{color:$font-clr-3;background-color:$common-clr-1;}
 
 /* text-box */
-.text-box{}
-.text-box.type-nor{width:100%;box-sizing: border-box;overflow: hidden;}
-.text-box.type-nor .ipt-txt-box{position:relative;width:100%;margin-bottom:5px;}
-.text-box.type-nor .tit-txt{font-size:$font-30px;color:$font-clr-1;letter-spacing: -0.05em;line-height: 1.3em;text-align:left;margin-bottom: 5px;}
-.tit-txt .red{color:$point-clr !important;}
-.text-box .ipt-txt-box .txt-reset-btn{position:absolute;right: 5px;top: 6px;width:28px;height:28px;background:url($img-path + "icon/text-reset-icon.png") no-repeat center;background-size:100%;}
-.text-box.type-nor .ipt-txt-box input[type="text"]{height:40px;font-size:$font-26px;letter-spacing:-0.05em;border:1px solid $common-clr-2;padding:0 10px;}
-.text-box.type-nor.border-type2 .ipt-txt-box input[type="text"]{border-width: 0 0 1px;}
-.text-box.type-nor .ipt-count{float:right;font-size:$font-24px;color:$font-clr-1;text-align: right;font-family:'Roboto';margin-top:7px;}
-.text-box.type-nor .input-error{float:left;font-size:$font-24px;color:$font-clr-1;text-align: left;margin-top:5px;}
-.text-box.type-nor .input-error.red{color:$point-clr;}
-.text-box.type-nor .input-error.blue{color:$point-clr-2;}
+.text-box{
+  .ipt-txt-box {
+    .txt-reset-btn {
+      position: absolute;
+      right: 5px;
+      top: 6px;
+      width: 28px;
+      height: 28px;
+      background: url($img-path + "icon/text-reset-icon.png") no-repeat center;
+      background-size: 100%;
+    }
+  }
+  &.type-nor {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    .ipt-txt-box {
+      position: relative;
+      width: 100%;
+      margin-bottom: 5px;
+      input[type="text"],
+      input[type="password"] {
+        height: 40px;
+        font-size: $font-26px;
+        letter-spacing: -0.05em;
+        border: 1px solid $common-clr-2;
+        padding: 0 10px;
+      }
+    }
+    .tit-txt {
+      font-size: $font-30px;
+      color: $font-clr-1;
+      letter-spacing: -0.05em;
+      line-height: 1.3em;
+      text-align: left;
+      margin-bottom: 5px;
+    }
+    .ipt-count {
+      float: right;
+      font-size: $font-24px;
+      color: $font-clr-1;
+      text-align: right;
+      font-family: 'Roboto';
+      margin-top: 7px;
+    }
+    .input-error {
+      float: left;
+      font-size: $font-24px;
+      color: $font-clr-1;
+      text-align: left;
+      margin-top: 5px;
+      &.red {
+        color: $point-clr;
+      }
+      &.blue {
+        color: $point-clr-2;
+      }
+    }
+    &.border-type2 {
+      .ipt-txt-box {
+        input[type="text"],
+        input[type="password"] {
+          border-width: 0 0 1px;
+        }
+      }
+    }
+  }
+}
+.tit-txt .red {
+  color: $point-clr !important;
+}
 
 .seller-info-box,
 .info-input-box {
