@@ -1173,7 +1173,7 @@ label {
   border-radius: 5px;
 }
 
-/* my page btns */
+/* mypage btns */
 .white-btn {
   display: inline-block;
   height: 48px;
@@ -1265,6 +1265,40 @@ label {
 }
 .underline-link.thin {
   font-weight: 400;
+}
+
+.btn-list-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.btn-list-wrap > li {
+  display: inline-block;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.btn-list-wrap > li > a,
+.btn-list-wrap > li > button {
+  display: inline-block;
+  width: 100%;
+}
+.btn-list-wrap.div-2 > li {
+  width: 50%;
+}
+.btn-list-wrap.div-2 > li:nth-child(2n) {
+  padding-right: 0;
+}
+.btn-list-wrap.div-3 > li {
+  width: 33.33%;
+}
+.btn-list-wrap.div-3 > li:nth-child(3n) {
+  padding-right: 0;
+}
+.btn-list-wrap.div-4 > li {
+  width: 25%;
+}
+.btn-list-wrap.div-4 > li:nth-child(4n) {
+  padding-right: 0;
 }
 
 /* btns e =================================================== */
@@ -5729,6 +5763,7 @@ label {
 #footer {
   width: 100%;
   background-color: #f8f8f8;
+  margin-top: 20px;
   padding: 20px 20px 90px;
   box-sizing: border-box;
 }

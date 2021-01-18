@@ -926,6 +926,12 @@ ActionSheet = (function(doc, global) {
 
 
 /* 공통함수 */
+function updateDocTitle(txtTit) {
+    if(txtTit) {
+        let tempTit = document.title;
+        document.title = txtTit + " | " + tempTit;
+    }
+}
 function numberWithCommas(x) {
     x = x.toString();
     var pattern = /(-?\d+)(\d{3})/;
