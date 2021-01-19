@@ -172,7 +172,7 @@
             <div class="button-box">
               <!-- 버튼 비활성화 상태 disabled 추가 -->
               <!--<button type="button" class="modal-blk-btn w100 btn-modal" disabled data-modal="seller-info-popup"><span>동의</span></button>-->
-              <button type="button" class="modal-blk-btn w100 btn-modal" data-modal="seller-info-popup"><span>동의</span></button>
+              <button type="button" class="modal-blk-btn w100"onclick="openPopup('seller-info-popup')"><span>동의</span></button>
             </div>
             <button type="button" class="icon-header-close">팝업닫기</button>
           </div>
@@ -369,7 +369,7 @@
               <button type="button" class="modal-gray-btn"><span>나중에 등록</span></button>
               <!-- 버튼 비활성화 상태 disabled 추가 -->
               <!--<button type="button" class="modal-blk-btn" disabled><span>지금등록</span></button>-->
-              <button type="button" class="modal-blk-btn btn-modal" data-modal="seller-complete-popup"><span>지금등록</span></button>
+              <button type="button" class="modal-blk-btn" onclick="openPopup('seller-complete-popup')"><span>지금등록</span></button>
             </div>
             <button type="button" class="icon-header-close">팝업닫기</button>
           </div>
@@ -452,7 +452,7 @@
       data() {
         return {
           pageTitle:'로그인/회원가입',
-          showFooterMenu: reqUrl.includes('/home') || reqUrl.includes('/shop') || reqUrl.includes('/drawer') || reqUrl.includes('/mypage')
+          showFooterMenu: reqUrl.includes('/home') || reqUrl.includes('/shop') || reqUrl.includes('/drawer') || reqUrl.includes('/mypage') || reqUrl.includes('/login')
         };
       },
       mounted:function(){
