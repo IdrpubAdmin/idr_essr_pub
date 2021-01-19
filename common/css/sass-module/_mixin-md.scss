@@ -550,6 +550,39 @@
   .wrapper .container .contents .login-wrap .button-box .white-btn{font-size:12px;}
   .wrapper .container .contents .login-wrap .button-box .white-btn span{font-size: 1.417em;line-height: 3.05em;}
 
+  .login-qr-box {
+    padding-top:80px;
+    padding-bottom:70px;
+    .tit {
+      font-weight:300;
+      font-size:$font-28r;
+      color:$font-clr-0;
+      line-height:3.4rem;
+      b {
+        font-weight:600;
+      }
+    }
+    .tit-sub {
+      font-weight:600;
+      font-size:$font-16r;
+      color:$font-clr-0;
+    }
+    .qr-img-box {
+      display:inline-block;
+      margin:50px auto;
+      padding:16px;
+      border:2px solid #000;
+      img {
+        width:150px;
+      }
+    }
+    .smt {
+      font-weight:300;
+      font-size:$font-13r;
+      color:$font-clr-0;
+    }
+  }
+
 }
 /* 상품상세 */
 @mixin md-detail{

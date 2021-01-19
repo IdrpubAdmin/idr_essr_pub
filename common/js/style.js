@@ -929,7 +929,9 @@ ActionSheet = (function(doc, global) {
 function updateDocTitle(txtTit) {
     if(txtTit) {
         let tempTit = document.title;
-        document.title = txtTit + " | " + tempTit;
+        if(tempTit != txtTit) {
+            document.title = txtTit + " | " + tempTit;
+        }
     }
 }
 function numberWithCommas(x) {

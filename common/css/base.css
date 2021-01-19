@@ -5369,4 +5369,37 @@ label {
   line-height: 3.05em;
 }
 
+.login-qr-box {
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+.login-qr-box .tit {
+  font-weight: 300;
+  font-size: 2.8rem;
+  color: #000;
+  line-height: 3.4rem;
+}
+.login-qr-box .tit b {
+  font-weight: 600;
+}
+.login-qr-box .tit-sub {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #000;
+}
+.login-qr-box .qr-img-box {
+  display: inline-block;
+  margin: 50px auto;
+  padding: 16px;
+  border: 2px solid #000;
+}
+.login-qr-box .qr-img-box img {
+  width: 150px;
+}
+.login-qr-box .smt {
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: #000;
+}
+
 /*# sourceMappingURL=base.css.map */
