@@ -47,10 +47,14 @@
           <main-banner-1></main-banner-1>
         </div>
         <div class="conner-container">
+
+          <!-- 카테고리탭 -->
           <div class="cate-slide-box">
             <category-slide></category-slide>
           </div>
-          <!--추천-->
+          <!-- //카테고리탭 -->
+
+          <!-- 추천 -->
           <div class="home-box" style="display: block;">
             <div class="gap-box-box first">
               <temp-conner-4></temp-conner-4>
@@ -92,6 +96,8 @@
               <div>시스템 설명 회원정책(디자인없음)</div>
             </div>
           </div>
+          <!-- //추천 -->
+
           <!--얼리버드-->
           <div class="home-box" style="display: block;">
             <div class="gap-box-box first">
@@ -110,7 +116,9 @@
               <bottom-banner></bottom-banner>
             </div>
           </div>
-          <!--지점-->
+          <!-- //얼리버드 -->
+
+          <!-- 지점 -->
           <div class="home-box" style="display: block;">
             <home-branch-nav></home-branch-nav>
             <div class="gap-box-box first">
@@ -126,6 +134,18 @@
               <div>서비스 설명(디자인없음)</div>
             </div>
           </div>
+          <!-- //지점 -->
+
+          <!-- mkp-add : 20210119 -->
+          <!-- 라이브 -->
+          <div class="home-box" style="display: block;">
+            <div class="gap-box-box first">
+              <cast-list></cast-list>
+            </div>
+          </div>
+          <!-- //라이브 -->
+          <!-- //mkp-add : 20210119 -->
+
         </div>
         <home-footer></home-footer>
   
@@ -167,6 +187,7 @@
         'home-branch-nav': semVueLoader('../../common/js/sem-vue/components/home/home-branch-nav.vue'),
         'home-footer': semVueLoader('../../common/js/sem-vue/components/home/footer.vue'),
         'popup-share': semVueLoader('../../common/js/sem-vue/components/conner/popup-share.vue'),
+        'cast-list': semVueLoader('../../common/js/sem-vue/components/common/cast-list.vue'),
       },
       data() {
         return {

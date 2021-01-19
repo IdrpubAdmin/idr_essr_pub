@@ -340,14 +340,17 @@
                 <div class="cap-add-box nor">
                   <button type="button" class="red-btn h96" onclick="openPopup('ppp-mycap-add');"><span>새 서랍 추가</span></button>
                 </div>
+
                 <div class="cap-add-box">
                   <button type="button" class="red-btn h96" onclick="openPopup('ppp-mycap-add');"><span>새 서랍 추가</span></button>
                   <button type="button" class="gray-btn2 h96" onclick="openPopup('ppp-mycap-sort-edit');"><span>순서편집</span></button>
                 </div>
+
                 <div class="edit-button-box">
                   <span>서랍의 순서를 편집해 보세요.</span>
                   <button type="button" class="modal-blk-btn h80"><span>완료</span></button>
                 </div>
+
                 <div class="mycap-list-box">
                   <div class="set-box first">
                     <p class="cate-txt"><em class="name-txt">기본</em><em class="num-txt">(10)</em></p>
@@ -438,110 +441,54 @@
             <div class="tab-menu-cont ptabcon-cab-live" :class="{'on':pppTabconCabLive}">
   
               <div class="mycap-setting-box">
-                <div class="button-box">
+                <div class="cap-add-box">
                   <button type="button" class="gray-btn2 h96" onclick="openPopup('ppp-mycap-sort-edit');"><span>순서편집</span></button>
                 </div>
+
+                <div class="edit-button-box">
+                  <span>서랍의 순서를 편집해 보세요.</span>
+                  <button type="button" class="modal-blk-btn h80"><span>완료</span></button>
+                </div>
+
                 <div class="mycap-list-box v2">
-  
-                  <div class="set-box">
-                    <p class="cate-txt"><em class="name-txt">2021시즌 겨울대전</em><em class="num-txt">(10)</em></p>
-                    <div class="edit-box">
-                      <button type="button" class="delete-btn"><span>삭제</span></button>
-                    </div>
-                  </div>
-  
-                  <div class="set-box">
-                    <p class="cate-txt"><em class="name-txt">디스커버리 최대 80% 아우터는 언제 입고 되나요?</em><em class="num-txt">(10)</em></p>
-                    <div class="edit-box btm">
-                      <button type="button" class="delete-btn"><span>삭제</span></button>
-                    </div>
-                  </div>
-  
-                  <div class="set-box last">
-                    <p class="cate-txt"><em class="name-txt">2021시즌 겨울대전</em><em class="num-txt">(10)</em></p>
-                    <div class="edit-box btm">
-                      <button type="button" class="delete-btn"><span>삭제</span></button>
-                    </div>
-                  </div>
-                  
-                  <div class="set-box first">
-                    <p class="cate-txt"><em class="name-txt">기본</em><em class="num-txt">(10)</em></p>
-                  </div>
+                  <!-- 편집모드 일 때 edit-mode 클래스 추가 -->
+                  <!--<div class="list-inner-box">-->
                   <div class="list-inner-box edit-mode">
+  
                     <div class="set-box">
                       <div class="button-box">
                         <button type="button" class="up-btn" onclick="cabEditPosition(this);"></button>
                         <button type="button" class="down-btn" onclick="cabEditPosition(this);"></button>
                       </div>
-                      <p class="cate-txt"><em class="name-txt">가방</em><em class="num-txt">(10)</em></p>
-                      <div class="switch-box">
-                        <span class="state-txt"></span>
-                        <label for="sld1" class="switch">
-                          <input type="checkbox" id="sld1" chekced="">
-                          <span class="slider round"></span>
-                        </label>
-                      </div>
+                      <p class="cate-txt"><em class="name-txt">2021시즌 겨울대전</em><em class="num-txt">(10)</em></p>
                       <div class="edit-box">
-                        <button type="button" class="modify-btn"><span>수정</span></button>
-                        <button type="button" class="delete-btn" onclick="openPopup('ppp-mycap-del');"><span>삭제</span></button>
-                      </div>
-                    </div>
-                    <div class="set-box">
-                      <div class="button-box">
-                        <button type="button" class="up-btn" onclick="cabEditPosition(this);"></button>
-                        <button type="button" class="down-btn" onclick="cabEditPosition(this);"></button>
-                      </div>
-                      <p class="cate-txt"><em class="name-txt">리빙</em><em class="num-txt">(10)</em></p>
-                      <div class="switch-box">
-                        <span class="state-txt"></span>
-                        <label for="sld2" class="switch">
-                          <input type="checkbox" id="sld2" chekced="">
-                          <span class="slider round"></span>
-                        </label>
-                      </div>
-                      <div class="edit-box">
-                        <button type="button" class="modify-btn"><span>수정</span></button>
                         <button type="button" class="delete-btn"><span>삭제</span></button>
                       </div>
                     </div>
+
                     <div class="set-box">
                       <div class="button-box">
                         <button type="button" class="up-btn" onclick="cabEditPosition(this);"></button>
                         <button type="button" class="down-btn" onclick="cabEditPosition(this);"></button>
                       </div>
-                      <p class="cate-txt"><em class="name-txt">구두</em><em class="num-txt">(10)</em></p>
-                      <div class="switch-box">
-                        <span class="state-txt"></span>
-                        <label for="sld3" class="switch">
-                          <input type="checkbox" id="sld3" checked="true">
-                          <span class="slider round"></span>
-                        </label>
-                      </div>
-                      <div class="edit-box">
-                        <button type="button" class="modify-btn"><span>수정</span></button>
+                      <p class="cate-txt"><em class="name-txt">디스커버리 최대 80% 아우터는 언제 입고 되나요?</em><em class="num-txt">(10)</em></p>
+                      <div class="edit-box btm">
                         <button type="button" class="delete-btn"><span>삭제</span></button>
                       </div>
                     </div>
-                    <div class="set-box">
+
+                    <div class="set-box last">
                       <div class="button-box">
                         <button type="button" class="up-btn" onclick="cabEditPosition(this);"></button>
                         <button type="button" class="down-btn" onclick="cabEditPosition(this);"></button>
                       </div>
-                      <p class="cate-txt"><em class="name-txt">구두1</em><em class="num-txt">(10)</em></p>
-                      <div class="switch-box">
-                        <span class="state-txt"></span>
-                        <label for="sld4" class="switch">
-                          <input type="checkbox" id="sld4" checked="true">
-                          <span class="slider round"></span>
-                        </label>
-                      </div>
-                      <div class="edit-box">
-                        <button type="button" class="modify-btn"><span>수정</span></button>
+                      <p class="cate-txt"><em class="name-txt">2021시즌 겨울대전</em><em class="num-txt">(10)</em></p>
+                      <div class="edit-box btm">
                         <button type="button" class="delete-btn"><span>삭제</span></button>
                       </div>
                     </div>
+
                   </div>
-                  
                 </div>
               </div>
               

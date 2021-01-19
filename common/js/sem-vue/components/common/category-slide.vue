@@ -11,6 +11,11 @@
         <swiper-slide>
           <div><button type="button">지점</button></div>
         </swiper-slide>
+        <!-- mkp-add : 20210119 -->
+        <swiper-slide>
+          <div><button type="button" class="on-air">라이브</button></div>
+        </swiper-slide>
+        <!-- //mkp-add : 20210119 -->
         <swiper-slide>
           <div><button type="button">추천</button></div>
         </swiper-slide>
@@ -21,13 +26,7 @@
           <div><button type="button">지점</button></div>
         </swiper-slide>
         <swiper-slide>
-          <div><button type="button">추천</button></div>
-        </swiper-slide>
-        <swiper-slide>
-          <div><button type="button">얼리버드</button></div>
-        </swiper-slide>
-        <swiper-slide>
-          <div><button type="button">지점</button></div>
+          <div><button type="button" class="on-air">라이브</button></div>
         </swiper-slide>
         <swiper-slide>
           <div><button type="button">추천</button></div>
@@ -39,6 +38,9 @@
           <div><button type="button">지점</button></div>
         </swiper-slide>
         <swiper-slide>
+          <div><button type="button" class="on-air">라이브</button></div>
+        </swiper-slide>
+        <swiper-slide>
           <div><button type="button">추천</button></div>
         </swiper-slide>
         <swiper-slide>
@@ -46,6 +48,21 @@
         </swiper-slide>
         <swiper-slide>
           <div><button type="button">지점</button></div>
+        </swiper-slide>
+        <swiper-slide>
+          <div><button type="button" class="on-air">라이브</button></div>
+        </swiper-slide>
+        <swiper-slide>
+          <div><button type="button">추천</button></div>
+        </swiper-slide>
+        <swiper-slide>
+          <div><button type="button">얼리버드</button></div>
+        </swiper-slide>
+        <swiper-slide>
+          <div><button type="button">지점</button></div>
+        </swiper-slide>
+        <swiper-slide>
+          <div><button type="button" class="on-air">라이브</button></div>
         </swiper-slide>
       </swiper>
     </div>

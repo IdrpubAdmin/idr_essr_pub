@@ -158,20 +158,75 @@
 .notice-detail-popup .inner-box .modal_cont .bottom-box{border-top:1px solid #ddd;padding:20px 0;overflow-y: auto;}
 .notice-detail-popup .inner-box .modal_cont .bottom-box p{font-size:$font-26px;color:$font-clr-1;letter-spacing: -0.05em;}
 .notice-detail-popup .inner-box .modal_cont .bottom-box img{width:100%;}
+
 /* 내 창고 설정 팝업 */
-.mycap-setting-popup{background-color: $common-clr-1;}
-.mycap-setting-popup .modal_cont{padding-top:0;background-color: $common-clr-1;}
-.mycap-setting-popup .modal_cont .mycap-setting-box{}
-.mycap-setting-popup .modal_cont .cap-add-box{padding-bottom:20px;text-align: center;overflow: hidden;}
-.mycap-setting-popup .modal_cont .cap-add-box p{font-size:$font-26px;letter-spacing: -0.05em;color:$font-clr-2;text-align: center;margin-top:20px;clear:both;}
-.mycap-setting-popup .modal_cont .cap-add-box button{float:left;width:49%;}
-.mycap-setting-popup .modal_cont .cap-add-box button:nth-child(1){margin-right:2%;}
-.mycap-setting-popup .modal_cont .cap-add-box button.red-btn:before{content:'';display:inline-block;width:14px;height:14px;font-weight:500;margin-right:10px;background:url($img-path + "icon/plus_28x28_fff.png") no-repeat left top;background-size:100%;}
-.mycap-setting-popup .modal_cont .cap-add-box.nor{text-align: center;}
-.mycap-setting-popup .modal_cont .cap-add-box.nor button{float:none;margin-right: 0;}
-.mycap-setting-popup .modal_cont .edit-button-box{padding-bottom:20px;overflow: hidden;}
-.mycap-setting-popup .modal_cont .edit-button-box > span{float:left;font-size:$font-30px;color:$font-clr-2;line-height:2.4em;letter-spacing: -0.05em;}
-.mycap-setting-popup .modal_cont .edit-button-box button{float:right;width:80px;}
+.mycap-setting-popup {
+  background-color: $common-clr-1;
+  .modal_cont {
+    padding-top: 0;
+    background-color: $common-clr-1;
+    .cap-add-box {
+      padding-bottom: 20px;
+      text-align: center;
+      overflow: hidden;
+      p {
+        font-size: $font-26px;
+        letter-spacing: -0.05em;
+        color: $font-clr-2;
+        text-align: center;
+        padding-top: 20px;
+        clear: both;
+      }
+      button {
+        float: left;
+        width: 49%;
+        &:nth-child(1) {
+          margin-right: 2%;
+        }
+        &.red-btn:before {
+          content: '';
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          font-weight: 500;
+          margin-right: 10px;
+          background: url($img-path + "icon/plus_28x28_fff.png") no-repeat left top;
+          background-size: 100%;
+        }
+        &:only-child {
+          width:100%;
+        }
+      }
+      &.nor {
+        //text-align: center;
+        button {
+          float: none;
+          margin-right: 0;
+        }
+      }
+    }
+    > .mycap-setting-box {
+      > .cap-add-box {
+        margin-top:25px;
+      }
+    }
+    .edit-button-box {
+      padding-bottom: 20px;
+      overflow: hidden;
+      > span {
+        float: left;
+        font-size: $font-30px;
+        color: $font-clr-2;
+        line-height: 2.4em;
+        letter-spacing: -0.05em;
+      }
+      button {
+        float: right;
+        width: 80px;
+      }
+    }
+  }
+}
 
 .mycap-list-box {
   .set-box {
@@ -317,6 +372,24 @@
         &:first-child .button-box button.up-btn,
         &:last-child .button-box button.down-btn {
           opacity: 0.3;
+        }
+      }
+    }
+  }
+  &.v2 {
+    .set-box {
+      .cate-txt {
+        margin-top:0;
+      }
+      .edit-box {
+        float:right;
+        position:relative;
+        right:unset;
+        top:unset;
+        .delete-btn {
+          &:before {
+            display:none;
+          }
         }
       }
     }

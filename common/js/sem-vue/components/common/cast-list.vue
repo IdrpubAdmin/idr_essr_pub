@@ -1,0 +1,121 @@
+<template>
+  <!-- conner-box -->
+  <div class="conner-box cast-list-wrap">
+    <div class="title-box">
+      <p class="tit-txt">
+        라이브편성표
+        <span class="tit-desc">방송 중에만 구매가능합니다.</span>
+      </p>
+    </div>
+
+    <!-- inner-box -->
+    <div class="inner-box">
+      <!-- top-box -->
+      <div class="top-box">
+        <div class="cast-info">
+          <span class="cast-date"><span>01.06</span><em>수</em></span>
+        </div>
+      </div>
+      <!-- //top-box -->
+
+      <!-- bottom-box -->
+      <div class="bottom-box">
+
+        <!-- cast-list -->
+        <ul class="cast-list">
+          <!-- 리스트 있을 때 -->
+          <li>
+            <cast-box
+                :link="'#none'"
+                :img-path="'../../common/images/temp/temp_cast_01.png'"
+                :sub-title="'2021아울렛 뉴코아 중계방송'"
+                :main-title="'디스커버 최대 80% OFF 아우터 최대세일'"
+                :cast-time="'15:00'"
+                :cast-date="'21.01.06 23:45:00'"
+                :goods-cnt="'100'"
+                :stk-live="'true'"
+                :cast-end="''"
+                :options="castOption"
+            ></cast-box>
+          </li>
+          <li>
+            <cast-box
+                :link="'#none'"
+                :img-path="'../../common/images/temp/temp_cast_02.png'"
+                :sub-title="'2021아울렛 뉴코아 중계방송'"
+                :main-title="'환절기,겨울철 건강을 지키기위함환절기,겨울철 건강을 지키기위함환절기,겨울철 건강을 지키기위함'"
+                :cast-time="'15:00'"
+                :cast-date="'21.01.06 23:45:00'"
+                :goods-cnt="'100'"
+                :stk-live="'true'"
+                :cast-end="''"
+                :options="castOption"
+            ></cast-box>
+          </li>
+          <li>
+            <cast-box
+                :link="'#none'"
+                :img-path="'../../common/images/temp/temp_cast_03.png'"
+                :sub-title="'2021아울렛 뉴코아 중계방송'"
+                :main-title="'디스커버 최대 80% OFF 아우터 최대세일'"
+                :cast-time="'15:00'"
+                :cast-date="'21.01.06 23:45:00'"
+                :goods-cnt="'100'"
+                :stk-live="'true'"
+                :cast-end="''"
+                :options="castOption"
+            ></cast-box>
+          </li>
+          <li>
+            <cast-box
+                :link="'#none'"
+                :img-path="'../../common/images/temp/temp_cast_01.png'"
+                :sub-title="'2021아울렛 뉴코아 중계방송'"
+                :main-title="'디스커버 최대 80% OFF 아우터 최대세일'"
+                :cast-time="'15:00'"
+                :cast-date="'21.01.06 23:45:00'"
+                :goods-cnt="'100'"
+                :stk-live="'true'"
+                :cast-end="''"
+                :options="castOption"
+            ></cast-box>
+          </li>
+          <!-- //리스트 있을 때 -->
+
+          <!-- 리스트 없을 때 -->
+          <li>
+            <div class="result-wrap">
+              <span class="ico"></span>
+              <p>오늘은 방송 중인 라이브가 없습니다.</p>
+              <span class="desc">다가오는 라이브 방송을 기대해주세요.</span>
+            </div>
+          </li>
+          <!-- //리스트 없을 때 -->
+
+        </ul>
+        <!-- //cast-list -->
+
+      </div>
+      <!-- //bottom-box -->
+    </div>
+    <!-- //inner-box -->
+  </div>
+  <!-- //conner-box -->
+</template>
+<script>
+module.exports = {
+  components: {
+    'cast-box': httpVueLoader('../common/cast.vue')
+  },
+  data: function(){
+    var that = this;
+    return {
+      castOption: {
+        imgMode:'',//img-wide 와이드 이미지 , img-rect 직사각형 이미지
+        imgAlign:'align-left img-size-s0',// align-center 기본형, align-left 이미지 왼쪽, align-right 이미지 오른쪽
+        //align-left 일경우 적용 이미지사이즈 img-size-s0(166 묶음코너1) , img-size-s1(190 묶음코너3) ,img-size-s2(196 랭킹구좌) .img-size-s3(230 기획전)
+      },
+    }
+  },
+}
+</script>
