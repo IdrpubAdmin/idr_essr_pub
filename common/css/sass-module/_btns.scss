@@ -116,4 +116,53 @@
     }
   }
 }
+
+.link-naver-blog,
+.link-instagram {
+  display:inline-block;
+  width:62px;
+  height:62px;
+  span {
+    @include textHide();
+  }
+}
+.link-naver-blog {
+  background:url($img-path + "icon/icon_naver_blog.png") no-repeat center;
+  background-size:cover
+}
+.link-instagram {
+  background:url($img-path + "icon/icon_insta.png") no-repeat center;
+  background-size:cover
+}
+
+.more-btn {
+  font-size: $font-24px;
+  color: $font-clr-3;
+  line-height: 1.2em;
+  font-family: 'Roboto';
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 6px;
+    margin-left: 5px;
+    background: url($img-path + "icon/title_more.png") no-repeat left top;
+    background-size: 100%;
+  }
+}
+.more-btn2 {
+  font-size: $font-14r;
+  color: $font-clr-0;
+  line-height: 3rem;
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 19px;
+    height: 8px;
+    margin-left: 5px;
+    background: url($img-path + "icon/title_more_b.png") no-repeat left top;
+    background-size: 100%;
+  }
+}
+
 /* btns e =================================================== */

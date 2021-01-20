@@ -1311,6 +1311,59 @@ label {
   padding-right: 0;
 }
 
+.link-naver-blog,
+.link-instagram {
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+}
+.link-naver-blog span,
+.link-instagram span {
+  font-size: 0;
+  text-indent: -9999px;
+}
+
+.link-naver-blog {
+  background: url("../images/icon/icon_naver_blog.png") no-repeat center;
+  background-size: cover;
+}
+
+.link-instagram {
+  background: url("../images/icon/icon_insta.png") no-repeat center;
+  background-size: cover;
+}
+
+.more-btn {
+  font-size: 1.167em;
+  color: #b9b9b9;
+  line-height: 1.2em;
+  font-family: 'Roboto';
+}
+.more-btn:after {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 6px;
+  margin-left: 5px;
+  background: url("../images/icon/title_more.png") no-repeat left top;
+  background-size: 100%;
+}
+
+.more-btn2 {
+  font-size: 1.4rem;
+  color: #000;
+  line-height: 3rem;
+}
+.more-btn2:after {
+  content: '';
+  display: inline-block;
+  width: 19px;
+  height: 8px;
+  margin-left: 5px;
+  background: url("../images/icon/title_more_b.png") no-repeat left top;
+  background-size: 100%;
+}
+
 /* btns e =================================================== */
 .gray-box {
   background-color: #f5f5f5;
@@ -1345,7 +1398,6 @@ label {
   position: relative;
   width: 100%;
 }
-
 .def-box .inner-box {
   position: relative;
   width: calc(100% - 40px);
@@ -1526,20 +1578,6 @@ label {
   position: absolute;
   right: 0;
   bottom: 27px;
-  font-size: 1.167em;
-  color: #b9b9b9;
-  line-height: 1.2em;
-  font-family: 'Roboto';
-}
-
-.title-box .more-btn:after {
-  content: '';
-  display: inline-block;
-  width: 12px;
-  height: 6px;
-  margin-left: 5px;
-  background: url("../images/icon/title_more.png") no-repeat left top;
-  background-size: 100%;
 }
 
 .title-box .delete-btn {
@@ -3929,6 +3967,27 @@ label {
 /* page s =================================================== */
 .service-guide-wrap {
   padding-bottom: 30px;
+}
+
+.landing-join-box {
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+.landing-join-box .title-box-type2 {
+  text-align: center;
+}
+.landing-join-box .button-box {
+  margin-top: 30px;
+}
+.landing-join-box .button-box li {
+  display: inline-block;
+  width: 49.6%;
+  text-align: center;
+  background: url("../images/bg/line_bg_gray.png") no-repeat 0;
+  background-size: 1px;
+}
+.landing-join-box .button-box li:first-child {
+  background: none;
 }
 
 /* page e =================================================== */

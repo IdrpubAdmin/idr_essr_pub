@@ -25,8 +25,15 @@
 .conner-box .def-tit{position:relative;width:100%;font-size:1.4em;color:#222;padding:10px;box-sizing: border-box;}
 .conner-container{position:relative;background-color:#fff;}
 
-.def-box{position:relative;width:100%;}
-.def-box .inner-box{position:relative;width:calc(100% - 40px);margin-left:20px;}
+.def-box {
+  position: relative;
+  width: 100%;
+  .inner-box {
+    position: relative;
+    width: calc(100% - #{$dflt-pd1 * 2});
+    margin-left:$dflt-pd1;
+  }
+}
 
 .stk-box {
   position: absolute;
@@ -169,8 +176,13 @@
 .title-box .sub-txt.allTxt{width: 100%;white-space: normal;text-overflow: initial;}
 .title-box .right-txt{position: absolute;right:0;bottom: 25px;font-size:$font-24px;color:$font-clr-3;line-height: 1.2em;}
 .title-box .right-txt em{font-family:'Roboto';margin-right: 5px;}
-.title-box .more-btn{position: absolute;right:0;bottom: 27px;font-size:$font-24px;color:$font-clr-3;line-height: 1.2em;font-family:'Roboto';}
-.title-box .more-btn:after{content:'';display:inline-block;width: 12px;height: 6px;margin-left: 5px;background:url($img-path + "icon/title_more.png") no-repeat left top;background-size:100%;}
+.title-box {
+  .more-btn {
+    position: absolute;
+    right: 0;
+    bottom: 27px;
+  }
+}
 .title-box .delete-btn{position: absolute;right:0;bottom: 27px;font-size:$font-24px;color:$font-clr-3;line-height: 1.2em;font-family:'Roboto';}
 .title-box .kakao-btn{position: absolute;right:20px;bottom:0px;font-size:12px;background:#FFE636 url($img-path + "icon/kakao_icon.png") no-repeat 8px center;background-size:15px 15px;border-radius: 5px;padding:7px 8px 7px 25px;}
 .title-box .kakao-btn span{font-size:$font-24px;color:$font-clr-1;letter-spacing:-0.05em;line-height: 1.2em;font-weight:bold;}
