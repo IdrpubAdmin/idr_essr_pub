@@ -1256,6 +1256,30 @@ label {
   line-height: 2.8em;
 }
 
+.share-btn {
+  width: 28px;
+  height: 28px;
+  background: url("../images/icon/prod_share.png") no-repeat left top;
+  background-size: 100%;
+}
+
+.kakao-btn {
+  width: 37px;
+  height: 37px;
+  background: url("../images/icon/kakao_share_74x74.png") no-repeat left top;
+  background-size: 100%;
+}
+
+.kakaotalk-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 31px;
+  height: 31px;
+  background: url("../images/icon/icon_kakao_talk.png") no-repeat left top;
+  background-size: 100%;
+}
+
 .share-btn-0 {
   position: absolute;
   top: 0;
@@ -1704,19 +1728,11 @@ label {
   position: absolute;
   right: 10px;
   bottom: 10px;
-  width: 28px;
-  height: 28px;
-  background: url("../images/icon/prod_share.png") no-repeat left top;
-  background-size: 100%;
 }
 .prod-box .img-box .kakao-btn {
   position: absolute;
   bottom: 0px;
   right: 0px;
-  width: 37px;
-  height: 37px;
-  background: url("../images/icon/kakao_share_74x74.png") no-repeat left top;
-  background-size: 100%;
 }
 .prod-box .img-box .drawer-btn-0 {
   position: absolute;
@@ -2179,8 +2195,9 @@ label {
 }
 .cast-box .info-box .tit {
   width: 100%;
-  min-height: 70px;
+  height: 62px;
   font-size: 1.6rem;
+  line-height: 2rem;
   letter-spacing: -0.1em;
   color: #000;
   text-overflow: ellipsis;
@@ -2190,7 +2207,7 @@ label {
   -webkit-box-orient: vertical;
 }
 .cast-box .info-box .cast-date {
-  margin-top: 2px;
+  margin-top: 12px;
   font-size: 1.2rem;
   color: #000;
   line-height: 1.5rem;
@@ -2199,17 +2216,18 @@ label {
   color: #767676;
 }
 .cast-box .info-box .cast-date em {
-  padding-left: 10px;
+  padding-right: 4px;
   font-weight: 400;
   letter-spacing: 0;
   color: #2989f8;
 }
 .cast-box .info-box .goods-cnt {
-  margin-top: 8px;
+  margin-top: 10px;
   font-size: 1.2rem;
   color: #000;
 }
-.cast-box .share-btn-0 {
+.cast-box .share-btn-0,
+.cast-box .kakaotalk-btn {
   top: unset;
   right: 5px;
   bottom: 0;

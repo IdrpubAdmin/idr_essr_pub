@@ -55,6 +55,27 @@
 .red-btn{display:inline-block;height:38px;font-size:$font-26px;color:$font-clr-4;text-align:center;line-height: 2.8em;background-color:$point-clr;border-radius:5px;}
 .red-btn.h96{height:48px;font-size:$font-34px;line-height: 2.8em;}
 
+.share-btn {
+  width: 28px;
+  height: 28px;
+  background: url($img-path + "icon/prod_share.png") no-repeat left top;
+  background-size: 100%;
+}
+.kakao-btn {
+  width: 37px;
+  height: 37px;
+  background: url($img-path + "icon/kakao_share_74x74.png") no-repeat left top;
+  background-size: 100%;
+}
+.kakaotalk-btn {
+  position:absolute;
+  top:0;
+  right:0;
+  width: 31px;
+  height: 31px;
+  background: url($img-path + "icon/icon_kakao_talk.png") no-repeat left top;
+  background-size: 100%;
+}
 .share-btn-0{
   position:absolute;
   top:0;

@@ -214,8 +214,16 @@
       .stk-box{width:auto;height:auto;}
     }
     .chk-box{position:absolute;left:0;bottom:0;}
-    .share-btn{position:absolute;right:10px;bottom:10px;width:28px;height:28px;background:url($img-path + "icon/prod_share.png") no-repeat left top;background-size:100%;}
-    .kakao-btn{position:absolute;bottom:0px;right:0px;width:37px;height:37px;background:url($img-path + "icon/kakao_share_74x74.png") no-repeat left top;background-size:100%;}
+    .share-btn {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+    }
+    .kakao-btn {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+    }
     .drawer-btn-0{
       position:absolute;
       right:10px;
@@ -471,15 +479,16 @@
       @include set-ellipsis();
     }
     .tit {
-      width: 100%;
-      min-height:70px;
+      width:100%;
+      height:62px;
       font-size: $font-16r;
+      line-height:2rem;
       letter-spacing: -0.1em;
       color: $font-clr-0;
       @include set-ellipsis(3);
     }
     .cast-date {
-      margin-top:2px;
+      margin-top:12px;
       font-size: $font-12r;
       color:$font-clr-0;
       line-height:1.5rem;
@@ -487,19 +496,20 @@
         color:$font-clr-2;
       }
       em {
-        padding-left:10px;
+        padding-right:4px;
         font-weight:400;
         letter-spacing:0;
         color:$point-clr-2;
       }
     }
     .goods-cnt {
-      margin-top:8px;
+      margin-top:10px;
       font-size: $font-12r;
       color:$font-clr-0;
     }
   }
-  .share-btn-0{
+  .share-btn-0,
+  .kakaotalk-btn {
     top:unset;
     right:5px;
     bottom:0;

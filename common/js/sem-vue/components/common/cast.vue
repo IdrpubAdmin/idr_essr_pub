@@ -23,7 +23,12 @@
         <p class="goods-cnt" v-if="goodsCnt"><em>{{goodsCnt}}</em><i>개 상품</i></p>
       </a>
     </div>
-    <button type="button" class="share-btn-0" @click="shareGoods($event.target)" data-param-url="paramUrl">공유하기</button>
+
+    <!-- mkp-edit : 20210120 -->
+    <!--<button type="button" class="share-btn-0" @click="shareGoods($event.target)" data-param-url="paramUrl">공유하기</button>-->
+    <button type="button" class="kakaotalk-btn"><span class="ico">카카오톡공유하기</span></button>
+    <!-- //mkp-edit : 20210120 -->
+
   </div>
 </template>
 <script>
