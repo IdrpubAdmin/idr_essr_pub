@@ -106,7 +106,9 @@
             <div class="tab-menu-cont tabcon-cab-goods" :class="{'on':tabconCabGoods}">
               <ul class="cap-list">
                 <li>
-                  <a href="#none">
+                  <!-- mkp-edit : 20200121 -->
+                  <!--<a href="#none">-->
+                  <a href="#none" onclick="openPopup('prod-list-popup')">
                     <div class="img-box">
                       <div>
                         <img src="../../common/images/temp/tempImg_1.png" alt="">
@@ -117,6 +119,7 @@
                       <p class="num">16</p>
                     </div>
                   </a>
+                  <!-- mkp-edit : 20200121 -->
                   <!--<button type="button" class="kakao-btn"></button>-->
                   <button type="button" class="share-btn-0" @click="shareGoods($event.target)" data-param-url="paramUrl">공유하기</button>
                 </li>
@@ -568,7 +571,7 @@
     </div>
     <!--  //상품이동 , 내 서랍 담기  -->
 
-    <!--  상품리스트 팝업  : 개발일정상 추후 개발   -->
+    <!--  상품리스트 팝업   -->
     <div class="modal-wrap big prod-list-popup" style="display:none;">
       <div class="modal-layer">
         <div class="inner-box has-btn">
@@ -576,7 +579,10 @@
           <div class="modal_cont">
             <div class="title-box">
               <p class="tit-txt">가방</p>
-              <button type="button" class="kakao-btn"><span>서랍 공유</span></button>
+              <!-- mkp-edit : 20210121 -->
+              <!--<button type="button" class="kakao-btn"><span>서랍 공유</span></button>-->
+              <button type="button" class="cab-kakao-btn"><span>서랍 공유</span></button>
+              <!-- //mkp-edit : 20210121 -->
             </div>
 
             <!--

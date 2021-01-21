@@ -129,7 +129,7 @@
 .modal-wrap.popup-type-message .button-box button.modal-gray-btn{border-top:1px solid $common-clr-1;}
 
 /* 상품 리스트 팝업 */
-.prod-list-popup{}
+.prod-list-popup{z-index:1000;}
 .prod-list-popup .inner-box{}
 .prod-list-popup .inner-box .modal_tit{}
 .prod-list-popup .inner-box .modal_cont{padding:10px 0 20px;height: calc(100% - 120px) !important;}
@@ -145,7 +145,18 @@
 .prod-list-popup .inner-box .button-box.share-mode{display:flex;flex-wrap:nowrap;padding:12px;overflow: hidden;}
 .prod-list-popup .inner-box .button-box.share-mode button{width: 100%;}
 .prod-list-popup .inner-box .button-box.share-mode button:nth-child(1){margin-right: 8px;}
-.prod-list-popup .inner-box .button-box.share-mode .kakao-btn{display:inline-block;height:40px;font-size:$font-26px;color:$font-clr-1;text-align:center;line-height: 2.8em;background-color:#FFE600;border-radius:5px;}
+
+.prod-list-popup .inner-box .button-box.share-mode .kakao-btn {
+  display: inline-block;
+  height: 40px;
+  font-size: $font-26px;
+  color: $font-clr-1;
+  text-align: center;
+  line-height: 2.8em;
+  background:none;
+  background-color: #FFE600;
+  border-radius: 5px;
+}
 .prod-list-popup .inner-box .button-box .kakao-btn.h80{height:40px;font-size:$font-26px;line-height: 2.8em;}
 
 .notice-detail-popup{}

@@ -14,12 +14,18 @@
         </div>
       </a>
       <button type="button" class="drawer-btn-0" v-if="options.drawer">내서랍</button>
-      <button type="button" class="kakao-btn" v-if="options.kakaoBtn">공유</button>
+      <!-- mkp-del : 20210121 -->
+      <!--<button type="button" class="kakao-btn" v-if="options.kakaoBtn">공유</button>-->
+      <!-- mkp-del : 20210121 -->
       <label :for="chkBoxId" v-if="chkBoxId" class="chk-box">
         <input type="checkbox" :id="chkBoxId" chekced="">
         <span class="square"></span>
       </label>
-      <button type="button" class="share-btn" v-if="options.shareBtn"><span class="ico">공유하기</span></button>
+
+      <!-- mkp-del : 20210121 -->
+      <!--<button type="button" class="share-btn" v-if="options.shareBtn"><span class="ico">공유하기</span></button>-->
+      <!-- mkp-del : 20210121 -->
+
       <!-- mkp-edit : 20210118 -->
       <!--<div class="sold-dim" v-if="soldout"></div>-->
       <div class="sold-dim" v-if="soldout || stkdispend || stksellstop"></div>
@@ -40,9 +46,9 @@
       </div>
     </div>
     <button type="button" class="drawer-btn-1" :class="{'sold-out' : soldout}" v-if="options.drawer">내서랍</button>
-    <!-- mkp-add : 20210113 -->
-    <button type="button" class="share-btn-0" @click="shareGoods($event.target)" data-param-url="paramUrl">공유하기</button>
-    <!-- //mkp-add : 20210113 -->
+    <!-- mkp-add : 20210121 -->
+    <button type="button" class="share-btn-0" v-if="options.shareBtn" @click="shareGoods($event.target)" data-param-url="paramUrl">공유하기</button>
+    <!-- //mkp-add : 20210121 -->
   </div>
 </template>
 <script>

@@ -1614,8 +1614,10 @@ label {
   font-family: 'Roboto';
 }
 
-.title-box .kakao-btn {
+.title-box .cab-kakao-btn {
   position: absolute;
+  width: auto;
+  height: auto;
   right: 20px;
   bottom: 0px;
   font-size: 12px;
@@ -1625,7 +1627,7 @@ label {
   padding: 7px 8px 7px 25px;
 }
 
-.title-box .kakao-btn span {
+.title-box .cab-kakao-btn span {
   font-size: 1.167em;
   color: #191919;
   letter-spacing: -0.05em;
@@ -3577,6 +3579,10 @@ label {
 }
 
 /* 상품 리스트 팝업 */
+.prod-list-popup {
+  z-index: 1000;
+}
+
 .prod-list-popup .inner-box .modal_cont {
   padding: 10px 0 20px;
   height: calc(100% - 120px) !important;
@@ -3638,6 +3644,7 @@ label {
   color: #191919;
   text-align: center;
   line-height: 2.8em;
+  background: none;
   background-color: #FFE600;
   border-radius: 5px;
 }

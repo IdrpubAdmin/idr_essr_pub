@@ -184,8 +184,8 @@
   }
 }
 .title-box .delete-btn{position: absolute;right:0;bottom: 27px;font-size:$font-24px;color:$font-clr-3;line-height: 1.2em;font-family:'Roboto';}
-.title-box .kakao-btn{position: absolute;right:20px;bottom:0px;font-size:12px;background:#FFE636 url($img-path + "icon/kakao_icon.png") no-repeat 8px center;background-size:15px 15px;border-radius: 5px;padding:7px 8px 7px 25px;}
-.title-box .kakao-btn span{font-size:$font-24px;color:$font-clr-1;letter-spacing:-0.05em;line-height: 1.2em;font-weight:bold;}
+.title-box .cab-kakao-btn{position: absolute;width:auto;height:auto;right:20px;bottom:0px;font-size:12px;background:#FFE636 url($img-path + "icon/kakao_icon.png") no-repeat 8px center;background-size:15px 15px;border-radius: 5px;padding:7px 8px 7px 25px;}
+.title-box .cab-kakao-btn span{font-size:$font-24px;color:$font-clr-1;letter-spacing:-0.05em;line-height: 1.2em;font-weight:bold;}
 
 
 .title-box-type2{padding:15px 0;}
