@@ -627,21 +627,75 @@
 .detail-tab-menu ul li.on button em{color:$font-clr-1;font-weight: bold;}
 .detail-tab-menu ul li.on button:after{content:'';display: block;position:absolute;bottom:0;width:100%;height:2px;background-color:$main-clr;}
 
-.goods-wrap .prod-info-box{}
-.goods-wrap .prod-info-box .delivery-box{margin-top:25px;}
-.goods-wrap .prod-info-box .delivery-box:first-child{margin-top:20px;}
-.goods-wrap .prod-info-box .delivery-box .tit-txt{font-size:$font-28px;color:$font-clr-1;letter-spacing: -0.05em;margin-bottom:10px;}
-.goods-wrap .prod-info-box .delivery-box address{position:relative;font-size:$font-26px;color:$font-clr-1;padding-left:10px;}
-.goods-wrap .prod-info-box .delivery-box address:before{content:'';display:block;position:absolute;left:0;top:11px;width:2px;height:2px;background-color:$main-clr;}
-.goods-wrap .prod-info-box .delivery-box address span{letter-spacing: -0.05em;}
-.goods-wrap .prod-info-box .delivery-box address a{text-decoration:underline;font-family:'Roboto';}
-.goods-wrap .prod-info-box .delivery-box dl{margin-bottom:30px;}
-.goods-wrap .prod-info-box .delivery-box dl:last-child{margin-bottom:0;}
-.goods-wrap .prod-info-box .delivery-box dl dt{margin-bottom:5px;}
-.goods-wrap .prod-info-box .delivery-box dl dt span{font-size:$font-26px;color:$font-clr-3;letter-spacing: -0.05em;font-weight: 500;}
-.goods-wrap .prod-info-box .delivery-box dl dd{}
-.goods-wrap .prod-info-box .delivery-box dl dd p{font-size:$font-26px;color:$font-clr-2;letter-spacing: -0.05em;margin-top:5px;}
-.goods-wrap .prod-info-box .delivery-box dl dd p:first-child{margin-top:0;}
+
+.prod-info-box {
+  padding-top:$dflt-pd1;
+  .tit-txt {
+    font-size: $font-28px;
+    color: $font-clr-1;
+    letter-spacing: -0.05em;
+    margin-bottom: 10px;
+  }
+  address {
+    position: relative;
+    font-size: $font-26px;
+    color: $font-clr-1;
+    padding-left: 10px;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 11px;
+      width: 2px;
+      height: 2px;
+      background-color: $main-clr;
+    }
+    span {
+      letter-spacing: -0.05em;
+    }
+    a {
+      text-decoration: underline;
+      font-family: 'Roboto';
+    }
+  }
+  .border-box {
+    margin-top:20px;
+  }
+  .delivery-box {
+    margin-top: 25px;
+    &:first-child {
+      margin-top: 20px;
+    }
+    dl {
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      dt {
+        margin-bottom: 5px;
+        span {
+          font-size: $font-26px;
+          color: $font-clr-3;
+          letter-spacing: -0.05em;
+          font-weight: 500;
+        }
+      }
+      dd {
+        p {
+          font-size: $font-26px;
+          color: $font-clr-2;
+          letter-spacing: -0.05em;
+          margin-top: 5px;
+          &:first-child {
+            margin-top: 0;
+          }
+
+        }
+      }
+    }
+  }
+}
 
 .goods-wrap .bottom-menu-box{position:fixed;left:50%;bottom:0;transform: translateX(-50%);width:100%;height:68px;max-width:640px;background-color:#fff;padding:10px 10px;border-left: 1px solid #e8e8e8;border-right: 1px solid #e8e8e8;overflow:hidden;box-shadow: 0 0px 5px 0 rgba(0,0,0,0.4);box-sizing: border-box;}
 .goods-wrap .bottom-menu-box button{display: inline-block;float:left;height:100%;font-size:12px;text-align:center;margin-left:8px;}
@@ -682,6 +736,12 @@
   .goods-accordion-box ul li dl dt p{color:$font-clr-3;}
   .goods-accordion-box ul li dl dd{position: relative;}
   .goods-accordion-box ul li dl dd p{color:$font-clr-1;}
+
+  .goods-accordion-box {
+    .inner-box {
+      @include setDfPadding();
+    }
+  }
 }
 
 /* 공통 ui -----------------------------------------------------------------------------*/

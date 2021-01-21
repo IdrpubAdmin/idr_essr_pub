@@ -8,20 +8,20 @@
 
 /* ---------------------------------------------------------- */
 /* font s =================================================== */
-/* @font-face {
+@font-face {
 	font-family: 'NotoSans';
 	font-weight: 300;
 	font-style: normal;
-	src: url("../font/NotoSansKR-Light.otf") format("opentype"),
-	url("../font/NotoSansKR-Light.woff2") format("woff2"),
+	src: /*url('../font/NotoSansKR-Light.otf') format("opentype"),*/
+	url('../font/NotoSansKR-Light.woff2') format("woff2"),
 	url("../font/NotoSansKR-Light.woff") format("woff");
-} */
+}
 
 @font-face {
   font-family: 'NotoSans';
   font-weight: 400;
   font-style: normal;
-  src: /*url("../font/NotoSansKR_Regular.otf") format("opentype"),*/
+  src: url("../font/NotoSansKR-Regular.otf") format("opentype"),
           url("../font/NotoSansKR-Regular.woff2") format("woff2"),
           url("../font/NotoSansKR-Regular.woff") format("woff");
 }
@@ -29,7 +29,7 @@
   font-family: 'NotoSans';
   font-weight: 500;
   font-style: normal;
-  src: /*url("../font/NotoSansKR_Regular.otf") format("opentype"),*/
+  src: url("../font/NotoSansKR-Medium.otf") format("opentype"),
           url("../font/NotoSansKR-Medium.woff2") format("woff2"),
           url("../font/NotoSansKR-Medium.woff") format("woff");
 }
@@ -51,6 +51,7 @@
 	url("../font/NotoSansKR-Black.woff") format("woff");
 } */
 
+/*
 @font-face {
   font-family: 'NotoSerif';
   font-weight: 300;
@@ -67,7 +68,7 @@
   url("../font/NotoSerifKR-Bold.woff") format("woff");
 }
 
-/* @font-face {
+@font-face {
 	font-family: 'NotoSerif';
 	font-weight: 400;
 	font-style: normal;
@@ -79,7 +80,8 @@
 	font-weight: 700;
 	font-style: normal;
 	src: url("../font/NotoSerifCJKkr-Bold.woff") format("woff");
-} */
+}
+*/
 
 /* @font-face {
 	font-family: 'Roboto';
@@ -123,6 +125,27 @@
           url("../font/Roboto-Bold.woff2") format("woff2"),
           url("../font/Roboto-Bold.woff") format("woff");
   /*url("../font/Roboto-Bold.ttf") format("truetype");*/
+}
+
+@font-face {
+  font-family: 'Campton';
+  font-weight: 300;
+  font-style: normal;
+  src: url("../font/Campton-LightDEMO.eot");
+  src: url("../font/Campton-LightDEMO.eot?#iefix") format("embedded-opentype"),
+          url("../font/Campton-LightDEMO.woff2") format("woff2"),
+          url("../font/Campton-LightDEMO.woff") format("woff"),
+          url("../font/Campton-LightDEMO.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Campton';
+  font-weight: 700;
+  font-style: normal;
+  src: url("../font/Campton-BoldDEMO.eot");
+  src: url("../font/Campton-BoldDEMO.eot?#iefix") format("embedded-opentype"),
+  url("../font/Campton-BoldDEMO.woff2") format("woff2"),
+  url("../font/Campton-BoldDEMO.woff") format("woff"),
+  url("../font/Campton-BoldDEMO.ttf") format("truetype");
 }
 
 /* font e =================================================== */

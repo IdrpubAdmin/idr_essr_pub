@@ -20,6 +20,13 @@
   border-radius:$brd-rnd;
 }
 
+.border-box {
+  padding:10px 10px 15px;
+  text-align:center;
+  border:1px solid $common-clr-2;
+  border-radius:$brd-rnd;
+}
+
 //코너
 .conner-box{position:relative;width:100%;}
 .conner-box .def-tit{position:relative;width:100%;font-size:1.4em;color:#222;padding:10px;box-sizing: border-box;}
@@ -1057,4 +1064,29 @@ $playbtn-size:40px;
   height:$playbtn-size;
   background:url($img-path + "temp/playIcon.png") no-repeat center center;
   background-size:$playbtn-size;
+}
+
+//table
+.view-table {
+  border:1px solid $common-clr-2;
+  border-bottom:0;
+  th,
+  td {
+    padding:10px 15px;
+    border-bottom:1px solid $common-clr-2;
+    vertical-align:middle;
+  }
+  th {
+    font-weight:$md;
+    color:$font-clr-2;
+    text-align:left;
+    border-right:1px solid $common-clr-2;
+  }
+  td {
+    font-weight:$md;
+    color:$font-clr-0;
+    a {
+      color:inherit;
+    }
+  }
 }

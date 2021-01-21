@@ -2,7 +2,7 @@
   <div class="detail-tab-menu">
     <ul>
       <li class="on"><button type="button"><em>상품설명</em></button></li>
-      <li><button type="button"><em>구매정보</em></button></li>
+      <li><button type="button"><em>고시정보</em></button></li>
       <li><button type="button"><em>배송/반품/교환</em></button></li>
     </ul>
   </div>

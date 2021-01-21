@@ -104,14 +104,65 @@
             <div class="detail-tab-container">
               <detail-tab-menu></detail-tab-menu>
             </div>
+            
             <!-- 상품설명 -->
             <div class="prod-info-box" style="display: block;">
               <img src="../../common/images/temp/main_banner.png" alt="">
             </div>
-            <!-- 구매정보 -->
+            <!-- //상품설명 -->
+            
+            <!-- 고시정보 -->
             <div class="prod-info-box">
-              <goods-accordion-box></goods-accordion-box>
+  
+              <!-- mkp-edit : 20210121 -->
+              <!--<goods-accordion-box></goods-accordion-box>-->
+              <div class="def-box">
+                <div class="inner-box">
+  
+                  <p class="tit-txt"><b>상품정보 제공고시</b></p>
+
+                  <table class="view-table">
+                    <colgroup>
+                      <col width="120px"/>
+                      <col/>
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                      <th>식품의유형</th>
+                      <td>상세페이지 참조</td>
+                    </tr>
+                    <tr>
+                      <th>생산자의 소재와 수입자명</th>
+                      <td>
+                        <a href="tel:18995900">
+                          <span>이랜드몰 고객센터</span> <b>1899-5900</b>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>&nbsp;</th>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <th>&nbsp;</th>
+                      <td>&nbsp;</td>
+                    </tr>
+                    </tbody>
+                  </table>
+      
+                  <div class="border-box">
+                    <a href="#none" class="underline-link sty2">
+                      <span>&#8270;</span> 셀러활동을 하면 리워드가 제공됩니다.
+                    </a>
+                  </div>
+    
+                </div>
+              </div>
+              <!-- //mkp-add : 20210121 -->
+              
             </div>
+            <!-- //고시정보 -->
+            
             <!-- 배송/반품/교환 -->
             <div class="prod-info-box">
               <div class="def-box">
@@ -165,6 +216,8 @@
                 </div>
               </div>
             </div>
+            <!-- //배송/반품/교환 -->
+            
           </div>
           <div class="bottom-menu-box">
             <button type="button" class="share-btn" @click="shareGoods($event.target)" data-param-url="paramUrl">
