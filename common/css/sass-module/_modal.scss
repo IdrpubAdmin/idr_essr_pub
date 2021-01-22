@@ -480,25 +480,25 @@
     .btn-share {
       display:inline-block;
       padding-top:105px;
-      width:81px;
+      width:100px;
       font-size:15px;
       font-weight:bold;
       color:#000;
     }
     .share-kakao-btn {
       display:inline-block;
-      margin-right:5%;
+      margin-right:2%;
       .btn-share {
-        background:url($img-path + "icon/icon_share_kakao.png") no-repeat left top;
-        background-size:100%;
+        background:url($img-path + "icon/icon_share_kakao.png") no-repeat center top;
+        background-size:80px;
       }
     }
     .share-url-btn {
       display:inline-block;
-      margin-left:5%;
+      margin-left:2%;
       .btn-share {
-        background:url($img-path + "icon/icon_share_url.png") no-repeat left top;
-        background-size:100%;
+        background:url($img-path + "icon/icon_share_url.png") no-repeat center top;
+        background-size:80px;
       }
     }
   }
