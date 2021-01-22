@@ -1731,12 +1731,7 @@ label {
   display: block;
   padding-bottom: 55%;
 }
-.prod-box .img-box.img-round {
-  background-color: #eee;
-  border: 1px solid #bcbcbc;
-  border-radius: 25px;
-}
-.prod-box .img-box.img-round:after {
+.prod-box .img-box.img-square:after {
   content: "";
   display: block;
   padding-bottom: 100%;
@@ -1786,6 +1781,7 @@ label {
   overflow: hidden;
 }
 .prod-box .info-box .sub-tit {
+  padding-top: 3px;
   height: 41px;
   font-size: 1.25em;
   line-height: 1.35em;
@@ -1794,6 +1790,7 @@ label {
   overflow: hidden;
 }
 .prod-box .info-box .desc {
+  padding-top: 2px;
   height: 37px;
   font-size: 1.167em;
   line-height: 1.35em;
@@ -1802,7 +1799,7 @@ label {
   overflow: hidden;
 }
 .prod-box .info-box p.oneLine {
-  height: 19px;
+  height: auto;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -1843,14 +1840,14 @@ label {
 .prod-box .social-box > button {
   font-size: 1em;
   line-height: 1.3em;
-  color: #767676;
+  color: #000;
   margin-right: 10px;
   vertical-align: bottom;
 }
 .prod-box .social-box > button .ico {
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   vertical-align: middle;
   margin-right: 5px;
 }
@@ -1858,15 +1855,17 @@ label {
   pointer-events: none;
 }
 .prod-box .social-box > button.share .ico {
-  background: url("../images/icon/prod_share.png") no-repeat left top;
-  background-size: 100%;
+  background: url("../images/icon/prod_share.png") no-repeat left center;
+  background-size: 16px;
 }
 .prod-box .social-box > button.like {
   pointer-events: none;
+  padding-left: 10px;
+  border-left: 1px solid #ddd;
 }
 .prod-box .social-box > button.like .ico {
-  background: url("../images/icon/prod_heart.png") no-repeat left top;
-  background-size: 100%;
+  background: url("../images/icon/prod_heart.png") no-repeat left center;
+  background-size: 17px;
 }
 .prod-box .social-box > button.on .ico {
   background-color: red;
@@ -1981,6 +1980,7 @@ label {
   margin-top: 57px;
 }
 .prod-box.align-left.img-size-s4 {
+  display: flex;
   height: auto;
 }
 .prod-box.align-left.img-size-s4 .img-box {
@@ -1992,16 +1992,12 @@ label {
   height: 100%;
   transform: translateX(-50%) translateY(-50%);
 }
-.prod-box.align-left.img-size-s4 .img-box .stk-box {
-  top: 10px;
-  left: 10px;
-}
 .prod-box.align-left.img-size-s4 .img-box .drawer-btn-0 {
   display: block;
 }
 .prod-box.align-left.img-size-s4 .info-box {
   width: 50%;
-  padding: 36px 0 0 10px;
+  padding: 18px 0 0 20px;
   -webkit-transform: translateY(0);
   -khtml-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -2022,13 +2018,22 @@ label {
 .prod-box.align-left.img-size-s4 .info-box .desc {
   height: auto;
   padding-top: 2px;
+  padding-bottom: 20px;
   font-size: 1.2rem;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
+.prod-box.align-left.img-size-s4 .info-box .social-box {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+}
 .prod-box.align-left.img-size-s4 .drawer-btn-1 {
   display: none;
+}
+.prod-box.align-left.img-size-s4 .share-btn-0 {
+  top: -12px;
 }
 .prod-box.align-left .info-box {
   float: left;

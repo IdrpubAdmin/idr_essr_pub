@@ -90,7 +90,7 @@ module.exports = {
     var that = this;
     return {
       productOption: {
-        imgMode:'',//img-wide 와이드 이미지 , img-rect 직사각형 이미지, img-round 라운드이미지
+        imgMode:'',//img-wide 와이드 이미지 , img-rect 직사각형 이미지, img-square 정사각형 이미지
         imgAlign:'align-left img-size-s1',// align-center 기본형, align-left 이미지 왼쪽, align-right 이미지 오른쪽
         //align-left 일경우 적용 이미지사이즈 img-size-s0(166 묶음코너1) , img-size-s1(190 묶음코너3) ,img-size-s2(196 랭킹구좌) .img-size-s3(230 기획전) .img-size-s4(50%)
         subTitLine: true,//서브타이틀 true 선택시 한줄표시

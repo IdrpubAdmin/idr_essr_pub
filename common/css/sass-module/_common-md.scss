@@ -216,10 +216,7 @@
     &.img-wide{background-color: #eee;
       &:after {content: "";display: block;padding-bottom: 55%;}
     }
-    &.img-round{
-      background-color:#eee;
-      border:1px solid #bcbcbc;
-      border-radius:25px;
+    &.img-square{
       &:after {content: "";display: block;padding-bottom:100%;}
     }
     >a{
@@ -262,6 +259,7 @@
       overflow: hidden;
     }
     .sub-tit {
+      padding-top:3px;
       height: 41px;
       font-size: $font-26px;
       line-height: 1.35em;
@@ -270,6 +268,7 @@
       overflow: hidden;
     }
     .desc {
+      padding-top:2px;
       height: 37px;
       font-size: $font-24px;
       line-height: 1.35em;
@@ -278,7 +277,8 @@
       overflow: hidden;
     }
     p.oneLine {
-      height: 19px;
+      //height: 19px;
+      height:auto;
       text-overflow: ellipsis;
       white-space: nowrap;
     }
@@ -309,17 +309,33 @@
   .social-box {
     margin-top:7px;
     >button {
-      font-size: 1em;line-height: 1.3em;color:$font-clr-2;margin-right: 10px;vertical-align: bottom;
+      font-size: 1em;
+      line-height: 1.3em;
+      color: $font-clr-0;
+      margin-right: 10px;
+      vertical-align: bottom;
       .ico {
-        display: inline-block;width: 15px;height: 15px;vertical-align: middle;margin-right: 5px;
+        display: inline-block;
+        width:20px;
+        height:20px;
+        vertical-align: middle;
+        margin-right: 5px;
       }
       &.share{
         pointer-events: none;
-        .ico{background:url($img-path + "icon/prod_share.png") no-repeat left top;background-size: 100%;}
+        .ico {
+          background: url($img-path + "icon/prod_share.png") no-repeat left center;
+          background-size: 16px;
+        }
       }
       &.like{
         pointer-events: none;
-        .ico{background:url($img-path + "icon/prod_heart.png") no-repeat left top;background-size: 100%;}
+        padding-left:10px;
+        border-left:1px solid #ddd;
+        .ico {
+          background: url($img-path + "icon/prod_heart.png") no-repeat left center;
+          background-size: 17px;
+        }
       }
     }
     >button.on {
@@ -395,6 +411,7 @@
       .info-box{width: calc(100% - 160px);padding:0 0 0 10px;margin-top: 57px;}
     }
     &.img-size-s4{
+      display:flex;
       height:auto;
       .img-box{
         width:50%;
@@ -404,18 +421,14 @@
           height:100%;
           transform:translateX(-50%) translateY(-50%);
         }
-        .stk-box {
-          top:10px;
-          left:10px;
-        }
         .drawer-btn-0 {
           display:block;
         }
-
       }
       .info-box {
         width:50%;
-        padding: 36px 0 0 10px;
+        padding: 18px 0 0 20px;
+        //&:after {content: "";display: block;padding-bottom:100%;}
         @include css3-prefix(transform, translateY(0));
         .tit {
           height:auto;
@@ -425,12 +438,19 @@
         .desc {
           height:auto;
           padding-top:2px;
+          padding-bottom:20px;
           font-size:1.2rem;
           @include set-ellipsis();
+        }
+        .social-box {
+          @include posa_bl(5px, 20px);
         }
       }
       .drawer-btn-1 {
         display:none;
+      }
+      .share-btn-0 {
+        top:-12px;
       }
     }
     .info-box{float:left;@include css3-prefix(transform, translateY(-50%));}
