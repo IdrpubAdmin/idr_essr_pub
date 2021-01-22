@@ -910,20 +910,17 @@ label {
   /*border-top:1px solid #eee;*/
   z-index: 6;
 }
-
 .tab-bar ul {
   overflow: hidden;
   width: 100%;
   border-top: 1px solid #eee;
 }
-
 .tab-bar ul li {
   float: left;
   width: 20%;
   height: 54px;
   text-align: center;
 }
-
 .tab-bar ul li a {
   display: block;
   width: 100%;
@@ -931,7 +928,6 @@ label {
   text-align: center;
   padding-top: 8px;
 }
-
 .tab-bar ul li em {
   display: block;
   font-size: 1em;
@@ -939,7 +935,6 @@ label {
   letter-spacing: -0.05em;
   line-height: 1.3em;
 }
-
 .tab-bar ul li i {
   display: inline-block;
   width: 22px;
@@ -947,58 +942,49 @@ label {
   background: url("../images/icon/tabmenu_icon.png") no-repeat;
   background-size: 110px;
 }
-
 .tab-bar ul li i.icon-home {
   background-position-x: 0;
 }
-
 .tab-bar ul li i.icon-shop {
   background-position-x: -22px;
 }
-
 .tab-bar ul li i.icon-drawer {
   background-position-x: -44px;
 }
-
 .tab-bar ul li i.icon-event {
-  background-position-x: -66px;
+  background: url("../images/icon/tabmenu_icon_event.png") no-repeat center 1px;
+  background-size: 20px;
 }
-
 .tab-bar ul li i.icon-my {
   background-position-x: -88px;
 }
-
 .tab-bar ul li.on i {
   background-position-y: -22px;
 }
-
-.tab-bar.fixed-tab-bar,
-.tab-bar.scr-tab-bar {
+.tab-bar ul li.on i.icon-event {
+  background-position: unset;
+  background: url("../images/icon/tabmenu_icon_event_on.png") no-repeat center 1px;
+  background-size: 20px;
+}
+.tab-bar.fixed-tab-bar, .tab-bar.scr-tab-bar {
   -webkit-transition: height 0.3s ease-in-out;
   -moz-transition: height 0.3s ease-in-out;
   -o-transition: height 0.3s ease-in-out;
   transition: height 0.3s ease-in-out;
 }
-
 .tab-bar.scr-tab-bar {
   height: 0;
 }
-
 .tab-bar.fixed-tab-bar {
   height: 54px;
-}
-
-.tab-bar.fixed-tab-bar {
   height: calc(constant(safe-area-inset-bottom) + 54px);
   height: calc(env(safe-area-inset-bottom) + 54px);
 }
-
-.tab-bar-hold {
+.tab-bar.tab-bar-hold {
   height: 54px !important;
   height: calc(constant(safe-area-inset-bottom) + 54px) !important;
   height: calc(env(safe-area-inset-bottom) + 54px) !important;
 }
-
 .tab-bar.force-height {
   height: 54px !important;
   border-top: none;
