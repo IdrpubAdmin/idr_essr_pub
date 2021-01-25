@@ -243,7 +243,7 @@
       //width:28px;
       //height:28px;
       //background:url($img-path + "icon/product_drawerIco_b.png") no-repeat left top;
-      background:url($img-path + "icon/product_drawerIco_b_v2.png") no-repeat left top;
+      background:url($img-path + "icon/product_drawerIco_w_v2.png") no-repeat left top;
       background-size:100%;
     }
   }
@@ -286,13 +286,13 @@
       display: inline-block;
       margin-top: 5px;
       margin-right: 5px;
-      font-size: $font-17r;
-      color: $point-clr;
+      font-size: $font-16r;
+      color: $point-clr-3;
     }
     .price {
       display: inline-block;
       margin-top: 5px;
-      font-size: $font-17r;
+      font-size: $font-16r;
       color: $font-clr-1;
       i {
         font-size: 0.85em;
@@ -427,18 +427,20 @@
       }
       .info-box {
         width:50%;
-        padding: 18px 0 0 20px;
+        padding:18px 0 0 20px;
         //&:after {content: "";display: block;padding-bottom:100%;}
         @include css3-prefix(transform, translateY(0));
         .tit {
           height:auto;
           font-size:1.6rem;
+          line-height:2rem;
           @include set-ellipsis(2);
         }
+        .sub-tit,
         .desc {
           height:auto;
           padding-top:2px;
-          padding-bottom:20px;
+          padding-bottom:14px;
           font-size:1.2rem;
           @include set-ellipsis();
         }
@@ -691,7 +693,6 @@
 .swiper-container .pagination-wrap .swiper-pagination-num{display:none;font-family: 'NotoSerif';font-size:14px;line-height:22px; text-align:right;white-space:nowrap; flex:0 0 0px;padding-left:14px; color: #ccc; font-weight: 400;}
 .swiper-container .pagination-wrap .swiper-pagination-num .current-num{color:#000; font-weight: 700;}
 
-
 //category-slide s--------------------------------------------//
 .cate-slide-box{margin-bottom:20px;}
 .category-slide{
@@ -739,7 +740,7 @@
           bottom: 0;
           width: 100%;
           height: 2px;
-          background-color: #000;
+          background-color:$point-clr-3;
         }
       }
     }

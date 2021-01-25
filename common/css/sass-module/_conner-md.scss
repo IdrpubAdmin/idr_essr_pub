@@ -5,6 +5,17 @@
 /* conner s ================================================= */
 
 //코너 가이드
+.gap-box-box {
+  border-top:1px solid #e1e1e1;
+  &:before {
+    content:'';
+    display:block;
+    margin-bottom:10px;
+    width:100%;
+    height:12px;
+    background:#f7f7f7;
+  }
+}
 .contents{
   .ui-box{
     .box-title{width:100%;color:#fff;font-weight: bold;font-size:1.4em;padding:10px;background-color:#888;box-sizing: border-box;}
@@ -189,16 +200,42 @@
 .template-box.temp-1 {
   .inner-box {
     .top-box {
-      border-bottom:1px solid $common-clr-1;padding-bottom:20px;margin-bottom:20px;
+      //border-bottom: 1px solid $common-clr-1;
+      //margin-bottom: 20px;
+      padding-bottom: 20px;
       .user-info {
-        margin-bottom:10px;
-        span {vertical-align: middle;}
-        .user{display: inline-block;width: 25px;height: 25px;overflow: hidden;border-radius: 50%;}
-        .name{font-size:$font-26px;color:$font-clr-1;margin-left:5px;}
-        .date{font-size:$font-26px;color:$font-clr-3;margin-left:5px;font-family:'Roboto';}
+        margin-bottom: 10px;
+        span {
+          vertical-align: middle;
+        }
+        .user {
+          display: inline-block;
+          //width: 25px;
+          //height: 25px;
+          width:40px;
+          height:40px;
+          overflow:hidden;
+          //border-radius50%;
+          border-radius:34%;
+          border:1px solid #ccc;
+        }
+        .name {
+          font-size: $font-26px;
+          color: $font-clr-1;
+          margin-left: 5px;
+        }
+        .date {
+          font-size: $font-26px;
+          color: $font-clr-3;
+          margin-left: 5px;
+          font-family: 'Roboto';
+        }
       }
       .img-box {
-        position:relative;width: calc(100% + 20px);margin-bottom:20px;
+        position: relative;
+        //width: calc(100% + 20px);
+        width:100%;
+        margin-bottom: 20px;
         img {width: 100%;}
       }
       .info-box{
@@ -215,7 +252,30 @@
         }
       }
     }
-    .bottom-box{border-bottom:1px solid $common-clr-1;padding-bottom:20px;}
+    .bottom-box {
+      @include setFullBox();
+      padding-top:40px;
+      padding-bottom:40px;
+      background-color:$point-clr-3;
+      border-bottom: 1px solid $common-clr-1;
+      box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1) inset;
+      .prod-list {
+        @include setDfPadding();
+        .prod-box {
+          background:#fff;
+          .info-box {
+            padding-top:36px;
+            padding-right:20px;
+          }
+          &.img-size-s4 {
+            .share-btn-0 {
+              top:0;
+              right:10px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 //Corner No.8 묶음코너 2-1
