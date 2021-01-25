@@ -1440,6 +1440,7 @@ label {
 
 .conner-container {
   position: relative;
+  min-height: 80px;
   background-color: #fff;
 }
 
