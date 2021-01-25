@@ -4615,6 +4615,7 @@ label {
 }
 .goods-banner .inner-box {
   position: fixed;
+  width: 100%;
   max-width: 638px;
 }
 .goods-banner .inner-box .dim-box {

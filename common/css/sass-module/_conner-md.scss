@@ -404,9 +404,12 @@
 }
 //상품상세 상단 배너
 .goods-banner {
-  position:relative;max-width: 638px;
+  position: relative;
+  max-width: 638px;
   .inner-box {
-    position:fixed;max-width:638px;
+    position: fixed;
+    width:100%;
+    max-width: 638px;
     .dim-box{position: absolute;left:0;top:0;width:100%;height:100%;background:#000;pointer-events:none;z-index: 2;}
     .img-box {
       position: relative;width: 100%;
