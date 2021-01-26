@@ -1193,4 +1193,21 @@ $playbtn-size:40px;
       color:inherit;
     }
   }
+  &.sty2 {
+    th,
+    td {
+      border-right:1px solid $common-clr-2;
+    }
+    th {
+      background:$common-clr-1;
+    }
+  }
+}
+
+//policy
+.policy-text-wrap {
+  white-space:pre-line;
+  .view-table {
+    margin-top:14px;
+  }
 }

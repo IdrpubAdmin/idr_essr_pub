@@ -20,7 +20,7 @@
           </div>
         </div>
         <div class="btn-rgt">
-          <a href="#none" class="login-btn">로그인</a>
+          <a href="#none" class="login-btn" v-if="isLoginBtn">로그인</a>
           <button class="icon-header-home" v-if="isHomeBtn">홈</button>
           <button class="icon-header-search" v-if="isSearchBtn">검색</button>
           <button class="icon-header-drawer on" v-if="isDrawerBtn">내창고</button>
@@ -68,6 +68,7 @@
             subCategory: Boolean,
             isMainIcon: Boolean,
             isBackBtn: Boolean,
+            isLoginBtn: Boolean,
             isHomeBtn: Boolean,
             isSearchBtn: Boolean,
             isDrawerBtn: Boolean,

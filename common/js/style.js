@@ -662,7 +662,8 @@ Modal = (function(doc, global) {
         if(_scrBox) StyleCommon.forceScroller(_scrBox);
         // PRIVATE METHOD
         if(modal){
-            var closeBtn = modal.querySelector('.icon-header-close, .btn-modal-close');
+            var closeBtn = modal.querySelector('.icon-header-close');
+            var closeBtn2 = modal.querySelector('.btn-modal-close');
             if(_dim){
                 _dim.onclick = function(){
                     _that.hide();
@@ -675,8 +676,14 @@ Modal = (function(doc, global) {
                     }
                 };
             }
+            if(closeBtn2){
+                closeBtn2.onclick = function(){
+                    if(!this.classList.contains('evt-none')){
+                        _that.hide();
+                    }
+                };
+            }
         }
-
         // PUBLIC METHOD
         _that.show = function(){
             if(modal) {
@@ -964,6 +971,10 @@ function scrollLock(bool){
 
 function openPopup(obj){
     new Modal('.' +obj).show();
+}
+function closePopup(obj){
+    console.log('d')
+    new Modal('.' +obj).hide();
 }
 
 function getBodyScrollTop() {

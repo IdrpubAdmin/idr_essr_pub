@@ -3129,6 +3129,20 @@ label {
 .view-table td a {
   color: inherit;
 }
+.view-table.sty2 th,
+.view-table.sty2 td {
+  border-right: 1px solid #ddd;
+}
+.view-table.sty2 th {
+  background: #f5f5f5;
+}
+
+.policy-text-wrap {
+  white-space: pre-line;
+}
+.policy-text-wrap .view-table {
+  margin-top: 14px;
+}
 
 /* ========================================================== */
 /*                                                            */

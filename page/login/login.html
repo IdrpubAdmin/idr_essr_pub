@@ -33,6 +33,7 @@
                      :sub-category="false"
                      :is-main-icon="false"
                      :is-back-btn="true"
+                     :is-login-btn="false"
                      :is-home-btn="false"
                      :is-search-btn="true"
                      :is-drawer-btn="true"
@@ -70,6 +71,7 @@
       </article>
       <!-- //contents -->
 
+      <!-- mkp-edit : 20210126 -->
       <!--   셀러쇼룸 가입 동의 팝업   -->
       <div class="modal-wrap big seller-agree-popup" style="display:none;">
         <div class="modal-layer">
@@ -93,25 +95,13 @@
                   <label for="chkBoxId2" class="chk-box-type2">
                     <input type="checkbox" id="chkBoxId2" chekced="">
                     <span class="square"></span>
-                    <p><em>셀러쇼룸 계정 약관</em></p>
+                    <p><em>이용약관</em></p>
                   </label>
                   <div class="terms-box">
                     <div class="terms-inner scr-box">
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
+
+                      <policy-text-terms></policy-text-terms>
+
                     </div>
                   </div>
                 </div>
@@ -119,25 +109,13 @@
                   <label for="chkBoxId3" class="chk-box-type2">
                     <input type="checkbox" id="chkBoxId3" chekced="">
                     <span class="square"></span>
-                    <p><em>셀러쇼룸 통합서비스 약관</em></p>
+                    <p><em>개인정보처리방침</em></p>
                   </label>
                   <div class="terms-box">
                     <div class="terms-inner scr-box">
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
+
+                      <policy-text-privacy></policy-text-privacy>
+
                     </div>
                   </div>
                 </div>
@@ -145,25 +123,13 @@
                   <label for="chkBoxId4" class="chk-box-type2">
                     <input type="checkbox" id="chkBoxId4" chekced="">
                     <span class="square"></span>
-                    <p><em>개인정보 수집 및 이용 동의</em></p>
+                    <p><em>운영약관</em></p>
                   </label>
                   <div class="terms-box">
                     <div class="terms-inner scr-box">
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
-                      <p>*동의 정책 수급 후 반영</p>
+
+                      <policy-text-operation></policy-text-operation>
+
                     </div>
                   </div>
                 </div>
@@ -180,6 +146,7 @@
         <div class="dim"></div>
       </div>
       <!--   //셀러쇼룸 가입 동의 팝업   -->
+      <!-- //mkp-edit : 20210126 -->
 
       <!--   셀러쇼룸 추가정보 팝업   -->
       <div class="modal-wrap big seller-info-popup" style="display:none;">
@@ -433,6 +400,9 @@
         'product-list': semVueLoader('../../common/js/sem-vue/components/common/product-list.vue'),
         'home-branch-nav': semVueLoader('../../common/js/sem-vue/components/home/home-branch-nav.vue'),
         'home-footer': semVueLoader('../../common/js/sem-vue/components/home/footer.vue'),
+        'policy-text-terms': httpVueLoader('../../common/js/sem-vue/components/home/policy-text-terms.vue'),
+        'policy-text-privacy': httpVueLoader('../../common/js/sem-vue/components/home/policy-text-privacy.vue'),
+        'policy-text-operation': httpVueLoader('../../common/js/sem-vue/components/home/policy-text-operation.vue'),
       },
       data() {
         return {
