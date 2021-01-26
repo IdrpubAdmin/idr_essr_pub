@@ -944,8 +944,8 @@ label {
   display: inline-block;
   width: 22px;
   height: 22px;
-  background: url("../images/icon/tabmenu_icon.png") no-repeat;
-  background-size: 110px;
+  background: url("../images/icon/tabmenu_icon_v2.png") no-repeat;
+  background-size: 111px;
 }
 .tab-bar ul li i.icon-home {
   background-position-x: 0;
@@ -957,8 +957,7 @@ label {
   background-position-x: -44px;
 }
 .tab-bar ul li i.icon-event {
-  background: url("../images/icon/tabmenu_icon_event.png") no-repeat center 1px;
-  background-size: 20px;
+  background-position-x: -66px;
 }
 .tab-bar ul li i.icon-my {
   background-position-x: -88px;
@@ -966,10 +965,8 @@ label {
 .tab-bar ul li.on i {
   background-position-y: -22px;
 }
-.tab-bar ul li.on i.icon-event {
-  background-position: unset;
-  background: url("../images/icon/tabmenu_icon_event_on.png") no-repeat center 1px;
-  background-size: 20px;
+.tab-bar ul li.on em {
+  color: #f30000;
 }
 .tab-bar.fixed-tab-bar, .tab-bar.scr-tab-bar {
   -webkit-transition: height 0.3s ease-in-out;

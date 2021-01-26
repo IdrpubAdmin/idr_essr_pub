@@ -280,8 +280,8 @@
         display: inline-block;
         width: 22px;
         height: 22px;
-        background: url($img-path + "icon/tabmenu_icon.png") no-repeat;
-        background-size: 110px;
+        background: url($img-path + "icon/tabmenu_icon_v2.png") no-repeat;
+        background-size: 111px;
         &.icon-home {
           background-position-x: 0;
         }
@@ -292,9 +292,9 @@
           background-position-x: -44px;
         }
         &.icon-event {
-          //background-position-x: -66px;
-          background: url($img-path + "icon/tabmenu_icon_event.png") no-repeat center 1px;
-          background-size:20px;
+          background-position-x: -66px;
+          //background: url($img-path + "icon/tabmenu_icon_event.png") no-repeat center 1px;
+          //background-size:20px;
         }
         &.icon-my {
           background-position-x: -88px;
@@ -303,11 +303,14 @@
       &.on {
         i {
           background-position-y: -22px;
-          &.icon-event {
-            background-position:unset;
-            background: url($img-path + "icon/tabmenu_icon_event_on.png") no-repeat center 1px;
-            background-size:20px;
-          }
+          //&.icon-event {
+          //  background-position:unset;
+          //  background: url($img-path + "icon/tabmenu_icon_event_on.png") no-repeat center 1px;
+          //  background-size:20px;
+          //}
+        }
+        em {
+          color:$point-clr;
         }
       }
     }
