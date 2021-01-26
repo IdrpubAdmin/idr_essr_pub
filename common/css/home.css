@@ -475,7 +475,7 @@ label {
   transform: translateY(-50%);
   display: inline-block;
   width: 150px;
-  background: url("../images/common/header/header_logo_b.png") no-repeat;
+  background: url("../images/common/header/header_logo_b_v2.png") no-repeat;
   background-size: 100%;
 }
 .header-wrap .header .header-top .sem_header_bi a {
@@ -863,7 +863,7 @@ label {
   background: none;
 }
 .wrapper.visual-wrap-type .header-wrap .header .header-top .sem_header_bi {
-  background-image: url("../images/common/header/header_logo_w.png");
+  background-image: url("../images/common/header/header_logo_w_v2.png");
 }
 .wrapper.visual-wrap-type .header-wrap .header .header-top .icon-header-back {
   background-image: url("../images/common/header/header_backIcon_w_v2.png");
@@ -884,7 +884,7 @@ label {
   background: #fff;
 }
 .wrapper.visual-wrap-type .header-wrap.header-type .header .header-top .sem_header_bi {
-  background-image: url("../images/common/header/header_logo_b.png");
+  background-image: url("../images/common/header/header_logo_b_v2.png");
 }
 .wrapper.visual-wrap-type .header-wrap.header-type .header .header-top .icon-header-back {
   background-image: url("../images/common/header/header_backIcon_b_v2.png");
@@ -1061,8 +1061,6 @@ label {
     max-width: 640px;
     left: calc(50% - (320px));
     box-shadow: none;
-    border-left: 1px solid #e8e8e8;
-    border-right: 1px solid #e8e8e8;
   }
 
   .tab-bar {
