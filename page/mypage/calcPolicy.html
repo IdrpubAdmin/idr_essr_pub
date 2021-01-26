@@ -5,13 +5,13 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   <meta http-equiv="pragma" content="no-cache">
-  <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,shrink-to-fit=no,viewport-fit=cover">
   <meta name="format-detection" content="telephone=no">
   <link rel="shortcut icon" type="image/x-icon" href="../common/images/common/favicon.ico">
-  <title>마이페이지</title>
+  <title>마이페이지 - 판매현황 홈</title>
   <link rel="stylesheet" href="../../common/css/mypage.css">
-<!--  <link rel="stylesheet" href="../../common/css/guide.css">-->
+  <!--<link rel="stylesheet" href="../../common/css/guide.css">-->
   <script type="text/javascript" th:inline="javascript">
     /*<![CDATA[*/
     const _PageMixins = [];
@@ -42,44 +42,38 @@
     <section class="container">
       <!-- contents -->
       <article class="contents">
-        <div class="mypage-wrap selling">
-          <div class="top-banner">
-            <img src="../../common/images/temp/myselling-top.png" alt="">
-          </div>
+
+        <div class="mypage-wrap calc-policy-wrap">
+
           <div class="def-box">
             <div class="inner-box">
-              <ul class="selling-list">
-                <li>
-                  <a href="#none">
-                    <p>서비스 설명</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <p>판매 현황</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <p>정산확정 내역</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="calcPolicy.html">
-                    <p>정산정책</p>
-                  </a>
-                </li>
+
+              <ul class="ul-dot">
+                <li>취소 및 반품분을 제외한 최종 수익금을 익익월 15일에 지급합니다.</li>
+                <li>수입금의 최소 지급액은 1만원 입니다.</li>
+                <li>1만원을 넘지 않을 경우 이월 처리되며, 최대 이월 기간은 6개월 입니다.</li>
+                <li>수수료는 회원 및 상품마다 다르게 적용될 수 있습니다.</li>
+                <li>탭머니는 익일 반영됩니다. (오전 8시 이후에 확인하세요!)</li>
               </ul>
+
             </div>
           </div>
+
         </div>
+
         <home-footer></home-footer>
+
       </article>
+      <!-- //contents -->
     </section>
+    <!-- //container -->
+
     <!-- 하단 고정 네비 -->
     <nav class="tab-bar">
       <footer-menu v-if="showFooterMenu"></footer-menu>
     </nav>
+    <!-- //하단 고정 네비 -->
+
   </div>
   <script type="text/javascript" src="../../common/js/swiper.js"></script>
   <script type="text/javascript" src="../../common/js/vuejs/vue-2.6.11.js"></script>
@@ -114,11 +108,11 @@
       },
       data() {
         return {
-          pageTitle : "판매 현황 보기",
+          pageTitle : "정산정책",
           showFooterMenu: reqUrl.includes('/home') || reqUrl.includes('/shop') || reqUrl.includes('/drawer') || reqUrl.includes('/mypage')
         };
       },
-      mounted:function(){
+      mounted: function(){
         //title mounted
         if(this.pageTitle){
           updateDocTitle(this.pageTitle);

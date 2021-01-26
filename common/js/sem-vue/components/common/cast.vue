@@ -25,8 +25,11 @@
     </div>
 
     <!-- mkp-edit : 20210120 -->
+    <!-- mkp-edit : 20210126 -->
     <!--<button type="button" class="share-btn-0" @click="shareGoods($event.target)" data-param-url="paramUrl">공유하기</button>-->
-    <button type="button" class="kakaotalk-btn"><span class="ico">카카오톡공유하기</span></button>
+    <!--<button type="button" class="kakaotalk-btn"><span class="ico">카카오톡공유하기</span></button>-->
+    <button type="button" class="share-btn-1">공유하기</button>
+    <!-- mkp-edit : 20210126 -->
     <!-- //mkp-edit : 20210120 -->
 
   </div>

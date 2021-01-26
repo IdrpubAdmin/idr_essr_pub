@@ -621,10 +621,13 @@
     }
   }
   .share-btn-0,
-  .kakaotalk-btn {
+  .kakaotalk-btn,
+  .share-btn-1 {
     top:unset;
     right:5px;
     bottom:0;
+    width:30px;
+    height:30px;
   }
   &.align-left{
     //img-size-s0
@@ -1209,5 +1212,25 @@ $playbtn-size:40px;
   white-space:pre-line;
   .view-table {
     margin-top:14px;
+  }
+}
+
+//ul
+.ul-dot {
+  > li {
+    position:relative;
+    margin-bottom:10px;
+    padding-left:8px;
+    font-size:1.4rem;
+    color:$font-clr-0;
+    &:before {
+      content:'';
+      @include posa_tl(7px,0);
+      display:inline-block;
+      width:4px;
+      height:4px;
+      background:#999;
+      border-radius:50%;
+    }
   }
 }

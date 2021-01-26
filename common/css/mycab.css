@@ -1294,6 +1294,16 @@ label {
   background-size: 60%;
 }
 
+.share-btn-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  background: url("../images/icon/detail_share_0_v2.png") no-repeat center;
+  background-size: 100%;
+}
+
 .underline-link {
   display: inline-block;
   font-size: 1.3rem;
@@ -2318,10 +2328,13 @@ label {
   color: #000;
 }
 .cast-box .share-btn-0,
-.cast-box .kakaotalk-btn {
+.cast-box .kakaotalk-btn,
+.cast-box .share-btn-1 {
   top: unset;
   right: 5px;
   bottom: 0;
+  width: 30px;
+  height: 30px;
 }
 .cast-box.align-left.img-size-s0 .img-box {
   width: 48%;
@@ -3142,6 +3155,25 @@ label {
 }
 .policy-text-wrap .view-table {
   margin-top: 14px;
+}
+
+.ul-dot > li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 8px;
+  font-size: 1.4rem;
+  color: #000;
+}
+.ul-dot > li:before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 0;
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #999;
+  border-radius: 50%;
 }
 
 /* ========================================================== */
@@ -6384,10 +6416,11 @@ label {
   background: url("../images/icon/kakao_share_74x74.png") no-repeat left top;
   background-size: 100%;
 }
-.cap-list li .share-btn-0 {
+.cap-list li .share-btn-0,
+.cap-list li .share-btn-1 {
   top: unset;
   right: 5px;
-  bottom: 0;
+  bottom: 5px;
 }
 .cap-list li .stk-box {
   top: unset;
@@ -6511,6 +6544,10 @@ label {
 
 .seller-sign-box .button-box .policy-btn:before {
   background-position-x: -44px;
+}
+
+.mycap-wrap {
+  padding-bottom: 40px;
 }
 
 .mycap-wrap .mycap-info-box {

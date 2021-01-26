@@ -13,7 +13,7 @@
 @include home-footer;
 @include md-cap;
 
-.mycap-wrap{}
+.mycap-wrap{padding-bottom:40px;}
 .mycap-wrap .mycap-info-box{position:relative;background-color:$main-clr;}
 .mycap-wrap .mycap-info-box .bg-box{position:absolute;left:0;top:0;width:100%;height:100%;}
 .mycap-wrap .mycap-info-box .bg-box:before{content:'';display: block;position:absolute;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,0.05);z-index: 0;}

@@ -990,10 +990,11 @@
         background: url($img-path + "icon/kakao_share_74x74.png") no-repeat left top;
         background-size: 100%;
       }
-      .share-btn-0 {
+      .share-btn-0,
+      .share-btn-1 {
         top:unset;
         right:5px;
-        bottom:0;
+        bottom:5px;
       }
       .stk-box {
         top:unset;
