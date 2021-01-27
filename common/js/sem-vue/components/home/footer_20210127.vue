@@ -1,6 +1,6 @@
 <template>
-  <!-- mkp-edit : 20210127 -->
-  <div id="footer">
+  <!-- mkp-edit : 20210122 -->
+  <div id="footer" class="v2">
     <div class="footer-nav">
       <ul>
         <li><a href="#">로그인</a></li>
@@ -19,19 +19,16 @@
         <p>개인정보 보호책임자 : 이동규</p>
       </address>
 
+      <!-- mkp-edit : 20210126 -->
       <a href="#none" class="anchor-txt" onclick="openPopup('policy-terms-popup')">이용약관</a>
       <a href="#none" class="anchor-txt" onclick="openPopup('policy-privacy-popup')">개인정보처리방침</a>
       <a href="#none" class="anchor-txt" onclick="openPopup('policy-operation-popup')">운영정책</a>
-
-      <ul class="footer-sns-list">
-        <li class="insta"><a href="#none">인스타그램</a></li>
-        <li class="face"><a href="#none">레이스북</a></li>
-        <li class="band"><a href="#none">인스타그램</a></li>
-      </ul>
+      <!-- //mkp-edit : 20210126 -->
 
       <p class="copy">Copyright © Elandretail All rights reserved.</p>
     </div>
 
+    <!-- mkp-add : 20210126 -->
     <!-- 이용약관 팝업   -->
     <div class="modal-wrap big policy-terms-popup" style="display:none;">
       <div class="modal-layer">
@@ -91,9 +88,10 @@
       <div class="dim"></div>
     </div>
     <!-- //운영정책 팝업   -->
+    <!-- //mkp-add : 20210126 -->
 
   </div>
-  <!-- //mkp-edit : 20210127 -->
+  <!-- //mkp-edit : 20210122 -->
 
 </template>
 

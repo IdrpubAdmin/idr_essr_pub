@@ -34,7 +34,6 @@
           text-indent: -9999px;
         }
       }
-      /*
       .login-btn {
         position: relative;
         top: 2px;
@@ -44,15 +43,13 @@
         margin-right: 5px;
         line-height: 1.5em;
       }
-      */
-      button,
-      .login-btn {
+      button {
         width: 32px;
         height: 32px;
         z-index: 11;
       }
       button {
-        margin-left:8px;
+        //margin-left:8px;
       }
       .icon-header-back {
         position: absolute;
@@ -80,20 +77,23 @@
         .login-btn {
           display:inline-block;
           vertical-align:middle;
-          @include textHide();
-          background: url($img-path + 'common/header/header_login_b_v2.png') no-repeat;
-          background-size: 32px;
+          //@include textHide();
+          //background: url($img-path + 'common/header/header_login_b_v2.png') no-repeat;
+          //background-size: 32px;
         }
         .icon-header-home {
-          background: url($img-path + 'common/header/header_home_b_v2.png') no-repeat;
+          //background: url($img-path + 'common/header/header_home_b_v2.png') no-repeat;
+          background: url($img-path + 'common/header/header_home_b.png') no-repeat;
           background-size: 32px;
         }
         .icon-header-search {
-          background: url($img-path + 'common/header/header_searchIcon_b_v2.png') no-repeat;
+          //background: url($img-path + 'common/header/header_searchIcon_b_v2.png') no-repeat;
+          background: url($img-path + 'common/header/header_searchIcon_b.png') no-repeat;
           background-size: 32px;
         }.icon-header-drawer {
            position: relative;
-           background: url($img-path + 'common/header/header_drawer_b_v2.png') no-repeat;
+           //background: url($img-path + 'common/header/header_drawer_b_v2.png') no-repeat;
+           background: url($img-path + 'common/header/header_drawer_b.png') no-repeat;
            background-size: 32px;
            &.on:after{
              content: '';
@@ -124,7 +124,8 @@
   left: 20px;
   top: 50%;
   transform: translateY(-50%);
-  background: url($img-path + 'common/header/header_backIcon_b_v2.png') no-repeat;
+  //background: url($img-path + 'common/header/header_backIcon_b_v2.png') no-repeat;
+  background: url($img-path + 'common/header/header_backIcon_b.png') no-repeat;
   background-size:contain;
 }
 
@@ -187,24 +188,29 @@
         .header-top {
           background: none;
           .sem_header_bi {
-            background-image: url($img-path + 'common/header/header_logo_w_v2.png');
+            //background-image: url($img-path + 'common/header/header_logo_w_v2.png');
+            background-image: url($img-path + 'common/header/header_logo_b_v2.png');
           }
           .icon-header-back {
-            background-image: url($img-path + 'common/header/header_backIcon_w_v2.png');
+            //background-image: url($img-path + 'common/header/header_backIcon_w_v2.png');
+            background-image: url($img-path + 'common/header/header_backIcon_w.png');
           }
           .btn-rgt {
             .login-btn {
-              //color: #fff;
-              background-image: url($img-path + 'common/header/header_login_w_v2.png');
+              color: #fff;
+              //background-image: url($img-path + 'common/header/header_login_w_v2.png');
             }
             .icon-header-home {
-              background-image: url($img-path + 'common/header/header_home_w_v2.png');
+              //background-image: url($img-path + 'common/header/header_home_w_v2.png');
+              background-image: url($img-path + 'common/header/header_home_w.png');
             }
             .icon-header-search {
-              background-image: url($img-path + 'common/header/header_searchIcon_w_v2.png');
+              //background-image: url($img-path + 'common/header/header_searchIcon_w_v2.png');
+              background-image: url($img-path + 'common/header/header_searchIcon_w.png');
             }
             .icon-header-drawer {
-              background-image: url($img-path + 'common/header/header_drawer_w_v2.png');
+              //background-image: url($img-path + 'common/header/header_drawer_w_v2.png');
+              background-image: url($img-path + 'common/header/header_drawer_w.png');
             }
           }
         }
@@ -217,21 +223,25 @@
               background-image: url($img-path + 'common/header/header_logo_b_v2.png');
             }
             .icon-header-back {
-              background-image: url($img-path + 'common/header/header_backIcon_b_v2.png');
+              //background-image: url($img-path + 'common/header/header_backIcon_b_v2.png');
+              background-image: url($img-path + 'common/header/header_backIcon_b.png');
             }
             .btn-rgt {
               .login-btn {
-                //color: #fff;
-                background-image: url($img-path + 'common/header/header_login_b_v2.png');
+                color: #000;
+                //background-image: url($img-path + 'common/header/header_login_b_v2.png');
               }
               .icon-header-home {
-                background-image: url($img-path + 'common/header/header_home_b_v2.png');
+                //background-image: url($img-path + 'common/header/header_home_b_v2.png');
+                background-image: url($img-path + 'common/header/header_home_b.png');
               }
               .icon-header-search {
-                background-image: url($img-path + 'common/header/header_searchIcon_b_v2.png');
+                //background-image: url($img-path + 'common/header/header_searchIcon_b_v2.png');
+                background-image: url($img-path + 'common/header/header_searchIcon_b.png');
               }
               .icon-header-drawer {
-                background-image: url($img-path + 'common/header/header_drawer_b_v2.png');
+                //background-image: url($img-path + 'common/header/header_drawer_b_v2.png');
+                background-image: url($img-path + 'common/header/header_drawer_b.png');
               }
             }
           }
@@ -280,7 +290,8 @@
         display: inline-block;
         width: 22px;
         height: 22px;
-        background: url($img-path + "icon/tabmenu_icon_v2.png") no-repeat;
+        //background: url($img-path + "icon/tabmenu_icon_v2.png") no-repeat;
+        background: url($img-path + "icon/tabmenu_icon.png") no-repeat;
         background-size: 111px;
         &.icon-home {
           background-position-x: 0;
@@ -310,7 +321,8 @@
           //}
         }
         em {
-          color:$point-clr;
+          //color:$point-clr;
+          color:#000;
         }
       }
     }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   <meta http-equiv="pragma" content="no-cache">
@@ -346,7 +346,7 @@
       <!--   //셀러쇼룸 추가정보 팝업   -->
 
       <!--   셀러쇼룸 가입완료 팝업   -->
-      <div class="modal-wrap big seller-complete-popup" style="display:none;">
+      <div class="modal-wrap big seller-complete-popup-old" style="display:none;">
         <div class="modal-layer">
           <div class="inner-box has-btn">
             <strong class="modal_tit">셀러쇼룸 가입</strong>
@@ -371,6 +371,44 @@
         <div class="dim"></div>
       </div>
       <!--   //셀러쇼룸 가입완료 팝업   -->
+
+      <!-- mkp-add : 20210127 -->
+      <!--   셀러쇼룸 가입완료 팝업_v2   -->
+      <div class="modal-wrap big seller-complete-popup" style="display:none;">
+        <div class="modal-layer">
+          <div class="inner-box has-btn">
+            <strong class="modal_tit">QualQual 가입</strong>
+            <div class="modal_cont">
+              <div class="complete-box v2">
+                <div class="gray-box">
+                  <p><b>회원가입이 완료되었습니다.</b></p>
+                  <p>QualQual에서 셀러로 활동을 해보세요!</p>
+                </div>
+
+                <div class="text-box type-nor border-type2">
+                  <p class="tit-txt">추천인 아이디</p>
+                  <div class="ipt-txt-box">
+                    <div>
+                      <input type="text" placeholder="QualQual" maxlength="10" class="input-type-nb">
+                      <button type="button" class="txt-reset-btn" style="">입력값 삭제</button>
+                      <p class="input-error red" style=""><span class="txt-entity">&#8270;</span>추천인 아이디는 가입 시 1회만 입력 가능하며 수정이 불가능 합니다.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="button-box">
+              <!-- 버튼 비활성화 상태 disabled 추가 -->
+              <button type="button" class="modal-blk-btn w100"><span>확인</span></button>
+            </div>
+            <button type="button" class="icon-header-close">팝업닫기</button>
+          </div>
+        </div>
+        <div class="dim"></div>
+      </div>
+      <!--   //셀러쇼룸 가입완료 팝업   -->
+      <!-- //mkp-add : 20210127 -->
 
     </section>
     <!-- //container -->

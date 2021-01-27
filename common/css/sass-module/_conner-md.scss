@@ -254,11 +254,11 @@
     }
     .bottom-box {
       @include setFullBox();
-      padding-top:40px;
-      padding-bottom:40px;
-      background-color:$point-clr-3;
-      border-bottom: 1px solid $common-clr-1;
-      box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1) inset;
+      padding-top:20px;
+      padding-bottom:20px;
+      //background-color:$point-clr-3;
+      //box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1) inset;
+      border-top: 1px solid $common-clr-1;
       .prod-list {
         @include setDfPadding();
         .prod-box {
@@ -269,8 +269,8 @@
           }
           &.img-size-s4 {
             .share-btn-0 {
-              top:0;
-              right:10px;
+              //top:0;
+              //right:10px;
             }
           }
         }

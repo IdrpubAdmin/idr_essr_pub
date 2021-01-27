@@ -194,14 +194,21 @@
         &:nth-child(1) {
           margin-right: 2%;
         }
-        &.red-btn:before {
+        &.red-btn:before,
+        &.point-btn:before {
           content: '';
           display: inline-block;
           width: 14px;
           height: 14px;
           font-weight: 500;
           margin-right: 10px;
+        }
+        &.red-btn:before {
           background: url($img-path + "icon/plus_28x28_fff.png") no-repeat left top;
+          background-size: 100%;
+        }
+        &.point-btn:before {
+          background: url($img-path + "icon/plus_28x28_000.png") no-repeat left top;
           background-size: 100%;
         }
         &:only-child {

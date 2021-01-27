@@ -52,8 +52,38 @@
 .gray-btn2{display:inline-block;height:40px;font-size:$font-26px;color:$font-clr-2;text-align:center;line-height: 2.8em;background-color:#ddd;border-radius:5px;}
 .gray-btn2.h80{height:40px;font-size:$font-26px;line-height: 2.8em;}
 .gray-btn2.h96{height:48px;font-size:$font-30px;line-height: 2.8em;}
-.red-btn{display:inline-block;height:38px;font-size:$font-26px;color:$font-clr-4;text-align:center;line-height: 2.8em;background-color:$point-clr;border-radius:5px;}
-.red-btn.h96{height:48px;font-size:$font-34px;line-height: 2.8em;}
+
+.red-btn {
+  display: inline-block;
+  height: 38px;
+  font-size: $font-26px;
+  color: $font-clr-4;
+  text-align: center;
+  line-height: 2.8em;
+  background-color: $point-clr;
+  border-radius: 5px;
+  &.h96 {
+    height: 48px;
+    font-size: $font-34px;
+    line-height: 2.8em;
+  }
+}
+
+.point-btn {
+  display: inline-block;
+  height: 38px;
+  font-size: $font-26px;
+  color: $font-clr-0;
+  text-align: center;
+  line-height: 2.8em;
+  background-color: $point-clr-3;
+  border-radius: 5px;
+  &.h96 {
+    height: 48px;
+    font-size: $font-34px;
+    line-height: 2.8em;
+  }
+}
 
 .share-btn {
   width: 28px;
@@ -110,9 +140,6 @@
     font-size:$font-12r;
     color:$point-clr-2;
     border-bottom:1px solid $point-clr-2;
-    span {
-      vertical-align:super;
-    }
   }
 }
 

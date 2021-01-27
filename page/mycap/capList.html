@@ -74,7 +74,10 @@
           <div class="def-box mycap-add-box">
             <div class="inner-box">
               <p>나만의 서랍를 만들고<br>원하는 대로 상품들을 담아보세요.</p>
-              <button type="button" class="red-btn"><span>상품담기</span></button>
+              <!-- mkp-edit : 20210127 -->
+              <!--<button type="button" class="red-btn"><span>상품담기</span></button>-->
+              <button type="button" class="point-btn"><span>상품담기</span></button>
+              <!-- mkp-edit : 20210127 -->
             </div>
           </div>
 
@@ -341,11 +344,17 @@
   
               <div class="mycap-setting-box">
                 <div class="cap-add-box nor">
-                  <button type="button" class="red-btn h96" onclick="openPopup('ppp-mycap-add');"><span>새 서랍 추가</span></button>
+                  <!-- mkp-edit : 20210127 -->
+                  <!--<button type="button" class="red-btn h96" onclick="openPopup('ppp-mycap-add');"><span>새 서랍 추가</span></button>-->
+                  <button type="button" class="point-btn h96" onclick="openPopup('ppp-mycap-add');"><span>새 서랍 추가</span></button>
+                  <!-- //mkp-edit : 20210127 -->
                 </div>
 
                 <div class="cap-add-box">
-                  <button type="button" class="red-btn h96" onclick="openPopup('ppp-mycap-add');"><span>새 서랍 추가</span></button>
+                  <!-- mkp-edit : 20210127 -->
+                  <!--<button type="button" class="red-btn h96" onclick="openPopup('ppp-mycap-add');"><span>새 서랍 추가</span></button>-->
+                  <button type="button" class="point-btn h96" onclick="openPopup('ppp-mycap-add');"><span>새 서랍 추가</span></button>
+                  <!-- //mkp-edit : 20210127 -->
                   <button type="button" class="gray-btn2 h96" onclick="openPopup('ppp-mycap-sort-edit');"><span>순서편집</span></button>
                 </div>
 
@@ -515,7 +524,10 @@
           <div class="modal_cont">
             <div class="mycap-setting-box">
               <div class="cap-add-box">
-                <button type="button" class="red-btn h96" onclick="openPopup('ppp-mycap-add');"><span>새 서랍 추가</span></button>
+                <!-- mkp-edit : 20210127 -->
+                <!--<button type="button" class="red-btn h96" onclick="openPopup('ppp-mycap-add');"><span>새 서랍 추가</span></button>-->
+                <button type="button" class="point-btn h96" onclick="openPopup('ppp-mycap-add');"><span>새 서랍 추가</span></button>
+                <!-- //mkp-edit : 20210127 -->
                 <p>* 서랍 하나당 최대 10개까지 상품을 담을 수 있습니다.</p>
               </div>
               <div class="mycap-list-box">
@@ -811,7 +823,7 @@
       data() {
         return {
           pageTitle : "서랍",
-          showFooterMenu: reqUrl.includes('/home') || reqUrl.includes('/shop') || reqUrl.includes('/drawer') || reqUrl.includes('/mypage'),
+          showFooterMenu: reqUrl.includes('/home') || reqUrl.includes('/shop') || reqUrl.includes('/drawer') || reqUrl.includes('/mypage') || reqUrl.includes('/mycap'),
         };
       },
       mounted:function(){
