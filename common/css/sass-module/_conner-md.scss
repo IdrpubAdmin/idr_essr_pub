@@ -263,10 +263,6 @@
         @include setDfPadding();
         .prod-box {
           background:#fff;
-          .info-box {
-            padding-top:36px;
-            padding-right:20px;
-          }
           &.img-size-s4 {
             .share-btn-0 {
               //top:0;

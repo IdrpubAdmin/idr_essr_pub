@@ -2015,7 +2015,7 @@ label {
 }
 .prod-box.align-left.img-size-s4 .info-box {
   width: 50%;
-  padding: 18px 0 0 20px;
+  padding: 36px 20px 0 20px;
   -webkit-transform: translateY(0);
   -khtml-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -3692,10 +3692,6 @@ label {
 }
 .template-box.temp-1 .inner-box .bottom-box .prod-list .prod-box {
   background: #fff;
-}
-.template-box.temp-1 .inner-box .bottom-box .prod-list .prod-box .info-box {
-  padding-top: 36px;
-  padding-right: 20px;
 }
 
 .template-box.temp-2-1 .inner-box {
