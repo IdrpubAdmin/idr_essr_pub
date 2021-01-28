@@ -463,7 +463,7 @@ label {
   top: calc(50% + 4px);
   transform: translateY(-50%);
   display: inline-block;
-  width: 150px;
+  width: 24%;
   background: url("../images/common/header/header_logo_b_v2.png") no-repeat;
   background-size: 100%;
 }
@@ -855,20 +855,8 @@ label {
 .wrapper.visual-wrap-type .header-wrap .header .header-top .sem_header_bi {
   background-image: url("../images/common/header/header_logo_b_v2.png");
 }
-.wrapper.visual-wrap-type .header-wrap .header .header-top .icon-header-back {
-  background-image: url("../images/common/header/header_backIcon_w.png");
-}
 .wrapper.visual-wrap-type .header-wrap .header .header-top .btn-rgt .login-btn {
-  color: #fff;
-}
-.wrapper.visual-wrap-type .header-wrap .header .header-top .btn-rgt .icon-header-home {
-  background-image: url("../images/common/header/header_home_w.png");
-}
-.wrapper.visual-wrap-type .header-wrap .header .header-top .btn-rgt .icon-header-search {
-  background-image: url("../images/common/header/header_searchIcon_w.png");
-}
-.wrapper.visual-wrap-type .header-wrap .header .header-top .btn-rgt .icon-header-drawer {
-  background-image: url("../images/common/header/header_drawer_w.png");
+  color: #000;
 }
 .wrapper.visual-wrap-type .header-wrap.header-type {
   background: #fff;
@@ -1373,12 +1361,12 @@ label {
 }
 
 .link-naver-blog {
-  background: url("../images/icon/icon_naver_blog.png") no-repeat center;
+  background: url("../images/icon/icon_naver_blog_v2.png") no-repeat center;
   background-size: cover;
 }
 
 .link-instagram {
-  background: url("../images/icon/icon_insta.png") no-repeat center;
+  background: url("../images/icon/icon_insta_v2.png") no-repeat center;
   background-size: cover;
 }
 

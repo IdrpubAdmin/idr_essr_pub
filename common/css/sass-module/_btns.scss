@@ -194,11 +194,13 @@
   }
 }
 .link-naver-blog {
-  background:url($img-path + "icon/icon_naver_blog.png") no-repeat center;
+  //background:url($img-path + "icon/icon_naver_blog.png") no-repeat center;
+  background:url($img-path + "icon/icon_naver_blog_v2.png") no-repeat center;
   background-size:cover
 }
 .link-instagram {
-  background:url($img-path + "icon/icon_insta.png") no-repeat center;
+  //background:url($img-path + "icon/icon_insta.png") no-repeat center;
+  background:url($img-path + "icon/icon_insta_v2.png") no-repeat center;
   background-size:cover
 }
 

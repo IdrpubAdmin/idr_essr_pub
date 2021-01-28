@@ -24,7 +24,8 @@
         top: calc(50% + 4px);
         transform: translateY(-50%);
         display: inline-block;
-        width: 150px;
+        //width: 150px;
+        width:24%;
         background: url($img-path + 'common/header/header_logo_b_v2.png') no-repeat;
         background-size: 100%;
         a {
@@ -193,24 +194,25 @@
           }
           .icon-header-back {
             //background-image: url($img-path + 'common/header/header_backIcon_w_v2.png');
-            background-image: url($img-path + 'common/header/header_backIcon_w.png');
+            //background-image: url($img-path + 'common/header/header_backIcon_w.png');
           }
           .btn-rgt {
             .login-btn {
-              color: #fff;
+              color: #000;
+              //color: #fff;
               //background-image: url($img-path + 'common/header/header_login_w_v2.png');
             }
             .icon-header-home {
               //background-image: url($img-path + 'common/header/header_home_w_v2.png');
-              background-image: url($img-path + 'common/header/header_home_w.png');
+              //background-image: url($img-path + 'common/header/header_home_w.png');
             }
             .icon-header-search {
               //background-image: url($img-path + 'common/header/header_searchIcon_w_v2.png');
-              background-image: url($img-path + 'common/header/header_searchIcon_w.png');
+              //background-image: url($img-path + 'common/header/header_searchIcon_w.png');
             }
             .icon-header-drawer {
               //background-image: url($img-path + 'common/header/header_drawer_w_v2.png');
-              background-image: url($img-path + 'common/header/header_drawer_w.png');
+              //background-image: url($img-path + 'common/header/header_drawer_w.png');
             }
           }
         }
