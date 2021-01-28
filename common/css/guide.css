@@ -4412,6 +4412,34 @@ label {
   background: url("../images/icon/icon_share_url.png") no-repeat center top;
   background-size: 80px;
 }
+.popup-share-wrap .ipt-txt-box {
+  position: relative;
+  margin-top: 10px;
+}
+.popup-share-wrap .ipt-txt-box input[type='text'] {
+  padding-right: 60px;
+}
+.popup-share-wrap .ipt-txt-box .url-copy-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 37px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+}
+.popup-share-wrap .ipt-txt-box .url-copy-btn span {
+  font-size: 1.25em;
+  letter-spacing: -0.05em;
+  color: #000;
+}
+.popup-share-wrap .ipt-txt-box .url-copy-btn.on {
+  border: none;
+  background-color: #ffd400;
+}
+.popup-share-wrap .ipt-txt-box .url-copy-btn.on span {
+  color: #000;
+}
 .popup-share-wrap .toast-inner {
   text-align: center;
 }
@@ -7324,6 +7352,34 @@ label {
 .popup-share-wrap .share-box .share-url-btn .btn-share {
   background: url("../images/icon/icon_share_url.png") no-repeat center top;
   background-size: 80px;
+}
+.popup-share-wrap .ipt-txt-box {
+  position: relative;
+  margin-top: 10px;
+}
+.popup-share-wrap .ipt-txt-box input[type='text'] {
+  padding-right: 60px;
+}
+.popup-share-wrap .ipt-txt-box .url-copy-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 37px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+}
+.popup-share-wrap .ipt-txt-box .url-copy-btn span {
+  font-size: 1.25em;
+  letter-spacing: -0.05em;
+  color: #000;
+}
+.popup-share-wrap .ipt-txt-box .url-copy-btn.on {
+  border: none;
+  background-color: #ffd400;
+}
+.popup-share-wrap .ipt-txt-box .url-copy-btn.on span {
+  color: #000;
 }
 .popup-share-wrap .toast-inner {
   text-align: center;
