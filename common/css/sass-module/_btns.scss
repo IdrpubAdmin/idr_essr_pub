@@ -187,20 +187,24 @@
 .link-naver-blog,
 .link-instagram {
   display:inline-block;
-  width:62px;
-  height:62px;
+  //width:62px;
+  //height:62px;
   span {
     @include textHide();
   }
 }
 .link-naver-blog {
+  width:176px;
+  height:138px;
   //background:url($img-path + "icon/icon_naver_blog.png") no-repeat center;
-  background:url($img-path + "icon/icon_naver_blog_v2.png") no-repeat center;
+  background:url($img-path + "icon/icon_naver_blog_v3.png") no-repeat center;
   background-size:cover
 }
 .link-instagram {
+  width:250px;
+  height:138px;
   //background:url($img-path + "icon/icon_insta.png") no-repeat center;
-  background:url($img-path + "icon/icon_insta_v2.png") no-repeat center;
+  background:url($img-path + "icon/icon_insta_v3.png") no-repeat center;
   background-size:cover
 }
 
