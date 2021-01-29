@@ -88,5 +88,39 @@
         }
       }
     }
+    &.v3 {
+      p {
+        color:$font-clr-0;
+        text-align:center;
+      }
+      .tit {
+        font-weight:$b;
+        font-size:$font-18r;
+      }
+      .tit-sub {
+        margin-top:10px;
+        font-size:$font-13r;
+      }
+      .text-box {
+        margin-top:130px;
+        .tit-txt {
+          padding:40px 0 0 0;
+          font-size:$font-15r;
+          text-align:left;
+        }
+        .ipt-txt-box {
+          background-color:#f9f9f9;
+          input {
+            border:0;
+            background:transparent;
+          }
+        }
+        .input-error {
+          width:100%;
+          text-align:center;
+          font-size:$font-12r;
+        }
+      }
+    }
   }
 }

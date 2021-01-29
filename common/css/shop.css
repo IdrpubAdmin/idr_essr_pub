@@ -6177,8 +6177,10 @@ label {
   position: relative;
   margin-top: 10px;
 }
-.popup-share-wrap .ipt-txt-box input[type='text']
-.url-copy-btn {
+.popup-share-wrap .ipt-txt-box input[type='text'] {
+  padding-right: 60px;
+}
+.popup-share-wrap .ipt-txt-box .url-copy-btn {
   position: absolute;
   right: 0;
   top: 0;
@@ -6187,19 +6189,16 @@ label {
   font-size: 12px;
   border: 1px solid #ddd;
 }
-.popup-share-wrap .ipt-txt-box input[type='text']
-.url-copy-btn span {
+.popup-share-wrap .ipt-txt-box .url-copy-btn span {
   font-size: 1.25em;
   letter-spacing: -0.05em;
   color: #000;
 }
-.popup-share-wrap .ipt-txt-box input[type='text']
-.url-copy-btn.on {
+.popup-share-wrap .ipt-txt-box .url-copy-btn.on {
   border: none;
   background-color: #ffd400;
 }
-.popup-share-wrap .ipt-txt-box input[type='text']
-.url-copy-btn.on span {
+.popup-share-wrap .ipt-txt-box .url-copy-btn.on span {
   color: #000;
 }
 .popup-share-wrap .toast-inner {

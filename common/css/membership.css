@@ -5535,5 +5535,37 @@ label {
 .seller-complete-popup .complete-box.v2 .text-box .input-error {
   font-size: 1.2rem;
 }
+.seller-complete-popup .complete-box.v3 p {
+  color: #000;
+  text-align: center;
+}
+.seller-complete-popup .complete-box.v3 .tit {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.seller-complete-popup .complete-box.v3 .tit-sub {
+  margin-top: 10px;
+  font-size: 1.3rem;
+}
+.seller-complete-popup .complete-box.v3 .text-box {
+  margin-top: 130px;
+}
+.seller-complete-popup .complete-box.v3 .text-box .tit-txt {
+  padding: 40px 0 0 0;
+  font-size: 1.5rem;
+  text-align: left;
+}
+.seller-complete-popup .complete-box.v3 .text-box .ipt-txt-box {
+  background-color: #f9f9f9;
+}
+.seller-complete-popup .complete-box.v3 .text-box .ipt-txt-box input {
+  border: 0;
+  background: transparent;
+}
+.seller-complete-popup .complete-box.v3 .text-box .input-error {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+}
 
 /*# sourceMappingURL=membership.css.map */

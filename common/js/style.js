@@ -500,7 +500,7 @@ Wrapper = (function(doc, global) {
                 if(getBodyScrollTop() >= detailVisualWrap.offsetHeight - headerH && !doc.querySelector('.header-wrap').classList.contains('header-type')){
                     doc.querySelector('.header-wrap').classList.add('header-type');
                 }
-                if(getBodyScrollTop() > detailVisualWrap.offsetHeight + detailVisualWrap.offsetTop){
+                if(getBodyScrollTop() >= detailVisualWrap.offsetHeight + detailVisualWrap.offsetTop){
                     headerToggle('UP');
                 }
 
@@ -521,7 +521,7 @@ Wrapper = (function(doc, global) {
                 if(getBodyScrollTop() + headerH <= detailVisualWrap.offsetHeight && doc.querySelector('.header-wrap').classList.contains('header-type')){
                     doc.querySelector('.header-wrap').classList.remove('header-type');
                 }
-                if(getBodyScrollTop() > detailVisualWrap.offsetHeight + detailVisualWrap.offsetTop){
+                if(getBodyScrollTop() >= detailVisualWrap.offsetHeight + detailVisualWrap.offsetTop){
                     headerToggle('DOWN');
                 }
 
