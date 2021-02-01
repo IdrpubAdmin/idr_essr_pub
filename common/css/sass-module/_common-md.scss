@@ -254,7 +254,7 @@
   }
   .info-box {
     .tit {
-      font-size: $font-26px;
+      font-size: $font-15r;
       letter-spacing: -0.1em;
       color: $font-clr-1;
       width: 100%;
@@ -266,7 +266,7 @@
     .sub-tit {
       padding-top:3px;
       height: 41px;
-      font-size: $font-26px;
+      font-size: $font-15r;
       line-height: 1.35em;
       letter-spacing: -0.1em;
       color: $font-clr-2;
@@ -275,7 +275,7 @@
     .desc {
       padding-top:2px;
       height: 37px;
-      font-size: $font-24px;
+      font-size: $font-14r;
       line-height: 1.35em;
       letter-spacing: -0.1em;
       color: $font-clr-2;
@@ -401,7 +401,19 @@
     &.img-size-s0{
       height:83px;
       .img-box{width:83px;}
-      .info-box{width: calc(100% - 120px);padding:0 0 0 10px;margin-top: 42px;}
+      .info-box{
+        width: calc(100% - 120px);padding:0 0 0 10px;margin-top: 42px;
+        .tit {
+          font-size:$font-14r;
+        }
+        .sub-tit,
+        .desc {
+          font-size:$font-12r;
+        }
+        .social-box {
+          margin-top:0;
+        }
+      }
     }
     &.img-size-s1{
       height:95px;
@@ -422,7 +434,7 @@
       display:flex;
       height:auto;
       .img-box{
-        width:50%;
+        width:48%;
         img {
           left:50%;
           width:auto;
@@ -434,8 +446,8 @@
         }
       }
       .info-box {
-        width:50%;
-        padding:36px 20px 0 20px;
+        width:52%;
+        padding:32px 20px 0 20px;
         //&:after {content: "";display: block;padding-bottom:100%;}
         @include css3-prefix(transform, translateY(0));
         .tit {
@@ -448,7 +460,7 @@
         .desc {
           height:auto;
           padding-top:2px;
-          padding-bottom:14px;
+          padding-bottom:5px;
           font-size:1.2rem;
           @include set-ellipsis();
         }

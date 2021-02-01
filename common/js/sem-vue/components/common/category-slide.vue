@@ -6,7 +6,7 @@
           <div class="on"><button type="button">추천</button></div>
         </swiper-slide>
         <swiper-slide>
-          <div><button type="button">얼리버드</button></div>
+          <div><button type="button" @click="moveScrollCategoryTop()">얼리버드2</button></div>
         </swiper-slide>
         <swiper-slide>
           <div><button type="button">지점</button></div>
@@ -151,7 +151,20 @@ module.exports = {
         cateSlideBox.append(cateSlide);
         cateSlideBox.style.paddingTop = 0;
       }
-    }
+    },
+    moveScrollCategoryTop() {
+      let categorySlide = document.querySelector('header .category-slide');
+      if (categorySlide) {
+        let moveScrollTop = document.querySelector('.conner-container').offsetTop,
+            headerTop = document.querySelector('.header-top');
+        if (headerTop && headerTop.offsetHeight && (moveScrollTop - headerTop.offsetHeight) > 0) {
+          moveScrollTop = moveScrollTop - headerTop.offsetHeight;
+        }
+        window.scrollTo(0, moveScrollTop);
+      }
+    },
+
+
   },
   created: function () {
     window.addEventListener('resize', this.handleResize);
