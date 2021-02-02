@@ -51,6 +51,12 @@
               <a href="#none"><span>프로필 설정</span></a>
               <a href="#none"><span>정산계좌 설정</span></a>
               <!-- mkp-edit : 20210114 -->
+
+              <!-- mkp-add : 20210202 -->
+              <a href="#none"><span>회원정보 수정</span></a>
+              <a href="#none" onclick="openPopup('recommender-info-popup')"><span>추천인 정보</span></a>
+              <!-- //mkp-add : 20210202 -->
+
             </div>
           </div>
           <div class="edit-box">
@@ -89,13 +95,55 @@
           </div>
         </div>
         <home-footer></home-footer>
+
       </article>
+      <!-- //contents -->
+
+      <!-- mkp-add : 20210202 -->
+      <!-- 추천인정보  -->
+      <div class="modal-wrap big recommender-info-popup" style="display:none;">
+        <div class="modal-layer">
+          <div class="inner-box has-btn">
+            <strong class="modal_tit">추천인 정보</strong>
+            <div class="modal_cont">
+              <div class="recommender-info-box">
+
+                <div class="text-box type-nor type-bg">
+                  <p class="tit-txt">추천인 아이디</p>
+                  <div class="ipt-txt-box">
+                    <div>
+                      <input type="text" placeholder="추천인 아이디를 입력하세요" maxlength="10" class="input-type-nb">
+                      <button type="button" class="txt-reset-btn" style="">입력값 삭제</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="button-box">
+              <!-- 버튼 비활성화 상태 disabled 추가 -->
+              <button type="button" class="modal-blk-btn w100 btn-modal-close"><span>저장</span></button>
+            </div>
+            <button type="button" class="icon-header-close">팝업닫기</button>
+          </div>
+        </div>
+        <div class="dim"></div>
+      </div>
+      <!--  //추천인정보  -->
+      <!-- //mkp-add : 20210202 -->
+
     </section>
+    <!-- //container -->
+
     <!-- 하단 고정 네비 -->
     <nav class="tab-bar">
       <footer-menu v-if="showFooterMenu"></footer-menu>
     </nav>
+    <!-- //하단 고정 네비 -->
+
   </div>
+  <!-- //wrapper -->
+
   <script type="text/javascript" src="../../common/js/swiper.js"></script>
   <script type="text/javascript" src="../../common/js/vuejs/vue-2.6.11.js"></script>
   <script type="text/javascript" src="../../common/js/vuejs/vue-awesome-swiper.js"></script>
@@ -104,10 +152,9 @@
   <script type="text/javascript" src="../../common/js/sem-vue/plugins/sem-plugin.js"></script>
   <script type="text/javascript" src="../../common/js/style.js"></script>
 
-  <script>
-    Vue.use(VueLazyload);
-  </script>
   <script type="text/javascript" th:inline="javascript">
+    Vue.use(VueLazyload);
+
     _PageMixins.push({
       components: {
         'mypage-cs-qna': semVueLoader('../../common/js/sem-vue/components/mypage/mypage-cs-qna.vue'),

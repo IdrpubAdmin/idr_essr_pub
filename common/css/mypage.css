@@ -2742,6 +2742,13 @@ label {
 .text-box.type-nor.border-type2 .ipt-txt-box input[type="password"] {
   border-width: 0 0 1px;
 }
+.text-box.type-nor.type-bg .ipt-txt-box {
+  background-color: #f9f9f9;
+}
+.text-box.type-nor.type-bg .ipt-txt-box input {
+  border: 0;
+  background: transparent;
+}
 
 .tit-txt .red {
   color: #f30000 !important;

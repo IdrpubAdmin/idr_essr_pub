@@ -885,6 +885,15 @@
         }
       }
     }
+    &.type-bg {
+      .ipt-txt-box {
+        background-color:#f9f9f9;
+        input {
+          border:0;
+          background:transparent;
+        }
+      }
+    }
   }
 }
 .tit-txt .red {
