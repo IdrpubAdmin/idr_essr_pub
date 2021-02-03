@@ -578,6 +578,9 @@ Wrapper = (function(doc, global) {
             }
         }, 100);
     }
+
+    obj.headerToggle = headerToggle;
+
     function headerToggle(_stance){
         headerBox = doc.querySelector('.header')
         if(headerBox){
