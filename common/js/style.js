@@ -598,11 +598,15 @@ Wrapper = (function(doc, global) {
 
         if(tabBar) {
             if(_stance == 'DOWN'){
-                tabBar.classList.add('scr-tab-bar');
-                tabBar.classList.remove('fixed-tab-bar');
-                doc.querySelector('body').classList.remove('tab-show');
+                //20210203 GNB tabBar 상시 고정으로 수정
+                //tabBar.classList.add('scr-tab-bar');
+                //tabBar.classList.remove('fixed-tab-bar');
+                //doc.querySelector('body').classList.remove('tab-show');
+                tabBar.classList.add('fixed-tab-bar');
+                doc.querySelector('body').classList.add('tab-show');
             }else if(_stance == 'UP'){
-                tabBar.classList.remove('scr-tab-bar');
+                //20210203 GNB tabBar 상시 고정으로 수정
+                //tabBar.classList.remove('scr-tab-bar');
                 tabBar.classList.add('fixed-tab-bar');
                 doc.querySelector('body').classList.add('tab-show');
             }
