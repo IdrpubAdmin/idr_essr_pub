@@ -1264,3 +1264,15 @@ $playbtn-size:40px;
     }
   }
 }
+
+.btm-desc-txt {
+  @include posa_bl();
+  padding:$dflt-pd1 $dflt-pd1 $dflt-pd1 ($dflt-pd1 + 10px);
+  font-size:$font-14r;
+  color:$font-clr-0;
+  &:before {
+    content:'*';
+    display:inline-block;
+    @include posa_tl(($dflt-pd1 + 3px),$dflt-pd1);
+  }
+}

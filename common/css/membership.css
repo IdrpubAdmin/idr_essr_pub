@@ -3192,6 +3192,22 @@ label {
   border-radius: 50%;
 }
 
+.btm-desc-txt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px 20px 20px 30px;
+  font-size: 1.4rem;
+  color: #000;
+}
+.btm-desc-txt:before {
+  content: '*';
+  display: inline-block;
+  position: absolute;
+  top: 23px;
+  left: 20px;
+}
+
 /* ========================================================== */
 /*                                                            */
 /* file		: modal                                       	  */
@@ -5564,15 +5580,22 @@ label {
 }
 .seller-complete-popup .complete-box.v3 .tit-sub {
   margin-top: 10px;
+  margin-bottom: 60px;
   font-size: 1.3rem;
 }
 .seller-complete-popup .complete-box.v3 .text-box {
-  margin-top: 130px;
+  position: relative;
+  margin-top: 60px;
 }
 .seller-complete-popup .complete-box.v3 .text-box .tit-txt {
-  padding: 40px 0 0 0;
+  padding: 5px 0 0 0;
   font-size: 1.5rem;
   text-align: left;
+}
+.seller-complete-popup .complete-box.v3 .text-box .ipt-count {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .seller-complete-popup .complete-box.v3 .text-box .ipt-txt-box {
   background-color: #f9f9f9;
@@ -5583,7 +5606,7 @@ label {
 }
 .seller-complete-popup .complete-box.v3 .text-box .input-error {
   width: 100%;
-  text-align: center;
+  text-align: left;
   font-size: 1.2rem;
 }
 

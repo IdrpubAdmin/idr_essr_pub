@@ -696,6 +696,11 @@ Modal = (function(doc, global) {
             if(modal) {
                 modal.style.display = 'block';
                 StyleCommon.scrollLock(true);
+                if(modal.querySelector('.ipt-count')){
+                    setTimeout(function(){
+                        StyleCommon.checkKeyInputing();
+                    }, 100);
+                }
             }
         };
         _that.hide = function(){
