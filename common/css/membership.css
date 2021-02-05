@@ -5580,12 +5580,12 @@ label {
 }
 .seller-complete-popup .complete-box.v3 .tit-sub {
   margin-top: 10px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   font-size: 1.3rem;
 }
 .seller-complete-popup .complete-box.v3 .text-box {
   position: relative;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 .seller-complete-popup .complete-box.v3 .text-box .tit-txt {
   padding: 5px 0 0 0;
