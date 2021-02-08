@@ -110,10 +110,12 @@
   position:absolute;
   top:0;
   right:0;
-  width:36px;
+  width:34px;
   height:36px;
-  background:url($img-path + "icon/ico_menu_more.png") no-repeat center;
-  background-size:60%;
+  //background:url($img-path + "icon/ico_menu_more.png") no-repeat center;
+  //background-size:60%;
+  background:url($img-path + "icon/ico_menu_share.png") no-repeat center;
+  background-size:34px;
 }
 
 .share-btn-1{

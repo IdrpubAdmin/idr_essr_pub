@@ -42,6 +42,9 @@
       <div class="social-box">
         <button type="button" class="share" v-if="share"><span class="ico"></span>{{share}}</button>
         <button type="button" class="like" v-if="like"><span class="ico"></span>{{like}}</button>
+        <!-- mkp-add : 20210208 -->
+        <button type="button" class="share-btn-0" v-if="share2" @click="shareGoods($event.target)" data-param-url="paramUrl">공유하기</button>
+        <!-- //mkp-add : 20210208 -->
         <span v-if="sell" class="sell">판매 : <i>{{sell}}</i></span>
       </div>
     </div>
@@ -91,6 +94,10 @@ module.exports = {
       required: false
     },
     share: {
+      type: String,
+      required: false
+    },
+    share2: {
       type: String,
       required: false
     },

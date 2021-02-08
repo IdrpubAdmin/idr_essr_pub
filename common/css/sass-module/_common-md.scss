@@ -316,11 +316,11 @@
   }
   .social-box {
     margin-top:7px;
-    >button {
+    > button {
       font-size: 1em;
       line-height: 1.3em;
       color: $font-clr-0;
-      margin-right: 10px;
+      margin-right: 8px;
       vertical-align: bottom;
       .ico {
         display: inline-block;
@@ -338,7 +338,7 @@
       }
       &.like{
         pointer-events: none;
-        padding-left:10px;
+        padding-left:8px;
         border-left:1px solid #ddd;
         .ico {
           background: url($img-path + "icon/prod_heart.png") no-repeat left center;
@@ -350,6 +350,17 @@
       .ico {background-color:red;}
     }
     .sell{font-size: 1em;color:$font-clr-2;}
+    .share-btn-0 {
+      right:unset !important;
+      font-size:0;
+      pointer-events: none;
+      margin-right:0;
+      padding-left:8px;
+      width:46px;
+      height:20px;
+      border-left:1px solid #ddd;
+      background-position:10px center;
+    }
   }
   .drawer-btn-1{
     position:absolute;
