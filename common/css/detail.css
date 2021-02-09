@@ -1281,10 +1281,10 @@ label {
   position: absolute;
   top: 0;
   right: 0;
-  width: 34px;
+  width: 36px;
   height: 36px;
-  background: url("../images/icon/ico_menu_share.png") no-repeat center;
-  background-size: 34px;
+  background: url("../images/icon/ico_menu_more.png") no-repeat center;
+  background-size: 60%;
 }
 
 .share-btn-1 {
@@ -5740,6 +5740,10 @@ label {
 }
 .prod-info-box img {
   width: 100% !important;
+  height: auto !important;
+}
+.prod-info-box div {
+  width: auto !important;
   height: auto !important;
 }
 
