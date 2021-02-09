@@ -1277,10 +1277,11 @@ $playbtn-size:40px;
 }
 
 .btm-desc-txt {
-  @include posa_bl();
+  @include posfb(50px, 0);
   padding:$dflt-pd1 $dflt-pd1 $dflt-pd1 ($dflt-pd1 + 10px);
   font-size:$font-14r;
   color:$font-clr-0;
+  background:#fff;
   &:before {
     content:'*';
     display:inline-block;
