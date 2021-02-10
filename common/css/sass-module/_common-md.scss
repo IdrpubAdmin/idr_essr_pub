@@ -243,11 +243,13 @@
       position:absolute;
       right:10px;
       bottom:10px;
-      width:36px;
-      height:36px;
+
       //width:28px;
       //height:28px;
       //background:url($img-path + "icon/product_drawerIco_b.png") no-repeat left top;
+
+      width:36px;
+      height:36px;
       background:url($img-path + "icon/product_drawerIco_w_v2.png") no-repeat left top;
       background-size:100%;
     }
@@ -368,13 +370,16 @@
     bottom:0;
     right:0;
     //@include css3-prefix(transform, translateY(-50%));
-    width:36px;
-    height:36px;
+
     //width:28px;
     //height:28px;
     //background:url($img-path + "icon/product_drawerIco_w.png") no-repeat left top;
+
+    width:36px;
+    height:36px;
     background:url($img-path + "icon/product_drawerIco_w_v2.png") no-repeat left top;
     background-size:100%;
+
     &.sold-out{
       background:url($img-path + "icon/product_drawerIco_d_v2.png") no-repeat left top;
       background-size:100%;

@@ -864,10 +864,15 @@
     background: none;
   }
   .goods-wrap .bottom-menu-box .share-btn .ico {
-    background: url($img-path + "icon/detail_share_0_v2.png") no-repeat center;
+    //background: url($img-path + "icon/detail_share_0_v2.png") no-repeat center;
+    //background-size: 100%;
+    background: url($img-path + "icon/detail_share_0_v5.png") no-repeat center;
     background-size: 100%;
   }
-.goods-wrap .bottom-menu-box .share-btn.on .ico{background-image:url($img-path + "icon/detail_share_1_v2.png");}
+  .goods-wrap .bottom-menu-box .share-btn.on .ico {
+    //background-image: url($img-path + "icon/detail_share_1_v2.png");
+    background-image: url($img-path + "icon/detail_share_1_v5.png");
+  }
 .goods-wrap .bottom-menu-box .share-btn p{font-size:1.083em;color:#ddd;font-family:'Roboto';}
 .goods-wrap .bottom-menu-box .share-btn.on p{color:#B9B9B9;}
 .goods-wrap .bottom-menu-box .like-btn{width:48px;}
