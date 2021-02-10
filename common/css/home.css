@@ -1885,6 +1885,7 @@ label {
   color: #767676;
 }
 .prod-box .social-box .share-btn-0 {
+  bottom: 0 !important;
   right: unset !important;
   font-size: 0;
   pointer-events: none;
@@ -1928,7 +1929,7 @@ label {
 .prod-box.align-center .share-btn-0 {
   top: unset;
   right: 5px;
-  bottom: 0;
+  bottom: -8px;
 }
 .prod-box.align-left.img-size-order {
   height: 75px;

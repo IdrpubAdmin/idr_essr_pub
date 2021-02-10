@@ -353,6 +353,7 @@
     }
     .sell{font-size: 1em;color:$font-clr-2;}
     .share-btn-0 {
+      bottom:0 !important;
       right:unset !important;
       font-size:0;
       pointer-events: none;
@@ -396,7 +397,7 @@
     .share-btn-0{
       top:unset;
       right:5px;
-      bottom:0;
+      bottom:-8px;
     }
   }
   &.align-left{

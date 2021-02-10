@@ -36,7 +36,7 @@
               :price="'43,900'"
               :share="'2,111'"
               :like="'1,111'"
-              :share2="'1'"
+              :share2="''"
               :sell="''"
               :stkad="''"
               :stknew="''"
@@ -55,7 +55,7 @@
               :price="'43,900'"
               :share="'2,111'"
               :like="'1,111'"
-              :share2="'1'"
+              :share2="''"
               :sell="''"
               :stkad="''"
               :stknew="''"
@@ -74,7 +74,7 @@
               :price="'43,900'"
               :share="'2,111'"
               :like="'1,111'"
-              :share2="'1'"
+              :share2="''"
               :sell="''"
               :stkad="''"
               :stknew="''"
@@ -93,7 +93,7 @@
               :price="'43,900'"
               :share="'2,111'"
               :like="'1,111'"
-              :share2="'1'"
+              :share2="''"
               :sell="''"
               :stkad="''"
               :stknew="''"
@@ -331,7 +331,7 @@ module.exports = {
         subTitLine: true,//서브타이틀 true 선택시 두줄표시
         desLine: true,//상품설명 true 선택시 두줄표시
         drawer: true,//true 선택시 내서랍 아이콘 노출
-        shareBtn: false,//창고상품 : true 선택시 공유하기 아이콘 노출
+        shareBtn: true,//창고상품 : true 선택시 공유하기 아이콘 노출
       },
     }
   },
