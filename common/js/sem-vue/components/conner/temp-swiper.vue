@@ -21,6 +21,7 @@
               :stkad="'true'"
               :stknew="'true'"
               :soldout="'true'"
+              :stkfreedlry="'true'"
               :options="productOption"
           ></product-box>
         </swiper-slide>

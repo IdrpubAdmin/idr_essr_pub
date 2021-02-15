@@ -1504,6 +1504,11 @@ label {
   font-weight: 400;
   font-size: 1.2rem;
 }
+.stk-box .stk_free_dlry {
+  background-color: #1b1b1b;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
 .stk-box .stk_live {
   padding: 1px 10px 0;
   font-weight: 400;
