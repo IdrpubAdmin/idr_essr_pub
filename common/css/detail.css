@@ -1465,10 +1465,13 @@ label {
 }
 .stk-box span {
   display: inline-block;
+  padding: 0 5px;
+  height: 15px;
+  line-height: 15px;
   color: #fff;
   font-weight: bold;
   text-align: center;
-  padding: 0 5px;
+  vertical-align: middle;
 }
 .stk-box span:first-child {
   margin-left: 0 !important;
@@ -1493,21 +1496,25 @@ label {
   text-align: center;
 }
 .stk-box .stk_disp_end,
+.stk-box .stk_sell_end,
+.stk-box .stk_sell_stop,
+.stk-box .stk_cast_cancel,
+.stk-box .stk_free_dlvr {
+  line-height: 16px;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: -0.5px;
+}
+.stk-box .stk_disp_end,
 .stk-box .stk_sell_end {
   background-color: #959595;
-  font-weight: 400;
-  font-size: 1.2rem;
 }
 .stk-box .stk_sell_stop,
 .stk-box .stk_cast_cancel {
   background-color: #1b1b1b;
-  font-weight: 400;
-  font-size: 1.2rem;
 }
-.stk-box .stk_free_dlry {
-  background-color: #1b1b1b;
-  font-weight: 400;
-  font-size: 1.2rem;
+.stk-box .stk_free_dlvr {
+  background-color: rgba(68, 68, 68, 0.6);
 }
 .stk-box .stk_live {
   padding: 1px 10px 0;
@@ -5547,6 +5554,12 @@ label {
   background-size: 100%;
 }
 
+.goods-wrap .prod-detail .info-box .price-box .dlvr-info {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  color: #555;
+}
+
 .goods-wrap .prod-detail .info-box .tag-box {
   margin-top: 20px;
 }
@@ -5566,7 +5579,7 @@ label {
 }
 
 .goods-wrap .prod-detail .option-box {
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .goods-wrap .prod-detail .option-box .opt-btn {

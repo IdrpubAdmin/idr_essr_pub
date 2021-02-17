@@ -7,9 +7,9 @@
           <span class="stk_ad" v-if="stkad">AD</span>
           <span class="stk_new" v-if="stknew">NEW</span>
           <span class="sold_out" v-if="soldout">SOLD OUT</span>
-          <!-- mkp-add : 20210215 -->
-          <span class="stk_free_dlry" v-if="stkfreedlry">무료배송</span>
-          <!-- mkp-add : 20210215 -->
+          <!-- mkp-add : 20210217 -->
+          <span class="stk_free_dlvr" v-if="stkfreedlvr">무료배송</span>
+          <!-- mkp-add : 20210217 -->
           <!-- mkp-add : 20210118 -->
           <span class="stk_disp_end" v-if="stkdispend">전시종료</span>
           <span class="stk_sell_stop" v-if="stksellstop">판매중지</span>
@@ -128,7 +128,7 @@ module.exports = {
       type: String,
       required: false
     },
-    stkfreedlry: {
+    stkfreedlvr: {
       type: String,
       required: false
     },

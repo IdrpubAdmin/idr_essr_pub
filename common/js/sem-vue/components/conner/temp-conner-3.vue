@@ -37,6 +37,7 @@
                 :sell="''"
                 :stkad="''"
                 :stknew="'true'"
+                :stkfreedlvr="'true'"
                 :options="productOption"
             ></product-box>
           </li>
@@ -54,7 +55,8 @@
                 :like="''"
                 :sell="''"
                 :stkad="''"
-                :stknew="'true'"
+                :stknew="'new'"
+                :stkfreedlvr="'true'"
                 :options="productOption"
             ></product-box>
           </li>
@@ -72,7 +74,8 @@
                 :like="''"
                 :sell="''"
                 :stkad="''"
-                :stknew="'true'"
+                :stknew="''"
+                :stkfreedlvr="'true'"
                 :options="productOption"
             ></product-box>
           </li>

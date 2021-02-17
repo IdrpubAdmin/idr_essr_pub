@@ -24,6 +24,7 @@
                     :sell="''"
                     :stkad="''"
                     :stknew="'true'"
+                    :stkfreedlvr="'true'"
                     :stkdispend="''"
                     :stksellstop="''"
                     :options="productOption"

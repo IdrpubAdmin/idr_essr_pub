@@ -55,10 +55,13 @@
   z-index: 1;
   span {
     display: inline-block;
+    padding: 0 5px;
+    height:15px;
+    line-height:15px;
     color: $font-clr-4;
     font-weight: bold;
     text-align: center;
-    padding: 0 5px;
+    vertical-align:middle;
     &:first-child {
       margin-left: 0 !important;
     }
@@ -83,21 +86,25 @@
     text-align: center;
   }
   .stk_disp_end,
+  .stk_sell_end,
+  .stk_sell_stop,
+  .stk_cast_cancel,
+  .stk_free_dlvr {
+    line-height:16px;
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing:-0.5px;
+  }
+  .stk_disp_end,
   .stk_sell_end{
     background-color: #959595;
-    font-weight: 400;
-    font-size: $font-12r;
   }
   .stk_sell_stop,
   .stk_cast_cancel {
     background-color: #1b1b1b;
-    font-weight: 400;
-    font-size: $font-12r;
   }
-  .stk_free_dlry {
-    background-color: #1b1b1b;
-    font-weight: 400;
-    font-size: $font-12r;
+  .stk_free_dlvr {
+    background-color:rgba(68,68,68,0.6);
   }
   .stk_live {
     padding:1px 10px 0;
