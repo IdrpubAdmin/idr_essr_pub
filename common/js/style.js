@@ -521,9 +521,10 @@ Wrapper = (function(doc, global) {
                 if(getBodyScrollTop() + headerH <= detailVisualWrap.offsetHeight && doc.querySelector('.header-wrap').classList.contains('header-type')){
                     doc.querySelector('.header-wrap').classList.remove('header-type');
                 }
-                if(getBodyScrollTop() >= detailVisualWrap.offsetHeight + detailVisualWrap.offsetTop){
-                    headerToggle('DOWN');
-                }
+                //20210226 메인화면에 탭 이동후 바로 스크롤 위로 이동시 헤더가 표시안되어 조건 제거
+                //if(getBodyScrollTop() >= detailVisualWrap.offsetHeight + detailVisualWrap.offsetTop){
+                headerToggle('DOWN');
+                //}
 
             }else{
                 headerToggle('DOWN');
@@ -633,6 +634,10 @@ Wrapper = (function(doc, global) {
     obj.assignTabbar =  function(){
         tabBar = doc.querySelector('.tab-bar');
     };
+    obj.removeScroll = function() {
+        beforeTop = 0;
+        global.removeEventListener('scroll', wrapperHandler);
+    }
     obj.assignScroll = function(){
         var timer = 0;
         timer = setInterval(function() {
