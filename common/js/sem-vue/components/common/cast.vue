@@ -1,6 +1,6 @@
 <template>
   <div class="cast-box" :class="options.imgAlign">
-    <div class="time-box">
+    <div class="time-box" :class="{'live':stkLive}">
       <span class="cast-time-t">{{castTime}}</span>
       <div class="stk-box cast">
         <span class="stk_live" v-if="stkLive">LIVE</span>
@@ -16,9 +16,9 @@
       <a v-if="link" :href="link">
         <p class="sub-tit" v-if="subTitle">{{subTitle}}</p>
         <p class="tit"><b>{{mainTitle}}</b></p>
-        <p class="cast-date" v-if="castDate">
+        <p class="cast-date" v-if="saleDate">
           <span>판매기간</span><br>
-          <em>{{castDate}}</em> <i>까지</i>
+          <em>{{saleDate}}</em> <i>까지</i>
         </p>
         <p class="goods-cnt" v-if="goodsCnt"><em>{{goodsCnt}}</em><i>개 상품</i></p>
       </a>
@@ -57,7 +57,7 @@ module.exports = {
       type: String,
       required: false
     },
-    castDate: {
+    saleDate: {
       type: String,
       required: false
     },

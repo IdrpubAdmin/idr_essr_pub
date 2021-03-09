@@ -581,7 +581,7 @@ label {
   color: #191919;
   letter-spacing: -0.05em;
   line-height: 1.3em;
-  background-color: #f5f5f5;
+  background-color: #e5e5e5;
   border-radius: 5px;
   border: none;
   padding: 0 10px;
@@ -704,7 +704,7 @@ label {
 .header .header-middle .sub-category-box {
   position: relative;
   height: 38px;
-  border: solid #f5f5f5;
+  border: solid #e5e5e5;
   border-width: 1px 0;
   padding: 0 20px;
   box-sizing: border-box;
@@ -796,7 +796,7 @@ label {
   width: 100%;
   padding: 20px;
   background-color: #fff;
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid #e5e5e5;
   overflow: hidden;
   box-sizing: border-box;
   z-index: 10;
@@ -1563,7 +1563,9 @@ label {
   position: relative;
   top: -1px;
   left: unset;
+  margin-left: 5px;
   display: inline-block;
+  vertical-align: text-bottom;
 }
 
 .sold-dim {
@@ -1581,8 +1583,8 @@ label {
 }
 
 .title-box .tit-txt {
-  font-size: 1.667em;
-  color: #191919;
+  font-size: 2rem;
+  color: #000;
   font-weight: bold;
   letter-spacing: -0.05em;
   line-height: 1.25em;
@@ -1604,6 +1606,15 @@ label {
   font-weight: 400;
   letter-spacing: -0.05em;
   line-height: 1.25em;
+}
+.title-box.v2 {
+  border-bottom: 1px solid #e5e5e5;
+}
+.title-box.v2 .tit-txt {
+  font-size: 1.4rem;
+}
+.title-box.v2 .tit-desc {
+  padding-top: 0;
 }
 
 .title-box .sub-txt {
@@ -2288,6 +2299,9 @@ label {
 .cast-box .time-box .cast-time-t {
   font-weight: 500;
   font-size: 1.7rem;
+  color: #505050;
+}
+.cast-box .time-box.live .cast-time-t {
   color: #000;
 }
 .cast-box .img-box {
@@ -2392,6 +2406,7 @@ label {
   color: #000;
   background: #f5f5f5;
   border-top: 1px solid #000;
+  border-bottom: 1px solid #e5e5e5;
 }
 .cast-list-wrap .top-box .cast-info .cast-date span {
   font-size: 2rem;
@@ -2410,8 +2425,24 @@ label {
 .cast-list li:nth-child(2n) {
   background: #f5f5f5;
 }
+.cast-list li.more-btn-li {
+  background: transparent;
+}
 .cast-list .result-wrap {
   padding-bottom: 60px;
+}
+
+.more-cast-btn {
+  width: 100%;
+}
+.more-cast-btn:after {
+  content: '';
+  display: inline-block;
+  margin-left: 10px;
+  width: 12px;
+  height: 8px;
+  background: url("../images/icon/arr_down_20x10_191919.png") no-repeat left center;
+  background-size: 100%;
 }
 
 .swiper-container .pagination-wrap {
@@ -2512,7 +2543,7 @@ label {
 }
 
 .type-shop-detail .category-slide {
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid #e5e5e5;
 }
 .type-shop-detail .category-slide .swiper-slide.on button:after {
   display: none;
@@ -2701,7 +2732,7 @@ label {
 
 .select-box select:disabled {
   color: #b9b9b9;
-  background-color: #f5f5f5;
+  background-color: #e5e5e5;
 }
 
 /* text-box */
@@ -3121,7 +3152,7 @@ label {
 
 .result-wrap .button-box button.bak-btn {
   color: #191919;
-  background-color: #f5f5f5;
+  background-color: #e5e5e5;
 }
 
 .result-wrap .button-box button.home-btn {
@@ -3187,7 +3218,7 @@ label {
   border-right: 1px solid #ddd;
 }
 .view-table.sty2 th {
-  background: #f5f5f5;
+  background: #e5e5e5;
 }
 
 .policy-text-wrap {
@@ -3733,7 +3764,7 @@ label {
   margin-left: -20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-top: 1px solid #f5f5f5;
+  border-top: 1px solid #e5e5e5;
 }
 .template-box.temp-1 .inner-box .bottom-box .prod-list {
   padding-right: 20px;
@@ -3876,7 +3907,7 @@ label {
 }
 
 .template-box.temp-3 .inner-box {
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid #e5e5e5;
   padding-bottom: 20px;
 }
 .template-box.temp-3 .inner-box .top-box {
@@ -3912,7 +3943,7 @@ label {
 }
 
 .template-box.temp-5 .inner-box {
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid #e5e5e5;
   padding-bottom: 20px;
 }
 .template-box.temp-5 .inner-box .tab-box {
@@ -4293,7 +4324,7 @@ label {
   letter-spacing: -1px;
   background: #fff;
   padding-top: 23px;
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid #e5e5e5;
   box-sizing: border-box;
 }
 
@@ -4771,7 +4802,7 @@ label {
 }
 
 .modal-wrap.popup-type-message .button-box button.modal-gray-btn {
-  border-top: 1px solid #f5f5f5;
+  border-top: 1px solid #e5e5e5;
 }
 
 /* 상품 리스트 팝업 */
@@ -4899,11 +4930,11 @@ label {
 
 /* 내 창고 설정 팝업 */
 .mycap-setting-popup {
-  background-color: #f5f5f5;
+  background-color: #e5e5e5;
 }
 .mycap-setting-popup .modal_cont {
   padding-top: 0;
-  background-color: #f5f5f5;
+  background-color: #e5e5e5;
 }
 .mycap-setting-popup .modal_cont .cap-add-box {
   padding-bottom: 20px;

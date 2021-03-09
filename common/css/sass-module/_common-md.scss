@@ -153,7 +153,9 @@
     position:relative;
     top:-1px;
     left:unset;
+    margin-left:5px;
     display:inline-block;
+    vertical-align:text-bottom;
   }
 }
 .sold-dim {
@@ -171,8 +173,8 @@
 
 .title-box {
   .tit-txt {
-    font-size: $font-36px;
-    color: $font-clr-1;
+    font-size: $font-20r;
+    color: $font-clr-0;
     font-weight: bold;
     letter-spacing: -0.05em;
     line-height: 1.25em;
@@ -194,6 +196,15 @@
     font-weight:400;
     letter-spacing:-0.05em;
     line-height: 1.25em;
+  }
+  &.v2 {
+    border-bottom:1px solid $common-clr-1;
+    .tit-txt {
+      font-size:$font-14r;
+    }
+    .tit-desc{
+      padding-top:0;
+    }
   }
 }
 .title-box .sub-txt{font-size:$font-30px;color:$font-clr-1;letter-spacing:-0.05em;line-height: 1.2em;margin-top:7px;width: calc(100% - 50px);white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
@@ -608,7 +619,12 @@
     .cast-time-t {
       font-weight:500;
       font-size:$font-17r;
-      color:$font-clr-0;
+      color:#505050;
+    }
+    &.live {
+      .cast-time-t {
+        color:$font-clr-0;
+      }
     }
   }
   .img-box {
@@ -707,6 +723,7 @@
       color:$font-clr-0;
       background:#f5f5f5;
       border-top:1px solid #000;
+      border-bottom:1px solid $common-clr-1;
       .cast-date {
         span {
           font-size: $font-20r;
@@ -730,9 +747,25 @@
     &:nth-child(2n) {
       background:#f5f5f5;
     }
+    &.more-btn-li {
+      background:transparent;
+    }
   }
   .result-wrap {
     padding-bottom:60px;
+  }
+}
+
+.more-cast-btn {
+  width:100%;
+  &:after {
+    content: '';
+    display:inline-block;
+    margin-left:10px;
+    width: 12px;
+    height: 8px;
+    background: url($img-path + "icon/arr_down_20x10_191919.png") no-repeat left center;
+    background-size: 100%;
   }
 }
 

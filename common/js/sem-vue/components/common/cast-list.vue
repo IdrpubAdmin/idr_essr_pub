@@ -4,7 +4,9 @@
     <div class="title-box">
       <p class="tit-txt">
         라이브편성표
-        <span class="tit-desc">방송 중에만 구매가능합니다.</span>
+        <!-- mkp-del : 20210309 -->
+        <!--<span class="tit-desc">방송 중에만 구매가능합니다.</span>-->
+        <!-- //mkp-del : 20210309 -->
       </p>
     </div>
 
@@ -13,7 +15,7 @@
       <!-- top-box -->
       <div class="top-box">
         <div class="cast-info">
-          <span class="cast-date"><span>01.06</span><em>수</em></span>
+          <span class="cast-date"><span>01.06</span>&nbsp;&nbsp;<em>수</em></span>
         </div>
       </div>
       <!-- //top-box -->
@@ -31,7 +33,7 @@
                 :sub-title="'2021아울렛 뉴코아 중계방송'"
                 :main-title="'디스커버 최대 80% OFF 아우터 최대세일'"
                 :cast-time="'15:00'"
-                :cast-date="'21.01.06 23:45:00'"
+                :sale-date="'21.01.06 23:45:00'"
                 :goods-cnt="'100'"
                 :stk-live="'true'"
                 :cast-end="''"
@@ -45,7 +47,7 @@
                 :sub-title="'2021아울렛 뉴코아 중계방송'"
                 :main-title="'환절기,겨울철 건강을 지키기위함환절기,겨울철 건강을 지키기위함환절기,겨울철 건강을 지키기위함'"
                 :cast-time="'15:00'"
-                :cast-date="'21.01.06 23:45:00'"
+                :sale-date="'21.01.06 23:45:00'"
                 :goods-cnt="'100'"
                 :stk-live="'true'"
                 :cast-end="''"
@@ -59,9 +61,9 @@
                 :sub-title="'2021아울렛 뉴코아 중계방송'"
                 :main-title="'디스커버 최대 80% OFF 아우터 최대세일'"
                 :cast-time="'15:00'"
-                :cast-date="'21.01.06 23:45:00'"
+                :sale-date="'21.01.06 23:45:00'"
                 :goods-cnt="'100'"
-                :stk-live="'true'"
+                :stk-live="''"
                 :cast-end="''"
                 :options="castOption"
             ></cast-box>
@@ -73,13 +75,32 @@
                 :sub-title="'2021아울렛 뉴코아 중계방송'"
                 :main-title="'디스커버 최대 80% OFF 아우터 최대세일'"
                 :cast-time="'15:00'"
-                :cast-date="'21.01.06 23:45:00'"
+                :sale-date="'21.01.06 23:45:00'"
                 :goods-cnt="'100'"
-                :stk-live="'true'"
+                :stk-live="''"
                 :cast-end="''"
                 :options="castOption"
             ></cast-box>
           </li>
+          <li>
+            <cast-box
+                :link="'#none'"
+                :img-path="'../../common/images/temp/temp_cast_03.png'"
+                :sub-title="'2021아울렛 뉴코아 중계방송'"
+                :main-title="'디스커버 최대 80% OFF 아우터 최대세일'"
+                :cast-time="'15:00'"
+                :sale-date="'21.01.06 23:45:00'"
+                :goods-cnt="'100'"
+                :stk-live="''"
+                :cast-end="''"
+                :options="castOption"
+            ></cast-box>
+          </li>
+          <!-- mkp-add : 20210309 -->
+          <li class="more-btn-li">
+            <button type="button" class="white-btn more-cast-btn"><span>라이브 편성표 더보기</span></button>
+          </li>
+          <!-- //mkp-add : 20210309 -->
           <!-- //리스트 있을 때 -->
 
           <!-- 리스트 없을 때 -->
@@ -99,6 +120,76 @@
       <!-- //bottom-box -->
     </div>
     <!-- //inner-box -->
+
+    <!-- mkp-add : 20210309 -->
+    <!-- inner-box -->
+    <div class="inner-box">
+
+      <!-- bottom-box -->
+      <div class="bottom-box">
+
+        <div class="title-box v2">
+          <p class="tit-txt">
+            지난 편성표 보기
+            <span class="tit-desc">판매 기간이 지난 라이브는 표시되지 않습니다.</span>
+          </p>
+        </div>
+
+        <!-- cast-list -->
+        <ul class="cast-list past-cast-list">
+          <!-- 리스트 있을 때 -->
+          <li>
+            <cast-box
+                :link="'#none'"
+                :img-path="'../../common/images/temp/temp_cast_01.png'"
+                :sub-title="'2021아울렛 뉴코아 중계방송'"
+                :main-title="'디스커버 최대 80% OFF 아우터 최대세일'"
+                :cast-time="'2021.03.06(토) 15:00'"
+                :sale-date="'21.01.06 23:45:00'"
+                :goods-cnt="'100'"
+                :stk-live="''"
+                :cast-end="''"
+                :options="castOption"
+            ></cast-box>
+          </li>
+          <li>
+            <cast-box
+                :link="'#none'"
+                :img-path="'../../common/images/temp/temp_cast_01.png'"
+                :sub-title="'2021아울렛 뉴코아 중계방송'"
+                :main-title="'디스커버 최대 80% OFF 아우터 최대세일'"
+                :cast-time="'2021.03.06(토) 15:00'"
+                :sale-date="'21.01.06 23:45:00'"
+                :goods-cnt="'100'"
+                :stk-live="''"
+                :cast-end="''"
+                :options="castOption"
+            ></cast-box>
+          </li>
+          <li>
+            <cast-box
+                :link="'#none'"
+                :img-path="'../../common/images/temp/temp_cast_01.png'"
+                :sub-title="'2021아울렛 뉴코아 중계방송'"
+                :main-title="'디스커버 최대 80% OFF 아우터 최대세일'"
+                :cast-time="'2021.03.06(토) 15:00'"
+                :sale-date="'21.01.06 23:45:00'"
+                :goods-cnt="'100'"
+                :stk-live="''"
+                :cast-end="''"
+                :options="castOption"
+            ></cast-box>
+          </li>
+          <!-- //리스트 있을 때 -->
+        </ul>
+        <!-- //cast-list -->
+
+      </div>
+      <!-- //bottom-box -->
+    </div>
+    <!-- //inner-box -->
+    <!-- //mkp-add : 20210309 -->
+
   </div>
   <!-- //conner-box -->
 </template>
