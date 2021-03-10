@@ -584,17 +584,25 @@
     <!--  //상품이동 , 내 서랍 담기  -->
 
     <!--  상품리스트 팝업   -->
-    <div class="modal-wrap big prod-list-popup" style="display:none;">
+
+    <!--  mkp-edit : 20210310   -->
+    <!-- : 하단의 버튼박스가 없을 경우 n0-button-box 클래스 추가 -->
+    <!--<div class="modal-wrap big prod-list-popup" style="display:none;">-->
+    <div class="modal-wrap big prod-list-popup no-button-box" style="display:none;">
+    <!--  //mkp-edit : 20210310   -->
+
       <div class="modal-layer">
         <div class="inner-box has-btn">
           <strong class="modal_tit"></strong>
           <div class="modal_cont">
             <div class="title-box">
-              <p class="tit-txt">가방</p>
+              <!--  mkp-edit : 20210310   -->
               <!-- mkp-edit : 20210121 -->
               <!--<button type="button" class="kakao-btn"><span>서랍 공유</span></button>-->
               <button type="button" class="cab-kakao-btn"><span>서랍 공유</span></button>
               <!-- //mkp-edit : 20210121 -->
+              <p class="tit-txt">가방</p>
+              <!--  //mkp-edit : 20210310   -->
             </div>
 
             <!--
@@ -627,21 +635,28 @@
               </div>
             </div>
           </div>
+
           <!-- 내서랍 리스트 편집버튼 -->
           <div class="button-box" style="display: none;">
             <button type="button" class="modal-blk-btn w100"><span>편집</span></button>
           </div>
+          <!-- //내서랍 리스트 편집버튼 -->
+
           <!-- 내서랍 리스트 취소 상품이동 삭제 버튼 -->
-          <div class="button-box share-mode">
+          <div class="button-box share-mode" style="display: none;">
             <button type="button" class="gray-btn h80 cancle-btn"><span>취소</span></button>
             <button type="button" class="kakao-btn h80"><span>공유(2)</span></button>
           </div>
+          <!-- //내서랍 리스트 취소 상품이동 삭제 버튼 -->
+
           <!-- 내서랍 리스트 취소 상품이동 삭제 버튼 -->
           <div class="button-box edit-mode" style="display: none;">
             <button type="button" class="gray-btn h80 cancle-btn"><span>취소</span></button>
             <button type="button" class="gray-btn h80 move-btn"><span>상품이동(2)</span></button>
             <button type="button" class="modal-blk-btn h80 delete-btn"><span>삭제(2)</span></button>
           </div>
+          <!-- //내서랍 리스트 취소 상품이동 삭제 버튼 -->
+
           <button type="button" class="icon-header-close">팝업닫기</button>
         </div>
       </div>

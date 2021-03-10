@@ -145,8 +145,10 @@
 .prod-list-popup .inner-box{}
 .prod-list-popup .inner-box .modal_tit{}
 .prod-list-popup .inner-box .modal_cont{padding:10px 0 20px;height: calc(100% - 120px) !important;}
+.prod-list-popup.no-button-box .inner-box .modal_cont{height: calc(100% - 60px) !important;}
 .prod-list-popup .inner-box .modal_cont .title-box{padding:0 20px;}
-.prod-list-popup .inner-box .modal_cont .title-box .tit-txt{font-size:$font-50px;}
+.prod-list-popup .inner-box .modal_cont .title-box .cab-kakao-btn {position:relative;float:right;right:0;}
+.prod-list-popup .inner-box .modal_cont .title-box .tit-txt{clear:both;font-size:$font-50px;}
 .prod-list-popup .inner-box .button-box.edit-mode{padding:12px;overflow: hidden;}
 .prod-list-popup .inner-box .button-box.edit-mode button{float:left;margin-left:8px;}
 .prod-list-popup .inner-box .button-box.edit-mode button:first-child{margin-left:0;}
