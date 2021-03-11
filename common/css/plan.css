@@ -1608,6 +1608,7 @@ label {
   line-height: 1.25em;
 }
 .title-box.v2 {
+  border-top: 1px solid #000;
   border-bottom: 1px solid #e5e5e5;
 }
 .title-box.v2 .tit-txt {
