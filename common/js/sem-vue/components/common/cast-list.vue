@@ -7,6 +7,10 @@
         <!-- mkp-del : 20210309 -->
         <!--<span class="tit-desc">방송 중에만 구매가능합니다.</span>-->
         <!-- //mkp-del : 20210309 -->
+
+        <!-- mkp-add : 20210312 -->
+        <span class="tit-desc">라이브 방송으로 더 생생하게</span>
+        <!-- //mkp-add : 20210312 -->
       </p>
     </div>
 
@@ -14,9 +18,11 @@
     <div class="inner-box">
       <!-- top-box -->
       <div class="top-box">
-        <div class="cast-info">
+        <!-- mkp-edit : 20210312 -->
+        <div class="cast-info v2">
           <span class="cast-date"><span>01.06</span>&nbsp;&nbsp;<em>수</em></span>
         </div>
+        <!-- //mkp-edit : 20210312 -->
       </div>
       <!-- //top-box -->
 
@@ -128,12 +134,14 @@
       <!-- bottom-box -->
       <div class="bottom-box">
 
-        <div class="title-box v2">
+        <!-- mkp-add : 20210312 -->
+        <div class="title-box v3">
           <p class="tit-txt">
-            지난 편성표 보기
+            지난 편성표 보기 <br>
             <span class="tit-desc">판매 기간이 지난 라이브는 표시되지 않습니다.</span>
           </p>
         </div>
+        <!-- //mkp-add : 20210312 -->
 
         <!-- cast-list -->
         <ul class="cast-list past-cast-list">
