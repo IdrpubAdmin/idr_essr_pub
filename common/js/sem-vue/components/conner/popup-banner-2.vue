@@ -54,8 +54,13 @@
           </dl>
         </swiper-slide>
       </swiper>
+
+      <!-- mkp-add : 20210312 -->
+      <div class="pagination-wrap" slot="pagination"></div>
+      <!-- //mkp-add : 20210312 -->
+
       <div class="button-box">
-        <button type="button" class="modal-blk-btn"><span>다시 보지 않기</span></button>
+        <button type="button" class="modal-blk-btn"><span>다시 보지 않기2</span></button>
         <button type="button" class="modal-blk-btn" onclick="document.querySelector('.popup-banner-2').style.display='none';"><span>닫기</span></button>
       </div>
     </div>
@@ -79,6 +84,10 @@ module.exports = {
         observer: true,
         observeParents: true,
         slidesPerView: 'auto',
+        pagination: {
+          el:'.pagination-wrap',
+          type: 'bullets'
+        },
         on: {
           init: function(){
             var loop = that.swiperOption.loop;
